@@ -11,3 +11,6 @@ class Personaje: # Trabajaremos con clase para representar a cada personaje de M
 
     def __str__(self):
         return f"Personaje: {self.nombre}"
+
+    def obtener_nombre(self):
+        return self.nombre

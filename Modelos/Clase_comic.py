@@ -8,3 +8,7 @@ class Comic: # vamos a usar la calse comic para representar lso comics de la tie
         self.descripcion = ""
         self.personajes = []  # esta es la lista de ids de personajes
         self.creadores = []  # esta es la lista de ids de creadores
+
+    def obtener_nombre_busqueda(self):
+        return self.titulo
+

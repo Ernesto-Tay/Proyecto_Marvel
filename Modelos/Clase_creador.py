@@ -9,3 +9,6 @@ class Creador:
 
     def __str__(self):
         return f"Creador: {self.nombre_completo}"
+
+    def obtener_nombre(self):
+        return self.nombre_completo

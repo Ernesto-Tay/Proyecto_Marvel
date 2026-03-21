@@ -8,3 +8,6 @@ class Evento: # esta clase va a representar un evento en Marvel
 
     def __str__(self):
         return f"Evento: {self.titulo}"
+
+    def obtener_nombre(self):
+        return self.titulo
