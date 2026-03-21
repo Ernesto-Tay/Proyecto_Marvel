@@ -20,14 +20,10 @@ class ComicVineAPI:
         if lapso < self.min_request_interval:
             time.sleep(self.min_request_interval-lapso)
 
-    def extraccion(self):
-        req = urllib.request.Request(f"{self.base_url}/issues/?api_key={self.api_key}&format=json&filter=publisher:Marvel", headers=self.headers)
+    def extraccion(self, endpoint):  #el endpoint refiere al tipo de dato a extraer: "issues" = cómics; "characters" = personajes, "events" = eventos
+        self.control_tiempo()
+        req = urllib.request.Request(f"{self.base_url}/{endpoint}/?api_key={self.api_key}&format=json&filter=publisher:Marvel", headers=self.headers)
         with urllib.request.urlopen(req) as resp:
             data = json.loads(resp.read().decode())
+        self.last_request_time = time.time()
         return data
-
-
-
-
-
-
