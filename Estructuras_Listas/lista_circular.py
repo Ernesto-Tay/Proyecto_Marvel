@@ -1,6 +1,5 @@
 from Modelos.nodo import Nodo
 
-
 class ListaCircular: #La usaremos para navegar entre las secciones
     def __init__(self):
         self.actual = None
