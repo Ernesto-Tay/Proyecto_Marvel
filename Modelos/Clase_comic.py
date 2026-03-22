@@ -12,3 +12,5 @@ class Comic: # vamos a usar la calse comic para representar lso comics de la tie
     def obtener_nombre_busqueda(self):
         return self.titulo
 
+    def obtener_fecha(self):
+        return self.fecha_lanzamiento

@@ -14,3 +14,6 @@ class Personaje: # Trabajaremos con clase para representar a cada personaje de M
 
     def obtener_nombre(self):
         return self.nombre
+
+    def obtener_fecha(self):
+        return ""

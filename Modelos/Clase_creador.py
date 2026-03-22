@@ -12,3 +12,6 @@ class Creador:
 
     def obtener_nombre(self):
         return self.nombre_completo
+
+    def obtener_fecha(self):
+        return ""
