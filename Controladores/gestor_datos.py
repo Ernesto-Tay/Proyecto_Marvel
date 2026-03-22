@@ -7,10 +7,26 @@ class Conversor:
     def __init__(self, datos):
         self.datos = datos
 
-    def convertir_a_comic(self): pass#crea una lista de datos con instancias de cómics
+    def convertir_a_comic(self): pass #crea una lista de datos con instancias de cómics
 
     def convertir_a_creador(self): pass #retorna una lista de datos con instancias de creadores
 
     def convertir_a_evento(self): pass # retorna una lista de datos con instancias de eventos
 
     def convertir_a_personaje(self): pass # retorna una lista de datos con istancias de personaejs
+
+class DataComics:
+    def __init__(self):
+        self.datos = {}
+
+class DataCreadores:
+    def __init__(self):
+        self.datos = {}
+
+class DataEventos:
+    def __init__(self):
+        self.datos = {}
+
+class DataPersonajes:
+    def __init__(self):
+        self.datos = {}
