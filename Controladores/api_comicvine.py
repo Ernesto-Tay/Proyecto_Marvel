@@ -28,11 +28,26 @@ class ComicVineAPI:
         self.last_request_time = time.time()
         return data
 
-    def obtener_comics(self):
-        return self._extraccion("issues", "&filter=publisher:Marvel&field_list=id,isbn,name,issue_number,character_credits,person_credits,event_credits,image")
+    def obtener_comics(self, c_id = None):
+        ep = "issues"
+        if c_id:
+            ep = f"issue/4000-{c_id}"
+        return self._extraccion(ep, "&filter=publisher:Marvel&field_list=id,isbn,name,issue_number,character_credits,person_credits,event_credits,image")
 
-    def obtener_personajes(self):
-        return self._extraccion("characters", "&field_list=id,name,image,deck,description,")
+    def obtener_personajes(self, p_id = None):
+        ep = "characters"
+        if p_id:
+            ep = f"character/4005-{p_id}"
+        return self._extraccion(ep, "&field_list=id,name,image,deck,description, ")
 
-    def obtener_eventos(self):
-        return self._extraccion("events", "&field_list=id,name,image,start_year")
+    def obtener_eventos(self, e_id = None):
+        ep = "events"
+        if e_id:
+            ep = f"event/4045-{e_id}"
+        return self._extraccion(ep, "&field_list=id,name,image,start_year")
+
+    def obtener_autores(self, a_id = None):
+        ep = "persons"
+        if a_id:
+            ep = f"person/4040-{a_id}"
+        return self._extraccion(ep, "&field_list=id,name,image")
