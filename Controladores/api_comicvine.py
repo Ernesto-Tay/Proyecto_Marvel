@@ -26,7 +26,13 @@ class ComicVineAPI:
         with urllib.request.urlopen(req) as resp:
             data = json.loads(resp.read().decode())
         self.last_request_time = time.time()
-        return data
+        results = data.get("results")
+        if isinstance(results, list):
+            return results
+        elif isinstance(results, dict):
+            return [results]
+        return []
+
 
     def obtener_comics(self, c_id = None):
         ep = "issues"

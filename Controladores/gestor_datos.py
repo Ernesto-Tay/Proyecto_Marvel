@@ -1,6 +1,5 @@
 # Las siguientes clases funcionarán como el Cache del sistema para optimizar procesos
 from Modelos.__init__ import Creador, Comic, Evento, Personaje
-from init import ComicVineAPI
 class DataComics:
     def __init__(self):
         self.datos = {}
@@ -9,8 +8,8 @@ class DataComics:
             return self.datos[id]
         data = api.obtener_comics(id)
         if data is not None:
-            self.datos[id] = data
-            return data
+            self.datos[id] = data[0]
+            return data[0]
         return False
 
 
@@ -23,8 +22,8 @@ class DataCreadores:
             return self.datos[id]
         data = api.obtener_creadores(id)
         if data is not None:
-            self.datos[id] = data
-            return data
+            self.datos[id] = data[0]
+            return data[0]
         return False
 
 
@@ -36,8 +35,8 @@ class DataEventos:
             return self.datos[id]
         data = api.obtener_eventos(id)
         if data is not None:
-            self.datos[id] = data
-            return data
+            self.datos[id] = data[0]
+            return data[0]
         return False
 
 
@@ -50,8 +49,8 @@ class DataPersonajes:
             return self.datos[id]
         data = api.obtener_personajes(id)
         if data is not None:
-            self.datos[id] = data
-            return data
+            self.datos[id] = data[0]
+            return data[0]
         return False
 
 
@@ -73,7 +72,7 @@ class Instanciador:
         try:
             c_id = datos.get("id")
             nombre = datos.get("name")
-            isbn = datos.get("issue_number")
+            isbn = datos.get("isbn")
             personajes = datos.get("character_credits")
             lanzamiento = datos.get("cover_date")
             p_ids = [p.get("id") for p in personajes]
@@ -157,7 +156,7 @@ class Instancias:
             return False
 
         type_dict = types[type][0]
-        if not type_dict[id]: #si el valor buscado por ID no existe en los diccionarios de instancias convertidas
+        if id not in type_dict: #si el valor buscado por ID no existe en los diccionarios de instancias convertidas
             retrieval = types[type][1]
             data = retrieval.obtener(id, api) #se busca en los diccionarios de instancias crudas, o se solicita de la API
             if data is not None: #ahora toca relacionar "data" con la función respectiva del convertidor (si se obtuvo algún dato)
