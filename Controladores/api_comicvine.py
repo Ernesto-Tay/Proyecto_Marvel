@@ -46,7 +46,7 @@ class ComicVineAPI:
             ep = f"event/4045-{e_id}"
         return self._extraccion(ep, "&field_list=id,name,image,start_year")
 
-    def obtener_autores(self, a_id = None):
+    def obtener_creadores(self, a_id = None):
         ep = "persons"
         if a_id:
             ep = f"person/4040-{a_id}"
