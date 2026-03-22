@@ -36,6 +36,7 @@ class ListaSimple:
 
         if self.cabeza.dato == dato:
             self.cabeza = self.cabeza.siguiente
+            self.tamanio -=1
             return True
 
         actual = self.cabeza
