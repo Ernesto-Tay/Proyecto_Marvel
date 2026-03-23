@@ -113,5 +113,25 @@ class ListaSimple:
 
                 actual = actual.siguiente
 
+    def obtener_pagina(self, numero_pagina, elementos_por_pagina=10):
+        inicio = numero_pagina * elementos_por_pagina
 
+        if inicio >= self.tamanio:
+            return []
+        resultados = []
+        actual = self.cabeza
 
+        # Saltaremos hasta el inicio
+        for i in range(inicio):
+            if actual:
+                actual = actual.siguiente
+
+        # Recoger página
+        for i in range(elementos_por_pagina):
+            if actual:
+                resultados.append(actual.dato)
+                actual = actual.siguiente
+            else:
+                break
+
+        return resultados
