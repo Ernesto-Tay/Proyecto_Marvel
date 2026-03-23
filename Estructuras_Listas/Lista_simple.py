@@ -133,5 +133,4 @@ class ListaSimple:
                 actual = actual.siguiente
             else:
                 break
-
         return resultados
