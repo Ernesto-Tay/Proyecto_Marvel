@@ -72,6 +72,7 @@ class DataComics:
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump(self.datos, f, ensure_ascii=False, indent=4)
 
+
 class DataCreadores:
     def __init__(self):
         self.datos = {}
@@ -99,6 +100,7 @@ class DataCreadores:
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump(self.datos, f, ensure_ascii=False, indent=4)
 
+
 class DataEventos:
     def __init__(self):
         self.datos = {}
@@ -125,6 +127,7 @@ class DataEventos:
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump(self.datos, f, ensure_ascii=False, indent=4)
 
+
 class DataPersonajes:
     def __init__(self):
         self.datos = {}
@@ -150,6 +153,7 @@ class DataPersonajes:
         ruta = os.path.join(folder, "personajes.json")
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump(self.datos, f, ensure_ascii=False, indent=4)
+
 
 class DataBank:
     def __init__(self):
@@ -263,7 +267,7 @@ class Instancias:
         :param api: Es la variable que refiere a la clase que controla la conexión con ComicVine
         """
         types = {"comic":[self.comics, self.raw_data.d_comics], "creador": [self.creadores, self.raw_data.d_creadores], "evento":[self.eventos,self.raw_data.d_eventos], "personaje":[self.personajes, self.raw_data.d_personajes]}
-        if type not in types.keys(): #si se solicita un tipo que no  existe
+        if type not in types.keys(): #si se solicita un tipo que no existe
             return False
 
         type_dict = types[type][0]
