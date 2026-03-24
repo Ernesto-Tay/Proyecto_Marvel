@@ -158,4 +158,3 @@ class MundoComicLogin(QWidget):
 
 app = QApplication(sys.argv)
 auth_service = Auth()
-
