@@ -91,7 +91,7 @@ class MundoComicLogin(QWidget):
 
         container_layout.addSpacing(20)
 
-        # --- INPUTS ---
+        #INPUTS
         self.user_input = QLineEdit()
         self.user_input.setPlaceholderText("USUARIO")
         self.apply_input_style(self.user_input)
@@ -161,7 +161,13 @@ auth_service = Auth()
 
 
 def ir_al_menu():
-    print("Login exitoso.")
+    login_win.hide()
+    from MenuPrincipal import MenuPrincipal
+    global win_principal
+    win_principal = MenuPrincipal(auth_service.admin.nombre)
+    win_principal.show()
+
+login_win = MundoComicLogin(auth_service, ir_al_menu)
 
 login_win = MundoComicLogin(auth_service, ir_al_menu)
 login_win.show()
