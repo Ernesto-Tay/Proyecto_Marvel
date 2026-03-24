@@ -63,7 +63,7 @@ class MundoComicLogin(QWidget):
         container_layout.setSpacing(10)
 
         # --- SECCIÓN DONDE IRA EL LOGO DE SPIDERMAN :D ---
-        ruta_logo = os.path.join(self.carpeta_recursos, "icono.png")
+        ruta_logo = os.path.join(self.carpeta_recursos, "UWU-PNG-Image.png")
         logo_label = QLabel()
         logo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         logo_label.setStyleSheet("border: none; background: transparent;")
@@ -159,16 +159,3 @@ class MundoComicLogin(QWidget):
 app = QApplication(sys.argv)
 auth_service = Auth()
 
-
-def ir_al_menu():
-    login_win.hide()
-    from MenuPrincipal import MenuPrincipal
-    global win_principal
-    win_principal = MenuPrincipal(auth_service.admin.nombre)
-    win_principal.show()
-
-login_win = MundoComicLogin(auth_service, ir_al_menu)
-
-login_win = MundoComicLogin(auth_service, ir_al_menu)
-login_win.show()
-sys.exit(app.exec())
