@@ -38,13 +38,13 @@ class ComicVineAPI:
         ep = "issues"
         if c_id:
             ep = f"issue/4000-{c_id}"
-        return self._extraccion(ep, "&filter=publisher:Marvel&field_list=id,isbn,name,issue_number,character_credits,person_credits,cover_date,description,image")
+        return self._extraccion(ep, "&filter=publisher:Marvel&field_list=id,isbn,name,issue_number,character_credits,person_credits,cover_date,description,image&limit=100")
 
     def obtener_personajes(self, p_id = None):
         ep = "characters"
         if p_id:
             ep = f"character/4005-{p_id}"
-        return self._extraccion(ep, "&field_list=id,name,image,deck,description,creator_credits,event_credits")
+        return self._extraccion(ep, "&field_list=id,name,image,deck,description,creator_credits,event_credits&limit=100")
 
     def obtener_eventos(self, e_id = None):
         ep = "events"

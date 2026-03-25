@@ -49,14 +49,28 @@ class DescargadorImagenes:
 class DataComics:
     def __init__(self):
         self.datos = {}
-    def obtener(self, id, api):
-        if id in self.datos:
-            return self.datos[id]
-        data = api.obtener_comics(id)
+    def obtener(self, api, id = None):
+        if id:
+            if id in self.datos:
+                return self.datos[id]
+            data = api.obtener_comics(id)
+            if data is not None:
+                if data.get("publisher") and data["publisher"].get("name") == "Marvel":
+                    self.datos[id] = data[0]
+                    return data[0]
+            return False
+
+        data = api.obtener_comics()
+        r_data = {}
         if data is not None:
-            self.datos[id] = data[0]
-            return data[0]
+            for comic in data:
+                if data.get("publisher") and data.get("publisher").get("name") == "Marvel":
+                    self.datos[comic["id"]] = data[0]
+                    r_data[comic["id"]] = data[0]
+            return r_data
         return False
+
+
 
     def cargar(self):
         ruta = os.path.join(folder, "comics.json")
@@ -132,14 +146,28 @@ class DataPersonajes:
     def __init__(self):
         self.datos = {}
 
-    def obtener(self, id, api):
-        if id in self.datos:
-            return self.datos[id]
-        data = api.obtener_personajes(id)
+    def obtener(self, api, id = None):
+        if id:
+            if id in self.datos:
+                return self.datos[id]
+            data = api.obtener_personajes(id)
+            if data is not None:
+                if data.get("publisher") and data["publisher"].get("name") == "Marvel":
+                    self.datos[id] = data[0]
+                    return data[0]
+            return False
+
+        data = api.obtener_personajes()
+        r_data = {}
         if data is not None:
-            self.datos[id] = data[0]
-            return data[0]
+            for val in data:
+                if val.get("publisher") and val["publisher"].get("name") == "Marvel":
+                    self.datos[val["id"]] = val
+                    r_data[val["id"]] = val
+            return r_data
         return False
+
+
 
     def cargar(self):
         ruta = os.path.join(folder, "personajes.json")
@@ -161,7 +189,19 @@ class DataBank:
         self.d_creadores = DataCreadores()
         self.d_eventos = DataEventos()
         self.d_personajes = DataPersonajes()
+        self.cargar_todos()
 
+    def cargar_todos(self):
+        self.d_comics.cargar()
+        self.d_eventos.cargar()
+        self.d_creadores.cargar()
+        self.d_personajes.cargar()
+
+    def guardar_todos(self):
+        self.d_comics.guardar()
+        self.d_eventos.guardar()
+        self.d_creadores.guardar()
+        self.d_personajes.guardar()
 
 class Instanciador:
     """
@@ -260,7 +300,7 @@ class Instancias:
         self.converter = Instanciador()
 
 
-    def buscador(self, id, type, api):
+    def buscador(self, type, api, id = None):
         """
         :param id: Es el ID de referencia para la búsqueda. Debe ser de 4 dígitos.
         :param type: Es el tipo de dato (comic, creador, evento, personaje).
@@ -271,9 +311,9 @@ class Instancias:
             return False
 
         type_dict = types[type][0]
-        if id not in type_dict.keys(): #si el valor buscado por ID no existe en los diccionarios de instancias convertidas
-            retrieval = types[type][1]
-            data = retrieval.obtener(id, api) #se busca en los diccionarios de instancias crudas, o se solicita de la API
+        retrieval = types[type][1]
+        if id and id not in type_dict.keys(): #si el valor buscado por ID no existe en los diccionarios de instancias convertidas
+            data = retrieval.obtener(id = id, api = api) #se busca en los diccionarios de instancias crudas, o se solicita de la API
             if data is not None: #ahora toca relacionar "data" con la función respectiva del convertidor (si se obtuvo algún dato)
                 match type:
                     case "comic":
@@ -290,3 +330,27 @@ class Instancias:
                 return c_data
             return False
         return type_dict[id]
+
+    def dumper(self, type, api):
+        types = {"comic": [self.comics, self.raw_data.d_comics], "personaje": [self.personajes, self.raw_data.d_personajes]}
+        if type not in types.keys():  # si se solicita un tipo que no existe
+            return False
+
+        type_dict = types[type][0]
+        retrieval = types[type][1]
+        data = retrieval.obtener(api = api)
+        if data and isinstance(data, dict):
+            conv = {}
+            for val in data.values():
+                match type:
+                    case "comic":
+                        c_data = self.converter.convertir_a_comic(val)
+                    case "personaje":
+                        c_data = self.converter.convertir_a_personaje(val)
+                        com_list = [comic.id for comic in self.comics.values() if c_data.id in comic.personajes]
+                        c_data.comics = com_list
+                type_dict[c_data.id] = c_data
+                conv[c_data.id] = c_data
+            return conv
+        return False
+
