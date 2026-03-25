@@ -16,6 +16,7 @@ class HomeMenu(QWidget):
 
         # Logo / Imagen
         self.lbl_logo = QLabel()
+        self.lbl_logo.setStyleSheet("border: none; background: transparent;")
         ruta_recursos = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Recursos")
         ruta_marvel = os.path.join(ruta_recursos, "marvel.png")
 

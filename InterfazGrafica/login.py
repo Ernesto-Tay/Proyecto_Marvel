@@ -63,7 +63,7 @@ class MundoComicLogin(QWidget):
         container_layout.setSpacing(10)
 
         # --- SECCIÓN DONDE IRA EL LOGO DE SPIDERMAN :D ---
-        ruta_logo = os.path.join(self.carpeta_recursos, "UWU-PNG-Image.png")
+        ruta_logo = os.path.join(self.carpeta_recursos, "icono.png")
         logo_label = QLabel()
         logo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         logo_label.setStyleSheet("border: none; background: transparent;")
