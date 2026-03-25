@@ -14,8 +14,13 @@ class ListaCircular: #La usaremos para navegar entre las secciones
             self.actual = nuevo
             nuevo.siguiente = nuevo
         else:
-            nuevo.siguiente = self.actual.siguiente
-            self.actual.siguiente = nuevo
+            aux = self.actual
+            while aux.siguiente != self.actual:
+                aux = aux.siguiente
+
+            aux.siguiente = nuevo
+            nuevo.siguiente = self.actual  # Cierra el círculo
+        self.tamanio += 1
 
     def eliminar(self, dato):
         if self.esta_vacia():
