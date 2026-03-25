@@ -14,14 +14,13 @@ class HomeMenu(QWidget):
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.setSpacing(20)
 
-        # logo
+        # Logo / Imagen
         self.lbl_logo = QLabel()
-        self.lbl_logo.setStyleSheet("background-color: transparent;")
         ruta_recursos = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Recursos")
-        ruta_spider= os.path.join(ruta_recursos, "marvel.png")
+        ruta_marvel = os.path.join(ruta_recursos, "marvel.png")
 
-        if os.path.exists(ruta_spider):
-            pixmap = QPixmap(ruta_spider).scaled(600, 400,
+        if os.path.exists(ruta_marvel):
+            pixmap = QPixmap(ruta_marvel).scaled(600, 400,
                                                  Qt.AspectRatioMode.KeepAspectRatio,
                                                  Qt.TransformationMode.SmoothTransformation)
             self.lbl_logo.setPixmap(pixmap)
@@ -32,8 +31,8 @@ class HomeMenu(QWidget):
         self.lbl_logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.lbl_logo)
 
-        # Boton de Bienvenido
-        self.btn_explorar = QPushButton("BIENVENIDO!")
+        # Botón de Bienvenido
+        self.btn_explorar = QPushButton("¡BIENVENIDO!")
         self.btn_explorar.setFixedWidth(250)
         self.btn_explorar.setCursor(Qt.CursorShape.PointingHandCursor)
         self.btn_explorar.setStyleSheet("""
@@ -43,11 +42,11 @@ class HomeMenu(QWidget):
             }
             QPushButton:hover { background-color: #ff3333; }
         """)
-        # Si sehace clic, te manda a la pestaña de personajes (índice 2)
-        self.btn_explorar.clicked.connect(self.ir_a_personajes())
+
+        #Aqui fue el error, la funcion se debe pasar sin parentesis x,d
+        self.btn_explorar.clicked.connect(self.ir_a_personajes)
         layout.addWidget(self.btn_explorar, 0, Qt.AlignmentFlag.AlignCenter)
 
     def ir_a_personajes(self):
         if self.parent_principal:
-            # El botón llama a la función de cambio de pestaña del menú principal
             self.parent_principal.cambiar_pestana(2, self.parent_principal.btn_personajes)
