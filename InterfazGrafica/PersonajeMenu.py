@@ -7,8 +7,12 @@ from PyQt6.QtGui import QPixmap
 
 
 class PersonajesMenu(QWidget):
-    def __init__(self):
+    def __init__(self, controlador=None):
         super().__init__()
+        self.controlador = controlador
+        self.pagina_actual = 1
+
+        # Contenedor principal
         self.setStyleSheet("background-color: white; border: none;")
 
         layout_exterior = QVBoxLayout(self)
@@ -33,7 +37,7 @@ class PersonajesMenu(QWidget):
 
         fila_busqueda = QHBoxLayout()
         self.buscador_oval = QLineEdit()
-        self.buscador_oval.setPlaceholderText(" Buscar personajes...")
+        self.buscador_oval.setPlaceholderText(" Buscar por nombre o creador...")
         self.buscador_oval.setFixedWidth(500)
         self.buscador_oval.setStyleSheet("""
             QLineEdit {
@@ -49,23 +53,25 @@ class PersonajesMenu(QWidget):
         contenedor_cabecera.addLayout(fila_busqueda)
         layout_principal.addLayout(contenedor_cabecera)
 
-        # filtros de busqueda/orden
+        #busqueda/orden
         fila_filtros = QHBoxLayout()
         estilo_cb = """
             QComboBox { 
-                background: #f8f8f8; border: 1px solid #ddd; border-radius: 6px; 
+                background: #e62429; border: 1px solid red; border-radius: 6px; 
                 padding: 6px; color: black; min-width: 160px;
             }
             QComboBox QAbstractItemView {
-                background-color: white; color: black;
-                selection-background-color: #e62429; selection-color: white;
+                background-color: #ffa6a6 ; color: black;
+                selection-background-color: red; selection-color: red;
             }
         """
-        self.cb_orden = QComboBox();
-        self.cb_orden.addItems(["Ordenar por nombre", "Creador"]);
+        # Ordenameinto
+        self.cb_orden = QComboBox()
+        self.cb_orden.addItems(["Ordenar por nombre", "Ordenar por autor"])
         self.cb_orden.setStyleSheet(estilo_cb)
-        self.cb_lanz = QComboBox();
-        self.cb_lanz.addItem("Lanzamiento");
+
+        self.cb_lanz = QComboBox()
+        self.cb_lanz.addItem("Lanzamiento")
         self.cb_lanz.setStyleSheet(estilo_cb)
 
         fila_filtros.addWidget(self.cb_orden)
@@ -73,7 +79,7 @@ class PersonajesMenu(QWidget):
         fila_filtros.addWidget(self.cb_lanz)
         layout_principal.addLayout(fila_filtros)
 
-        # cuadros para mostrar a personajes
+        # area de caudros
         self.scroll = QScrollArea()
         self.scroll.setWidgetResizable(True)
         self.scroll.setStyleSheet("QScrollArea { border: none; background-color: white; }")
@@ -84,89 +90,102 @@ class PersonajesMenu(QWidget):
         self.layout_grid.setSpacing(20)
         self.layout_grid.setContentsMargins(10, 10, 10, 10)
 
-        # Generacion de personajes de prueba en cuadrícula
-        personajes = ["Spider-Man", "Iron Man", "Black Panther", "Thor", "Storm",
-                      "Deadpool", "Black Widow", "Falcon", "Captain Marvel", "She-Hulk"]
+        #Esto es solo para probar, aun no se debe conectar la api x,d
+        # Generación de 10 personajes
+        self.personajes_prueba = ["Spider-Man", "Iron Man", "Black Panther", "Thor", "Storm",
+                                  "Deadpool", "Black Widow", "Falcon", "Captain Marvel", "She-Hulk"]
 
-        for i, nombre in enumerate(personajes):
-            fila = i // 5
-            columna = i % 5
-            self.layout_grid.addWidget(self.crear_tarjeta_personaje(nombre), fila, columna)
+        self.cargar_tarjetas_prueba()
 
         self.scroll.setWidget(self.contenedor_grid)
         layout_principal.addWidget(self.scroll)
 
-        # pahinacion
+        #paginacion
+        #Son estaticos por ahora, cuando se integre la lista doble con la api ya no lo sera :D
         footer = QHBoxLayout()
-        btn_ant = QPushButton("< Anterior")
-        btn_sig = QPushButton("Siguiente >")
-        estilo_btn_pag = "QPushButton { background: #333; color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold; }"
-        btn_ant.setStyleSheet(estilo_btn_pag)
-        btn_sig.setStyleSheet(
+        self.btn_ant = QPushButton("<")
+        self.btn_sig = QPushButton(">")
+
+        # Estilos
+        self.btn_ant.setStyleSheet(
+            "background: #333; color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold;")
+        self.btn_sig.setStyleSheet(
             "background: #e62429; color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold;")
 
+        self.lbl_pag = QLabel(f"{self.pagina_actual}")
+        self.lbl_pag.setStyleSheet("color: black; font-weight: bold; font-size: 14px;")
+
         footer.addStretch()
-        footer.addWidget(btn_ant)
-        footer.addSpacing(10)
-        footer.addWidget(btn_sig)
+        footer.addWidget(self.btn_ant)
+        footer.addSpacing(15)
+        footer.addWidget(self.lbl_pag)
+        footer.addSpacing(15)
+        footer.addWidget(self.btn_sig)
         footer.addStretch()
         layout_principal.addLayout(footer)
 
         layout_exterior.addWidget(self.lienzo)
 
+    def cargar_tarjetas_prueba(self):
+        for i, nombre in enumerate(self.personajes_prueba):
+            fila = i // 5
+            columna = i % 5
+            tarjeta = self.crear_tarjeta_personaje(nombre)
+            self.layout_grid.addWidget(tarjeta, fila, columna)
+
     def crear_tarjeta_personaje(self, nombre):
         tarjeta = QFrame()
         tarjeta.setFixedSize(180, 260)
-        # Diseño de tarjeta
         tarjeta.setStyleSheet("""
             QFrame { 
                 background-color: #1a1a1a; 
                 border-radius: 10px;
             }
+            QFrame:hover { border: 2px solid #e62429; }
         """)
 
         ly = QVBoxLayout(tarjeta)
         ly.setContentsMargins(10, 10, 10, 10)
 
-        # Imagen del personaje
+        # Imagen de referencia
         img = QLabel()
         img.setFixedSize(160, 160)
-        img.setStyleSheet("background-color: #333; border-radius: 8px;")  # Simula la imagen de ref
+        img.setStyleSheet("background-color: #333; border-radius: 8px;")
         img.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Nombre
         lbl_n = QLabel(nombre)
-        lbl_n.setStyleSheet("color: white; font-weight: bold; font-size: 14px; border: none;")
+        lbl_n.setStyleSheet("color: white; font-weight: bold; font-size: 14px; border: none; background: transparent;")
         lbl_n.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Botón Detalles
         btn = QPushButton("Ver Detalles")
+        btn.setCursor(Qt.CursorShape.PointingHandCursor)
         btn.setStyleSheet("""
             QPushButton { 
                 background: #e62429; color: white; border-radius: 4px; 
                 font-size: 11px; font-weight: bold; padding: 5px;
             }
+            QPushButton:hover { background: white; color: #e62429; }
         """)
 
         ly.addWidget(img)
         ly.addWidget(lbl_n)
+        ly.addStretch()
         ly.addWidget(btn)
 
         btn.clicked.connect(lambda: self.enviar_a_detalles(nombre))
-
         return tarjeta
 
     def enviar_a_detalles(self, nombre):
-        #Obtenemos la ventana principal
+        """Navega a la vista de detalles del personaje """
         ventana = self.window()
-
         if hasattr(ventana, 'stack') and hasattr(ventana, 'vista_detalles_per'):
             ventana.vista_detalles_per.actualizar_datos(nombre)
+            ventana.stack.setCurrentIndex(3) #detalles indice 3
 
-            ventana.stack.setCurrentIndex(3) #el indice 3 es detalles de personaje
-
-            #Desactive los botones del sidebar para que ninguno parezca como seleccionado (ya paso y se miraba mal xd)
-            if hasattr(ventana, 'btn_personajes'):
+            # Limpia estilos de botones laterales
+            if hasattr(ventana, 'actualizar_estilo_boton'):
                 ventana.actualizar_estilo_boton(ventana.btn_home, False)
                 ventana.actualizar_estilo_boton(ventana.btn_comics, False)
                 ventana.actualizar_estilo_boton(ventana.btn_personajes, False)

@@ -84,7 +84,7 @@ class DetallesPersonaje(QWidget):
         layout_superior_detalles.addLayout(desc_container, 1)
 
         # --- CUADRO DE CREADORES (Movid de abajo hacia aquí) ---
-        self.lista_autores_widget = self.crear_cuadro_creadores("Creadores del Personaje", ["Stan Lee", "Steve Ditko"])
+        self.lista_autores_widget = self.crear_cuadro_creadores("Autres", ["Stan Lee", "Steve Ditko"])
         self.lista_autores_widget.setFixedWidth(280)  # Ancho fijo para que no baile
         layout_superior_detalles.addWidget(self.lista_autores_widget)
 
@@ -103,7 +103,7 @@ class DetallesPersonaje(QWidget):
 
         items_demo = ["Amazing Fantasy #15", "Civil War", "Spider-Verse", "Secret Wars", "Avengers #1"]
 
-        self.lista_comics = self.crear_lista_marvel("Cómics en los que aparece", items_demo)
+        self.lista_comics = self.crear_lista_marvel("Cómics", items_demo)
         tablas_layout.addWidget(self.lista_comics)
 
         self.lista_eventos = self.crear_lista_marvel("Eventos", items_demo)
@@ -259,7 +259,7 @@ class DetallesPersonaje(QWidget):
         return frame
 
     def actualizar_datos(self, nombre):
-        self.lbl_nombre.setText(nombre.upper())
+        self.lbl_nombre.setText(f"Nombre: {nombre.upper()}")
         self.lbl_descripcion.setText(f"Información detallada sobre {nombre}. "
                                      f"Explora sus apariciones más importantes.")
 
