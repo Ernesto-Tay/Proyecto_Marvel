@@ -1,9 +1,9 @@
 import os
-from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,QPushButton, QScrollArea, QFrame, QLineEdit,QComboBox, QGridLayout)
+from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,QPushButton, QScrollArea, QFrame, QLineEdit,QComboBox, QGridLayout, QMessageBox)
 from PyQt6.QtCore import Qt, QThread
 from PyQt6.QtGui import QPixmap
 from Controladores.init import gestor, PageOrderer
-from Estructuras_Listas.init import ListaDoble
+from Controladores.api_comicvine import ComicVineAPI
 
 class PersonajesMenu(QWidget):
     def __init__(self, perfil, controlador=None):
@@ -15,9 +15,8 @@ class PersonajesMenu(QWidget):
         self.lista_personajes = None
         self.thread = None
         self.trabajador = None
-        self.carga_datos()
-
-
+        self.api = ComicVineAPI(self.perfil.clave) if getattr(self.perfil, "clave", None) else None
+        self.modo_carga = "ucm"
 
         # Contenedor principal
         self.setStyleSheet("background-color: white; border: none;")
@@ -41,6 +40,11 @@ class PersonajesMenu(QWidget):
         fila_titulo.addStretch()
         contenedor_cabecera.addLayout(fila_titulo)
 
+        self.lbl_estado = QLabel("Cargando personajes...")
+        self.lbl_estado.setStyleSheet("color: #666; font-size: 13px;")
+        self.lbl_estado.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        contenedor_cabecera.addWidget(self.lbl_estado)
+
         fila_busqueda = QHBoxLayout()
         self.buscador_oval = QLineEdit()
         self.buscador_oval.setPlaceholderText(" Buscar por nombre o creador...")
@@ -52,12 +56,12 @@ class PersonajesMenu(QWidget):
                 font-size: 15px;
             }
         """)
-
         fila_busqueda.addStretch()
         fila_busqueda.addWidget(self.buscador_oval)
         fila_busqueda.addStretch()
         contenedor_cabecera.addLayout(fila_busqueda)
         layout_principal.addLayout(contenedor_cabecera)
+        self.buscador_oval.textChanged.connect(self.manejar_busqueda)
 
         #busqueda/orden
         fila_filtros = QHBoxLayout()
@@ -77,7 +81,7 @@ class PersonajesMenu(QWidget):
         self.cb_orden.setStyleSheet(estilo_cb)
 
         self.cb_lanz = QComboBox()
-        self.cb_lanz.addItem("Lanzamiento")
+        self.cb_lanz.addItems(["Relevantes UCM", "Catalogo general"])
         self.cb_lanz.setStyleSheet(estilo_cb)
 
         fila_filtros.addWidget(self.cb_orden)
@@ -88,6 +92,7 @@ class PersonajesMenu(QWidget):
         self.cb_orden.clear()  # Limpiamos lo anterior
         self.cb_orden.addItems(["Nombre (A-Z)", "Nombre (Z-A)"])
         self.cb_orden.currentIndexChanged.connect(self.manejar_ordenamiento)
+        self.cb_lanz.currentIndexChanged.connect(self.manejar_modo_carga)
 
         # area de caudros
         self.scroll = QScrollArea()
@@ -130,6 +135,30 @@ class PersonajesMenu(QWidget):
         footer.addStretch()
         layout_principal.addLayout(footer)
         layout_exterior.addWidget(self.lienzo)
+        self.carga_datos()
+
+
+    def manejar_busqueda(self):
+        texto = self.buscador_oval.text().strip()
+        if not texto:
+            self.mostrar_pagina()
+            return
+
+        if self.lista_personajes:
+            resultados = self.lista_personajes.buscar_por_nombre(texto)
+            self.mostrar_resultados_filtrados(resultados)
+
+
+    def mostrar_resultados_filtrados(self, lista_resultados):
+        for i in reversed(range(self.layout_grid.count())):
+            widget = self.layout_grid.itemAt(i).widget()
+            if widget:
+                widget.setParent(None)
+        for i, personaje in enumerate(lista_resultados[:15]):
+            fila = i // 5
+            columna = i % 5
+            tarjeta = self.crear_tarjeta_personaje(personaje)
+            self.layout_grid.addWidget(tarjeta, fila, columna)
 
 
     def manejar_ordenamiento(self):
@@ -142,18 +171,83 @@ class PersonajesMenu(QWidget):
         self.pagina_actual = 0
         self.mostrar_pagina()
 
+
     def carga_datos(self):
+        if not self.api:
+            self.mostrar_error_carga("No hay una clave de API configurada para cargar personajes.")
+            return
+
+        if self._thread_activo():
+            return
+
         self.thread = QThread()
-        self.trabajador = PageOrderer(self.gestor, self.perfil.clave)
+        self.trabajador = PageOrderer(self.gestor, self.api, self.modo_carga)
         self.trabajador.moveToThread(self.thread)
         self.trabajador.finalizado.connect(self.recibir_lista)
+        self.trabajador.error.connect(self.mostrar_error_carga)
+        self.trabajador.finalizado.connect(self.thread.quit)
+        self.trabajador.error.connect(self.thread.quit)
+        self.thread.finished.connect(self._on_thread_finished)
+        self.thread.finished.connect(self.thread.deleteLater)
         self.thread.started.connect(self.trabajador.dump_list)
         self.thread.start()
+
+    def _thread_activo(self):
+        if not self.thread:
+            return False
+        try:
+            return self.thread.isRunning()
+        except RuntimeError:
+            self.thread = None
+            self.trabajador = None
+            return False
+
+    def _on_thread_finished(self):
+        self.thread = None
+        self.trabajador = None
+
+    def manejar_modo_carga(self):
+        nuevo_modo = "ucm" if self.cb_lanz.currentIndex() == 0 else "general"
+        if nuevo_modo == self.modo_carga:
+            return
+        self.modo_carga = nuevo_modo
+        self.pagina_actual = 0
+        self.lbl_estado.setText("Cargando personajes...")
+        self.lista_personajes = None
+        self.carga_datos()
 
 
     def recibir_lista(self, lista):
         self.lista_personajes = lista
+        # CORRECCION: limpiar el estado de error/carga cuando ya hay datos disponibles.
+        self.lbl_estado.setText("")
         self.mostrar_pagina()
+
+    def mostrar_error_carga(self, mensaje):
+        # CORRECCION: dejar el error visible dentro de la pantalla y tambien en una ventana emergente.
+        self.lbl_estado.setText("Error al cargar personajes. Revisa el detalle mostrado.")
+        self.lbl_estado.setStyleSheet("color: #000000; font-size: 13px; font-weight: bold;")
+        # CORRECCION: forzar colores legibles en el popup de error para que el detalle se pueda leer.
+        msg_box = QMessageBox(self)
+        msg_box.setIcon(QMessageBox.Icon.Critical)
+        msg_box.setWindowTitle("Error de carga")
+        msg_box.setText(mensaje)
+        msg_box.setStyleSheet("""
+            QMessageBox {
+                background-color: white;
+            }
+            QMessageBox QLabel {
+                color: black;
+                background-color: white;
+            }
+            QMessageBox QPushButton {
+                color: black;
+                background-color: #f0f0f0;
+                padding: 6px 12px;
+                min-width: 80px;
+            }
+        """)
+        msg_box.exec()
 
 
     def mostrar_pagina(self):
@@ -198,11 +292,24 @@ class PersonajesMenu(QWidget):
         ly = QVBoxLayout(tarjeta)
         ly.setContentsMargins(10, 10, 10, 10)
 
-        # Imagen de referencia
-        img = QLabel()
-        img.setFixedSize(160, 160)
-        img.setStyleSheet("background-color: #333; border-radius: 8px;")
-        img.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        url_remota, ruta_local = nombre.imagen
+
+        img_label = QLabel()
+        img_label.setFixedSize(160, 160)
+        img_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        img_label.setStyleSheet("background-color: #222; border-radius: 8px;")
+
+        if ruta_local and os.path.exists(ruta_local):
+            pixmap = QPixmap(ruta_local)
+
+            img_label.setPixmap(pixmap.scaled(
+                img_label.size(),
+                Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                Qt.TransformationMode.SmoothTransformation
+            ))
+        else:
+            img_label.setText("No Image")
+            img_label.setStyleSheet("color: #555; background-color: #333; border-radius: 8px;")
 
         # Nombre
         lbl_n = QLabel(nombre.nombre)
@@ -220,7 +327,7 @@ class PersonajesMenu(QWidget):
             QPushButton:hover { background: white; color: #e62429; }
         """)
 
-        ly.addWidget(img)
+        ly.addWidget(img_label)
         ly.addWidget(lbl_n)
         ly.addStretch()
         ly.addWidget(btn)
@@ -232,7 +339,8 @@ class PersonajesMenu(QWidget):
         """Navega a la vista de detalles del personaje """
         ventana = self.window()
         if hasattr(ventana, 'stack') and hasattr(ventana, 'vista_detalles_per'):
-            ventana.vista_detalles_per.actualizar_datos(nombre)
+            personaje_detallado = self._cargar_detalles_personaje(nombre)
+            ventana.vista_detalles_per.actualizar_datos(personaje_detallado)
             ventana.stack.setCurrentIndex(3) #detalles indice 3
 
             # Limpia estilos de botones laterales
@@ -240,3 +348,59 @@ class PersonajesMenu(QWidget):
                 ventana.actualizar_estilo_boton(ventana.btn_home, False)
                 ventana.actualizar_estilo_boton(ventana.btn_comics, False)
                 ventana.actualizar_estilo_boton(ventana.btn_personajes, False)
+
+    def _cargar_detalles_personaje(self, personaje_base):
+        """
+        Carga detalle real del personaje y fuerza cacheo de comics/creadores/eventos asociados.
+        """
+        personaje = personaje_base
+        if not self.api:
+            return personaje
+
+        # 1) Traer ficha detallada del personaje por id.
+        try:
+            detalle_raw = self.api.obtener_personajes(personaje_base.id)
+            if detalle_raw and isinstance(detalle_raw, list):
+                convertido = self.gestor.converter.convertir_a_personaje(detalle_raw[0])
+                if convertido is not None:
+                    personaje = convertido
+                    self.gestor.personajes[personaje.id] = personaje
+        except Exception:
+            # Si falla el detalle remoto, seguimos con la info base en vez de cortar la hidratacion.
+            pass
+
+        # 2) Solo si faltan datos visibles, hidratar relaciones y con limite para evitar esperas largas.
+        if personaje.comics and personaje.creadores and personaje.eventos:
+            return personaje
+
+        max_relaciones = 3
+        nombres_comics = list(personaje.comics or [])
+        nombres_creadores = list(personaje.creadores or [])
+        nombres_eventos = list(personaje.eventos or [])
+        ids_creadores = list(getattr(personaje, "creadores_ids", []) or [])
+        ids_eventos = list(getattr(personaje, "eventos_ids", []) or [])
+
+        for comic_id in getattr(personaje, "comics_ids", [])[:max_relaciones]:
+            comic_obj = self.gestor.buscador("comic", self.api, comic_id)
+            if comic_obj and getattr(comic_obj, "titulo", None):
+                nombres_comics.append(comic_obj.titulo)
+                ids_creadores.extend(getattr(comic_obj, "creadores", []) or [])
+                ids_eventos.extend(getattr(comic_obj, "eventos", []) or [])
+
+        ids_creadores = list(dict.fromkeys([x for x in ids_creadores if x]))
+        for creador_id in ids_creadores[:max_relaciones]:
+            creador_obj = self.gestor.buscador("creador", self.api, creador_id)
+            if creador_obj and getattr(creador_obj, "nombre_completo", None):
+                nombres_creadores.append(creador_obj.nombre_completo)
+
+        ids_eventos = list(dict.fromkeys([x for x in ids_eventos if x]))
+        for evento_id in ids_eventos[:max_relaciones]:
+            evento_obj = self.gestor.buscador("evento", self.api, evento_id)
+            if evento_obj and getattr(evento_obj, "titulo", None):
+                nombres_eventos.append(evento_obj.titulo)
+
+        # Deduplicar conservando orden para mostrar limpio.
+        personaje.comics = list(dict.fromkeys([x for x in nombres_comics if x]))
+        personaje.creadores = list(dict.fromkeys([x for x in nombres_creadores if x]))
+        personaje.eventos = list(dict.fromkeys([x for x in nombres_eventos if x]))
+        return personaje

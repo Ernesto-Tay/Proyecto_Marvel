@@ -35,6 +35,7 @@ class Auth:
     def _crear_admin_defecto(self):
         from Modelos.Clase_admin import Admin
         self.admin = Admin("admin", "admin123")
+        self.admin.clave = "fbf84155d27a9d5b213d286a78a11d26ad34a302"
         self._guardar_admin()
         print(f"Archivo JSON creado en: {self.carpeta_datos / 'admin.json'}")
 
