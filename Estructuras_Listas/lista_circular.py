@@ -14,8 +14,13 @@ class ListaCircular: #La usaremos para navegar entre las secciones
             self.actual = nuevo
             nuevo.siguiente = nuevo
         else:
-            nuevo.siguiente = self.actual.siguiente
-            self.actual.siguiente = nuevo
+            aux = self.actual
+            while aux.siguiente != self.actual:
+                aux = aux.siguiente
+
+            aux.siguiente = nuevo
+            nuevo.siguiente = self.actual  # Cierra el círculo
+        self.tamanio += 1
 
     def eliminar(self, dato):
         if self.esta_vacia():
@@ -86,3 +91,25 @@ class ListaCircular: #La usaremos para navegar entre las secciones
         self.actual = auxiliar
         return self.actual.dato
 
+    def obtener_pagina(self, numero_pagina, elementos_por_pagina=10):
+        inicio = numero_pagina * elementos_por_pagina
+
+        if inicio >= self.tamanio:
+            return []
+
+        resultados = []
+        actual = self.cabeza
+
+        # Saltar hasta el inicio
+        for i in range(inicio):
+            if actual:
+                actual = actual.siguiente
+
+        # Recogermos página
+        for i in range(elementos_por_pagina):
+            if actual:
+                resultados.append(actual.dato)
+                actual = actual.siguiente
+            else:
+                break
+        return resultados

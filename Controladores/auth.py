@@ -27,6 +27,7 @@ class Auth:
                 from Modelos.Clase_admin import Admin
                 self.admin = Admin(datos['usuario'], datos['contraseña'])
                 self.admin.nombre = datos.get('nombre', 'Administrador')
+                self.admin.clave = datos.get('clave', 'fbf84155d27a9d5b213d286a78a11d26ad34a302')
         except Exception as e:
             print(f"Error al cargar admin: {e}")
             self._crear_admin_defecto()
@@ -42,7 +43,8 @@ class Auth:
         datos = {
             "usuario": self.admin.usuario,
             "contraseña": self.admin.contraseña,
-            "nombre": self.admin.nombre}
+            "nombre": self.admin.nombre,
+            "clave": self.admin.clave }
         with open(archivo, "w", encoding="utf-8") as f:
             json.dump(datos, f, indent=2)
 

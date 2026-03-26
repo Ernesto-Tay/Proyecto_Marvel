@@ -3,6 +3,7 @@ class Admin:
         self.usuario = usuario
         self.contraseña = contraseña
         self.nombre = "Administrador"
+        self.clave = None
 
     def verificar_contraseña(self, contraseña):
         return self.contraseña == contraseña

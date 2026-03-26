@@ -91,7 +91,7 @@ class MundoComicLogin(QWidget):
 
         container_layout.addSpacing(20)
 
-        # --- INPUTS ---
+        #INPUTS
         self.user_input = QLineEdit()
         self.user_input.setPlaceholderText("USUARIO")
         self.apply_input_style(self.user_input)
@@ -155,14 +155,25 @@ class MundoComicLogin(QWidget):
             QMessageBox.critical(self, "Error", mensaje)
 
 
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
 
-app = QApplication(sys.argv)
-auth_service = Auth()
+    #Iniciamos el coso de autenticación
+    auth_service = Auth()
+    def ir_al_menu():
+        try:
+            from MenuPrincipal import MenuPrincipal
 
+            global win_principal
+            # Pasamos el nombre del administrador
+            win_principal = MenuPrincipal(auth_service.admin)
+            # Cerramos el login y mostramos el menu
+            login_win.close()
+            win_principal.show()
+        except Exception as e:
+            print(f"Error al cargar el menú principal: {e}")
 
-def ir_al_menu():
-    print("Login exitoso.")
-
-login_win = MundoComicLogin(auth_service, ir_al_menu)
-login_win.show()
-sys.exit(app.exec())
+    #iniciamos la ventana de Login
+    login_win = MundoComicLogin(auth_service, ir_al_menu)
+    login_win.show()
+    sys.exit(app.exec())

@@ -19,6 +19,7 @@ class ListaDoble:
             nuevo.anterior = self.cola
             self.cola.siguiente = nuevo
             self.cola = nuevo
+        self.tamanio += 1
 
     def agregar_al_inicio(self, dato):
         nuevo = NodoDoble(dato)
@@ -137,12 +138,3 @@ class ListaDoble:
             else:
                 break
         return resultados
-
-
-lisa= ListaDoble()
-
-lisa.agregar("mono")
-lisa.agregar("jirafa")
-lisa.recorrer_atras()
-print(lisa.recorrer_adelante())
-print(lisa.recorrer_atras())
