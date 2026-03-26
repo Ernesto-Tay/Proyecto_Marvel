@@ -7,6 +7,7 @@ import urllib.request
 import os
 import traceback
 import re
+from types import SimpleNamespace
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 folder = os.path.join(BASE_DIR, "Datos_json")
@@ -103,7 +104,7 @@ class DataComics:
             data = api.obtener_comics(id)
             if data:
                 comic = self._normalizar_comic(data[0])
-                if not comic.get("publisher") or comic["publisher"].get("name") == "Marvel":
+                if comic.get("publisher") and comic["publisher"].get("name") == "Marvel":
                     self.datos[id] = comic
                     self.datos[cache_key] = comic
                     self.guardar()
@@ -119,9 +120,16 @@ class DataComics:
         if data is not None:
             for comic in data:
                 comic = self._normalizar_comic(comic)
-                if not comic.get("publisher") or comic["publisher"].get("name") == "Marvel":
-                    self.datos[comic["id"]] = comic
-                    r_data[comic["id"]] = comic
+                comic_id = comic.get("id")
+                if not comic_id:
+                    continue
+                # El bulk fetch ya viene de una busqueda curada de series Marvel.
+                # Solo rechazamos si el publisher viene explicitamente como no-Marvel.
+                pub_name = (comic.get("publisher") or {}).get("name")
+                if pub_name and pub_name != "Marvel":
+                    continue
+                self.datos[comic_id] = comic
+                r_data[comic_id] = comic
             if r_data:
                 self.guardar()
             return r_data
@@ -195,6 +203,22 @@ class DataEventos:
         self.datos = {}
         self.max_items = MAX_CACHE_EVENTOS
 
+    def precargar(self, api):
+        """Carga eventos en bulk desde la API si el cache está vacío."""
+        if self.datos:
+            return
+        try:
+            data = api.obtener_eventos()
+        except Exception:
+            return
+        if data:
+            for evento in data:
+                eid = evento.get("id")
+                if eid:
+                    self.datos[eid] = evento
+                    self.datos[str(eid)] = evento
+            self.guardar()
+
     def obtener(self, id, api):
         cache_key = str(id)
         if id in self.datos:
@@ -246,7 +270,7 @@ class DataPersonajes:
             data = api.obtener_personajes(id)
             if data:
                 personaje = data[0]
-                if not personaje.get("publisher") or personaje["publisher"].get("name") == "Marvel":
+                if personaje.get("publisher") and personaje["publisher"].get("name") == "Marvel":
                     self.datos[id] = personaje
                     self.datos[cache_key] = personaje
                     self.guardar()
@@ -264,7 +288,7 @@ class DataPersonajes:
         r_data = {}
         if data is not None:
             for val in data:
-                if not val.get("publisher") or val["publisher"].get("name") == "Marvel":
+                if val.get("publisher") and val["publisher"].get("name") == "Marvel":
                     self.datos[val["id"]] = val
                     r_data[val["id"]] = val
             if r_data:
@@ -355,14 +379,27 @@ class Instanciador:
         try:
             c_id = datos.get("id")
             nombre = datos.get("name")
+            if not nombre:
+                volumen = (datos.get("volume") or {}).get("name", "")
+                numero = datos.get("issue_number", "")
+                if volumen and numero:
+                    nombre = f"{volumen} #{numero}"
+                elif volumen:
+                    nombre = volumen
+                else:
+                    nombre = f"Issue #{numero}" if numero else "Sin título"
             isbn = datos.get("isbn")
             personajes = datos.get("character_credits") or []
             lanzamiento = datos.get("cover_date")
             p_ids = [self._extraer_id_credito(p) for p in personajes if isinstance(p, dict)]
             p_ids = [pid for pid in p_ids if pid is not None]
+            p_nombres = [p.get("name") for p in personajes if isinstance(p, dict) and p.get("name")]
+
             autores = datos.get("person_credits") or []
             a_ids = [self._extraer_id_credito(a) for a in autores if isinstance(a, dict)]
             a_ids = [aid for aid in a_ids if aid is not None]
+            a_nombres = [a.get("name") for a in autores if isinstance(a, dict) and a.get("name")]
+
             r_eventos = datos.get("event_credits") or []
             e_ids = [self._extraer_id_credito(e) for e in r_eventos if isinstance(e, dict)]
             e_ids = [eid for eid in e_ids if eid is not None]
@@ -374,6 +411,8 @@ class Instanciador:
             comic.eventos = e_ids
             comic.isbn = isbn
             comic.descripcion = datos.get("description")
+            comic.nombres_creadores = a_nombres
+            comic.nombres_personajes = p_nombres
             return comic
         except Exception:
             return None
@@ -484,7 +523,11 @@ class Instancias:
 
         type_dict = types[type][0]
         retrieval = types[type][1]
-        data = retrieval.obtener(api=api, modo=modo)
+        if type == "personaje":
+            data = retrieval.obtener(api=api, modo=modo)
+        else:
+            data = retrieval.obtener(api=api)
+
         if data and isinstance(data, dict):
             conv = {}
             for val in data.values():
@@ -507,6 +550,67 @@ class Instancias:
 
 
 gestor = Instancias()
+
+
+class ComicOrderer(QObject):
+    finalizado = pyqtSignal(object)
+    error = pyqtSignal(str)
+
+    def __init__(self, g_data, perfil_clave):
+        super().__init__()
+        self.gestor = g_data
+        self.perfil_clave = perfil_clave
+
+    def _cargar_comics_desde_cache_local(self):
+        cache = self.gestor.raw_data.d_comics.datos
+        if not cache:
+            self.gestor.raw_data.d_comics.cargar()
+            cache = self.gestor.raw_data.d_comics.datos
+
+        if not cache or not isinstance(cache, dict):
+            return {}
+
+        conv = {}
+        for val in cache.values():
+            c_data = self.gestor.converter.convertir_a_comic(val)
+            if c_data is None:
+                continue
+            self.gestor.comics[c_data.id] = c_data
+            conv[c_data.id] = c_data
+        return conv
+
+    def dump_list(self):
+        try:
+            if not hasattr(self.perfil_clave, "obtener_comics"):
+                raise ValueError("La API de ComicVine no fue inicializada correctamente.")
+
+            comics_dict = self.gestor.dumper("comic", self.perfil_clave)
+            if not comics_dict:
+                comics_dict = self._cargar_comics_desde_cache_local()
+
+            if not comics_dict:
+                ruta_cache = os.path.join(folder, "comics.json")
+                en_memoria = len(self.gestor.raw_data.d_comics.datos or {})
+                raise ValueError(
+                    "No se pudieron cargar cómics desde ComicVine ni desde cache local.\n"
+                    f"Cache esperada: {ruta_cache}\n"
+                    f"Registros disponibles en memoria: {en_memoria}"
+                )
+
+            lista_comics = ListaDoble()
+            for comic_obj in comics_dict.values():
+                if comic_obj is None:
+                    continue
+                lista_comics.agregar(comic_obj)
+
+            if lista_comics.tamanio == 0:
+                raise ValueError("La carga terminó sin cómics válidos para mostrar.")
+
+            self.finalizado.emit(lista_comics)
+            # Aprovechar el hilo para precargar eventos si el cache está vacío
+            self.gestor.raw_data.d_eventos.precargar(self.perfil_clave)
+        except Exception as e:
+            self.error.emit(f"{e}\n\n{traceback.format_exc()}")
 
 
 class PageOrderer(QObject):

@@ -219,7 +219,10 @@ class VentanaComic(QDialog):
             else:
                 # Crear nuevo
                 nuevo_id = self.controlador.generar_id()
-                comic = Comic(nuevo_id, titulo, autor, anio, editorial)
+                comic = Comic(nuevo_id, titulo, (None, None), f"{anio}-01-01")
+                comic.autor = autor
+                comic.anio = anio
+                comic.editorial = editorial
                 comic.descripcion = descripcion
                 comic.personajes = personajes
                 self.controlador.agregar_comic(comic)

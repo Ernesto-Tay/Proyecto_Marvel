@@ -14,9 +14,10 @@ import os
 # Asegurarse de que la ruta esté configurada
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from Controladores.gestor_datos import Instancias
+from Controladores.init import gestor
 # Importar desde el __init__ de Modelos
-from Modelos import Comic, ListaDoble
+from Modelos.__init__ import Comic
+from Estructuras_Listas.init import ListaDoble
 
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
@@ -28,13 +29,14 @@ class VentanaPrincipal(QMainWindow):
         self.setMinimumSize(1000, 600)
         
         # Controlador
-        self.controlador = Instancias()
+        self.controlador = gestor
         
         # Variables para filtros
         self.filtro_autor = ""
         self.filtro_anio = ""
         self.busqueda = ""
         self.orden = "Nombre"
+        self._actualizando_filtros = False
         
         # Configurar estilo CSS
         self.setStyleSheet("""
@@ -345,11 +347,14 @@ class VentanaPrincipal(QMainWindow):
         
     def cargar_comics(self):
         """Cargar comics en el TreeWidget con filtros y ordenamiento"""
+        if self._actualizando_filtros:
+            return
         # Limpiar tree
         self.tree.clear()
         
         # Obtener comics filtrados
         comics = self.controlador.obtener_todos_comics()
+        comics = [self._normalizar_comic_vista(c) for c in comics]
         
         # Aplicar filtros
         self.busqueda = self.busqueda_entry.text().lower()
@@ -367,11 +372,11 @@ class VentanaPrincipal(QMainWindow):
         # Ordenar
         self.orden = self.orden_combo.currentText()
         if self.orden == "Nombre":
-            comics.sort(key=lambda x: x.titulo)
+            comics.sort(key=lambda x: (x.titulo or "").lower())
         elif self.orden == "Año":
-            comics.sort(key=lambda x: x.anio)
+            comics.sort(key=lambda x: x.anio if isinstance(x.anio, int) else 0)
         elif self.orden == "Autor":
-            comics.sort(key=lambda x: x.autor)
+            comics.sort(key=lambda x: (x.autor or "").lower())
         
         # Insertar en tree
         for comic in comics:
@@ -389,12 +394,13 @@ class VentanaPrincipal(QMainWindow):
         
     def actualizar_filtros(self, comics):
         """Actualizar opciones de filtros"""
+        self._actualizando_filtros = True
         # Guardar selección actual
         autor_actual = self.autor_combo.currentText()
         anio_actual = self.anio_combo.currentText()
         
         # Actualizar autores
-        autores = sorted(set(c.autor for c in comics))
+        autores = sorted(set((c.autor or "") for c in comics if c.autor))
         self.autor_combo.clear()
         self.autor_combo.addItem("Todos")
         self.autor_combo.addItems(autores)
@@ -405,7 +411,7 @@ class VentanaPrincipal(QMainWindow):
             self.autor_combo.setCurrentIndex(index)
         
         # Actualizar años
-        anios = sorted(set(c.anio for c in comics))
+        anios = sorted(set(c.anio for c in comics if isinstance(c.anio, int)))
         self.anio_combo.clear()
         self.anio_combo.addItem("Todos")
         self.anio_combo.addItems([str(anio) for anio in anios])
@@ -415,6 +421,8 @@ class VentanaPrincipal(QMainWindow):
         if index >= 0:
             self.anio_combo.setCurrentIndex(index)
         
+        self._actualizando_filtros = False
+
     def mostrar_detalles(self):
         """Mostrar detalles del comic seleccionado"""
         items = self.tree.selectedItems()
@@ -488,6 +496,7 @@ class VentanaPrincipal(QMainWindow):
     def mostrar_estadisticas(self):
         """Mostrar estadísticas de la colección"""
         comics = self.controlador.obtener_todos_comics()
+        comics = [self._normalizar_comic_vista(c) for c in comics]
         
         total = len(comics)
         autores = len(set(c.autor for c in comics))
@@ -532,3 +541,26 @@ class VentanaPrincipal(QMainWindow):
     def iniciar(self):
         """Iniciar la aplicación"""
         self.show()
+
+    def _normalizar_comic_vista(self, comic):
+        if comic is None:
+            return comic
+
+        if not hasattr(comic, "titulo") or comic.titulo is None:
+            comic.titulo = "Sin titulo"
+        if not hasattr(comic, "autor") or comic.autor is None:
+            comic.autor = "Desconocido"
+        if not hasattr(comic, "editorial") or comic.editorial is None:
+            comic.editorial = "Marvel"
+        if not hasattr(comic, "anio") or comic.anio is None:
+            comic.anio = 0
+        elif not isinstance(comic.anio, int):
+            try:
+                comic.anio = int(comic.anio)
+            except Exception:
+                comic.anio = 0
+        if not hasattr(comic, "descripcion") or comic.descripcion is None:
+            comic.descripcion = ""
+        if not hasattr(comic, "personajes") or comic.personajes is None:
+            comic.personajes = []
+        return comic

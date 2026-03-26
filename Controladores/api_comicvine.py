@@ -45,18 +45,47 @@ class ComicVineAPI:
         return []
 
     def obtener_comics(self, c_id=None):
-        ep = "issues"
         if c_id:
-            ep = f"issue/4000-{c_id}"
-        return self._extraccion(
-            ep,
-            "&filter=publisher:Marvel&field_list=id,isbn,name,issue_number,character_credits,person_credits,event_credits,cover_date,image&limit=60",
-        )
+            return self._extraccion(
+                f"issue/4000-{c_id}",
+                "&field_list=id,isbn,name,issue_number,volume,publisher,character_credits,person_credits,event_credits,cover_date,image,description",
+            )
+            # filter=publisher:Marvel no funciona en Comic Vine (publisher es objeto complejo).
+            # En su lugar, buscamos issues de series Marvel conocidas y filtramos por publisher en codigo.
+        series_marvel = [
+            "Amazing Spider-Man", "Avengers", "X-Men", "Iron Man",
+            "Thor", "Captain America", "Hulk", "Black Panther",
+            "Doctor Strange", "Fantastic Four", "Daredevil", "Wolverine",
+        ]
+        acumulado = []
+        vistos = set()
+        for serie in series_marvel:
+            nombre_q = urllib.parse.quote(serie)
+            try:
+                resultados = self._extraccion(
+                    "search",
+                    f"&resources=issue&query={nombre_q}"
+                    "&field_list=id,isbn,name,issue_number,volume,publisher,character_credits,person_credits,event_credits,cover_date,image"
+                    "&limit=10",
+                )
+            except Exception:
+                continue
+            for issue in resultados:
+                issue_id = issue.get("id")
+                if not issue_id or issue_id in vistos:
+                    continue
+                # El endpoint search no devuelve publisher para issues aunque se pida.
+                # La busqueda por nombre de serie Marvel ya actua como filtro suficiente.
+                acumulado.append(issue)
+                vistos.add(issue_id)
+            if len(acumulado) >= 60:
+                break
+        return acumulado
 
     def _buscar_personajes_por_nombre(self, nombre):
         nombre_q = urllib.parse.quote(str(nombre))
         return self._extraccion(
-            "search",
+             "search",
             f"&resources=character&query={nombre_q}"
             "&field_list=id,name,image,deck,description,creator_credits,event_credits,issue_credits,publisher"
             "&limit=10",

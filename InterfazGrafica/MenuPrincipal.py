@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QHBoxLayout, QVBoxLayout,
                              QPushButton, QLabel, QStackedWidget, QFrame)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap
-
+from InterfazGrafica.Ventana_principal import VentanaPrincipal
 from PersonajeMenu import PersonajesMenu
 from PersonajeDetalles import DetallesPersonaje
 from HomeMenu import HomeMenu
@@ -88,7 +88,7 @@ class MenuPrincipal(QMainWindow):
         self.stack = QStackedWidget()
         self.vista_home = HomeMenu(self)
         # Comic, solo llamen al modulo, no colocar logica :D
-        self.vista_comics_vacia = QWidget()
+        self.vista_comics_vacia =  VentanaPrincipal()
 
         # perosnjae
         self.vista_personajes = PersonajesMenu(perfil)
