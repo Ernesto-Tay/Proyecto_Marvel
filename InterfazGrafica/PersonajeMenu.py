@@ -94,7 +94,7 @@ class PersonajesMenu(QWidget):
         layout_principal.addLayout(fila_filtros)
 
         self.cb_orden.clear()  # Limpiamos lo anterior
-        self.cb_orden.addItems(["Nombre (A-Z)", "Nombre (Z-A)"])
+        self.cb_orden.addItems(["Nombre (A-Z)", "Nombre (Z-A)","Creador"])
         self.cb_orden.currentIndexChanged.connect(self.manejar_ordenamiento)
         self.cb_lanz.currentIndexChanged.connect(self.manejar_modo_carga)
 
@@ -149,16 +149,39 @@ class PersonajesMenu(QWidget):
         layout_exterior.addWidget(self.lienzo)
         self.carga_datos()
 
-
     def manejar_busqueda(self):
-        texto = self.buscador_oval.text().strip()
+        texto = self.buscador_oval.text().strip().lower()
+
         if not texto:
             self.mostrar_pagina()
             return
 
+        resultados = []
+
         if self.lista_personajes:
-            resultados = self.lista_personajes.buscar_por_nombre(texto)
-            self.mostrar_resultados_filtrados(resultados)
+            personajes = self.lista_personajes.obtener_pagina(0, self.lista_personajes.tamanio)
+
+            for p in personajes:
+                # 🔥 ASEGURAR CREADORES (igual que en detalles)
+                if not p.creadores and getattr(p, "creadores_ids", []):
+                    nombres = []
+                    for cid in p.creadores_ids[:3]:  # limitamos para rendimiento
+                        creador_obj = self.gestor.buscador("creador", self.api, cid)
+                        if creador_obj and getattr(creador_obj, "nombre_completo", None):
+                            nombres.append(creador_obj.nombre_completo)
+                    if nombres:
+                        p.creadores = nombres
+
+                nombre_match = texto in p.nombre.lower()
+
+                creador_match = any(
+                    texto in c.lower() for c in (p.creadores or [])
+                )
+
+                if nombre_match or creador_match:
+                    resultados.append(p)
+
+        self.mostrar_resultados_filtrados(resultados)
 
 
     def mostrar_resultados_filtrados(self, lista_resultados):
@@ -172,16 +195,46 @@ class PersonajesMenu(QWidget):
             tarjeta = self.crear_tarjeta_personaje(personaje)
             self.layout_grid.addWidget(tarjeta, fila, columna)
 
-
     def manejar_ordenamiento(self):
         if not self.lista_personajes or self.lista_personajes.esta_vacia():
             return
 
-        texto_seleccionado = self.cb_orden.currentText()
-        ascendente = (texto_seleccionado == "Nombre (A-Z)")
-        self.lista_personajes.ordenar_por_nombre(ascendente=ascendente)
+        texto = self.cb_orden.currentText()
+
+        personajes = self.lista_personajes.obtener_pagina(0, self.lista_personajes.tamanio)
+
+        if texto == "Nombre (A-Z)":
+            personajes.sort(key=lambda p: p.nombre.lower())
+
+        elif texto == "Nombre (Z-A)":
+            personajes.sort(key=lambda p: p.nombre.lower(), reverse=True)
+
+        elif texto == "Creador":
+            personajes.sort(
+                key=lambda p: (p.creadores[0].lower() if p.creadores else "zzz")
+            )
+
+        # 🔥 guardamos lista ordenada temporal
+        self._lista_filtrada = personajes
         self.pagina_actual = 0
         self.mostrar_pagina()
+
+    def ordenar_por_creador(self):
+        if not self.lista_personajes:
+            return
+
+        try:
+            personajes = self.lista_personajes.obtener_pagina(0, self.lista_personajes.tamanio)
+
+            personajes.sort(
+                key=lambda p: (p.creadores[0].lower() if p.creadores else "zzz")
+            )
+
+            # 🔥 guardamos temporalmente
+            self._lista_ordenada_temp = personajes
+
+        except Exception as e:
+            print("Error ordenando:", e)
 
 
     def carga_datos(self):
@@ -261,7 +314,12 @@ class PersonajesMenu(QWidget):
         for i in reversed(range(self.layout_grid.count())):
             self.layout_grid.itemAt(i).widget().setParent(None)
 
-        personajes_pagina = self.lista_personajes.obtener_pagina(self.pagina_actual, 10)
+        if hasattr(self, "_lista_filtrada"):
+            inicio = self.pagina_actual * 10
+            fin = inicio + 10
+            personajes_pagina = self._lista_filtrada[inicio:fin]
+        else:
+            personajes_pagina = self.lista_personajes.obtener_pagina(self.pagina_actual, 10)
         for i, personaje in enumerate(personajes_pagina):
             fila = i // 5
             columna = i % 5

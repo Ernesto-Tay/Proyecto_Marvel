@@ -134,3 +134,11 @@ class ListaSimple:
             else:
                 break
         return resultados
+
+    def obtener_todos(self):
+        elementos = []
+        actual = self.cabeza
+        while actual:
+            elementos.append(actual.dato)
+            actual = actual.siguiente
+        return elementos

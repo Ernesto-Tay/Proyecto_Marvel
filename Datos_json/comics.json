@@ -1,4 +1,556 @@
 {
+    "1155347": {
+        "id": 1155347,
+        "isbn": null,
+        "name": null,
+        "issue_number": "21",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9978778-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9978778-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9978778-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9978778-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9978778-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9978778-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9978778-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9978778-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9978778-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1156261": {
+        "id": 1156261,
+        "isbn": null,
+        "name": null,
+        "issue_number": "22",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9991552-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9991552-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9991552-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9991552-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9991552-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9991552-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9991552-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9991552-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1151943": {
+        "id": 1151943,
+        "isbn": null,
+        "name": null,
+        "issue_number": "19",
+        "cover_date": "2026-03-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9955800-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9955800-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9955800-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9955800-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9955800-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9955800-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9955800-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9955800-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9955800-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1153436": {
+        "id": 1153436,
+        "isbn": null,
+        "name": null,
+        "issue_number": "20",
+        "cover_date": "2026-03-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9966973-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9966973-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9966973-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9966973-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9966973-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9966973-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9966973-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9966973-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9966973-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1136076": {
+        "id": 1136076,
+        "isbn": null,
+        "name": null,
+        "issue_number": "13",
+        "cover_date": "2025-12-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9881589-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9881589-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9881589-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9881589-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9881589-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9881589-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9881589-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9881589-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9881589-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1160263": {
+        "id": 1160263,
+        "isbn": null,
+        "name": null,
+        "issue_number": "25",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10022955-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10022955-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10022955-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10022955-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10022955-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10022955-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10022955-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10022955-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10022955-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1133786": {
+        "id": 1133786,
+        "isbn": null,
+        "name": null,
+        "issue_number": "12",
+        "cover_date": "2025-11-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9869407-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9869407-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9869407-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9869407-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9869407-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9869407-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9869407-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9869407-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9869407-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1147680": {
+        "id": 1147680,
+        "isbn": null,
+        "name": null,
+        "issue_number": "17",
+        "cover_date": "2026-02-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9933448-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9933448-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9933448-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9933448-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9933448-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9933448-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9933448-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9933448-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9933448-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1149813": {
+        "id": 1149813,
+        "isbn": null,
+        "name": null,
+        "issue_number": "18",
+        "cover_date": "2026-02-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9944542-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9944542-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9944542-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9944542-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9944542-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9944542-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9944542-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9944542-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9944542-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1117431": {
+        "id": 1117431,
+        "isbn": null,
+        "name": null,
+        "issue_number": "7",
+        "cover_date": "2025-09-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9774738-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9774738-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9774738-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9774738-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9774738-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9774738-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9774738-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9774738-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9774738-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1152756": {
+        "id": 1152756,
+        "isbn": null,
+        "name": "Heroes; Happy Anniversary, Avengers!",
+        "issue_number": "34",
+        "cover_date": "2026-03-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9961117-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9961117-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9961117-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9961117-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9961117-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9961117-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9961117-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9961117-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9961117-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142896": {
+        "id": 1142896,
+        "isbn": null,
+        "name": null,
+        "issue_number": "22",
+        "cover_date": "2025-12-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912132-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912132-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912132-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912132-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912132-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912132-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912132-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912132-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912132-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142913": {
+        "id": 1142913,
+        "isbn": null,
+        "name": null,
+        "issue_number": "21",
+        "cover_date": "2025-11-10",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912131-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912131-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912131-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912131-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912131-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912131-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912131-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912131-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912131-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142914": {
+        "id": 1142914,
+        "isbn": null,
+        "name": null,
+        "issue_number": "20",
+        "cover_date": "2025-10-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912130-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912130-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912130-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912130-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912130-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912130-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912130-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912130-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912130-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142983": {
+        "id": 1142983,
+        "isbn": null,
+        "name": null,
+        "issue_number": "19",
+        "cover_date": "2025-09-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912108-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912108-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912108-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912108-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912108-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912108-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912108-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912108-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912108-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142916": {
+        "id": 1142916,
+        "isbn": null,
+        "name": null,
+        "issue_number": "18",
+        "cover_date": "2025-08-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912127-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912127-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912127-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912127-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912127-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912127-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912127-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912127-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912127-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142915": {
+        "id": 1142915,
+        "isbn": null,
+        "name": null,
+        "issue_number": "17",
+        "cover_date": "2025-07-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912126-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912126-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912126-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912126-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912126-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912126-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912126-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912126-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912126-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142984": {
+        "id": 1142984,
+        "isbn": null,
+        "name": null,
+        "issue_number": "16",
+        "cover_date": "2025-06-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912113-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912113-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912113-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912113-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912113-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912113-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912113-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912113-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912113-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142985": {
+        "id": 1142985,
+        "isbn": null,
+        "name": null,
+        "issue_number": "15",
+        "cover_date": "2025-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912114-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912114-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912114-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912114-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912114-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912114-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912114-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912114-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912114-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1142986": {
+        "id": 1142986,
+        "isbn": null,
+        "name": null,
+        "issue_number": "14",
+        "cover_date": "2025-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912115-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912115-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912115-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912115-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912115-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912115-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912115-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912115-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912115-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1108868": {
+        "id": 1108868,
+        "isbn": null,
+        "name": "X-Men",
+        "issue_number": "16",
+        "cover_date": "2025-07-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9716259-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9716259-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9716259-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9716259-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9716259-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9716259-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9716259-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9716259-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9716259-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1152495": {
+        "id": 1152495,
+        "isbn": null,
+        "name": null,
+        "issue_number": "10",
+        "cover_date": "2025-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9959607-001.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9959607-001.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9959607-001.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9959607-001.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9959607-001.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9959607-001.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9959607-001.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9959607-001.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9959607-001.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1093030": {
+        "id": 1093030,
+        "isbn": null,
+        "name": "Brinkmanship",
+        "issue_number": "10",
+        "cover_date": "2025-03-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9614880-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9614880-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9614880-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9614880-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9614880-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9614880-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9614880-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9614880-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9614880-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
     "1151954": {
         "id": 1151954,
         "isbn": null,
@@ -886,2629 +1438,5 @@
         "event_credits": [],
         "publisher": null,
         "description": null
-    },
-    "1156261": {
-        "id": 1156261,
-        "isbn": null,
-        "name": null,
-        "issue_number": "22",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9991552-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9991552-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9991552-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9991552-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9991552-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9991552-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9991552-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9991552-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1780,
-                "name": "Aunt May"
-            },
-            {
-                "id": 6286,
-                "name": "Ben Reilly"
-            },
-            {
-                "id": 196127,
-                "name": "Glitch"
-            },
-            {
-                "id": 79465,
-                "name": "Hallow's Eve"
-            },
-            {
-                "id": 2120,
-                "name": "Human Torch"
-            },
-            {
-                "id": 194988,
-                "name": "Maira Osmani-Milton"
-            },
-            {
-                "id": 195915,
-                "name": "Nial"
-            },
-            {
-                "id": 58812,
-                "name": "Norman Osborn"
-            },
-            {
-                "id": 195914,
-                "name": "Raelith the Wretched"
-            },
-            {
-                "id": 32814,
-                "name": "Rocket Raccoon"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 195913,
-                "name": "Symbie"
-            },
-            {
-                "id": 2114,
-                "name": "Thing"
-            },
-            {
-                "id": 83029,
-                "name": "Xanto Starblood"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 64630,
-                "name": "Ario Anindito"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 44779,
-                "name": "David Nakayama"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 40982,
-                "name": "Joe Kelly"
-            },
-            {
-                "id": 119896,
-                "name": "Kaitlyn Lindtvedt"
-            },
-            {
-                "id": 10025,
-                "name": "Lee Bermejo"
-            },
-            {
-                "id": 2123,
-                "name": "Mark Bagley"
-            },
-            {
-                "id": 45375,
-                "name": "Marte Gracia"
-            },
-            {
-                "id": 134749,
-                "name": "McFarlane Toys"
-            },
-            {
-                "id": 66212,
-                "name": "Nathan Stockman"
-            },
-            {
-                "id": 42134,
-                "name": "Nick Bradshaw"
-            },
-            {
-                "id": 41757,
-                "name": "Nick Lowe"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 10681,
-                "name": "Scott Hanna"
-            },
-            {
-                "id": 42064,
-                "name": "Simone Bianchi"
-            },
-            {
-                "id": 77673,
-                "name": "Simone Di Meo"
-            },
-            {
-                "id": 9641,
-                "name": "Todd Nauck"
-            },
-            {
-                "id": 98087,
-                "name": "Tom Groneman"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>TOO LITTLE, TOO LATE!</em></p><p><em>The era of space/earth Spider-Men comes to an end and everyone is left to pick up the pieces.</em></p><p><em>We are about to enter DEATH SPIRAL so Spidey better take a deep, deep breath.</em></p>"
-    },
-    "1159663": {
-        "id": 1159663,
-        "isbn": null,
-        "name": "All His Servants",
-        "issue_number": "5",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016679-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016679-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016679-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016679-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016679-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016679-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016679-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016679-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016679-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 3445,
-                "name": "Betty Ross"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 184669,
-                "name": "Eldest"
-            },
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 61410,
-                "name": "Adam Gorham"
-            },
-            {
-                "id": 10065,
-                "name": "Cam Smith"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 6726,
-                "name": "Edgar Delgado"
-            },
-            {
-                "id": 41882,
-                "name": "Giuseppe Camuncoli"
-            },
-            {
-                "id": 43502,
-                "name": "Kevin Walker"
-            },
-            {
-                "id": 46064,
-                "name": "Matthew Wilson"
-            },
-            {
-                "id": 44601,
-                "name": "Nic Klein"
-            },
-            {
-                "id": 87894,
-                "name": "Phillip Kennedy Johnson"
-            },
-            {
-                "id": 53766,
-                "name": "Romulo Fajardo Jr."
-            },
-            {
-                "id": 62579,
-                "name": "SKAN"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>INFERNAL VERSUS ALMIGHTY!</em></p><p><em>As Infernal Hulk prepares to deal his death blow against Earth, a being of unimaginable power descends from the heavens to save us: the Creator of the Marvel Universe himself! Everything on Earth will change after this shocking, never-before-seen battle for the ages: INFERNAL HULK versus THE ONE ABOVE ALL!</em></p>"
-    },
-    "1159663": {
-        "id": 1159663,
-        "isbn": null,
-        "name": "All His Servants",
-        "issue_number": "5",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016679-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016679-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016679-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016679-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016679-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016679-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016679-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016679-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016679-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 3445,
-                "name": "Betty Ross"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 184669,
-                "name": "Eldest"
-            },
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 61410,
-                "name": "Adam Gorham"
-            },
-            {
-                "id": 10065,
-                "name": "Cam Smith"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 6726,
-                "name": "Edgar Delgado"
-            },
-            {
-                "id": 41882,
-                "name": "Giuseppe Camuncoli"
-            },
-            {
-                "id": 43502,
-                "name": "Kevin Walker"
-            },
-            {
-                "id": 46064,
-                "name": "Matthew Wilson"
-            },
-            {
-                "id": 44601,
-                "name": "Nic Klein"
-            },
-            {
-                "id": 87894,
-                "name": "Phillip Kennedy Johnson"
-            },
-            {
-                "id": 53766,
-                "name": "Romulo Fajardo Jr."
-            },
-            {
-                "id": 62579,
-                "name": "SKAN"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>INFERNAL VERSUS ALMIGHTY!</em></p><p><em>As Infernal Hulk prepares to deal his death blow against Earth, a being of unimaginable power descends from the heavens to save us: the Creator of the Marvel Universe himself! Everything on Earth will change after this shocking, never-before-seen battle for the ages: INFERNAL HULK versus THE ONE ABOVE ALL!</em></p>"
-    },
-    "1159204": {
-        "id": 1159204,
-        "isbn": null,
-        "name": "Hulk Smash Everything, Chapter Four: Hulk vs. the Entire Planet Earth",
-        "issue_number": "4",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10010802-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10010802-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10010802-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10010802-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10010802-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10010802-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10010802-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10010802-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10010802-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 7617,
-                "name": "Leader"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 10434,
-                "name": "Adam Kubert"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 62630,
-                "name": "Ryan North"
-            },
-            {
-                "id": 107522,
-                "name": "Vincenzo Carratu"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>HULK GOES COSMIC! Galaxies are born, stars go supernova, but HULK will always remain!!! After deserting Hulk in Earth's pre-historic age, the Leader thought himself successful — only for HULK to get sucked into a black hole and become COSMIC. Now too powerful for his own good, COSMIC HULK goes up against Earth's mightiest heroes in a battle that rivals the big bang!!! GO FIGURE!</em></p>"
-    },
-    "1159204": {
-        "id": 1159204,
-        "isbn": null,
-        "name": "Hulk Smash Everything, Chapter Four: Hulk vs. the Entire Planet Earth",
-        "issue_number": "4",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10010802-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10010802-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10010802-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10010802-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10010802-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10010802-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10010802-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10010802-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10010802-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 7617,
-                "name": "Leader"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 10434,
-                "name": "Adam Kubert"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 62630,
-                "name": "Ryan North"
-            },
-            {
-                "id": 107522,
-                "name": "Vincenzo Carratu"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>HULK GOES COSMIC! Galaxies are born, stars go supernova, but HULK will always remain!!! After deserting Hulk in Earth's pre-historic age, the Leader thought himself successful — only for HULK to get sucked into a black hole and become COSMIC. Now too powerful for his own good, COSMIC HULK goes up against Earth's mightiest heroes in a battle that rivals the big bang!!! GO FIGURE!</em></p>"
-    },
-    "1159114": {
-        "id": 1159114,
-        "isbn": null,
-        "name": null,
-        "issue_number": "5",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009812-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009812-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009812-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009812-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009812-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009812-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009812-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009812-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009812-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 38634,
-                "name": "Benjamin Franklin"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 2216,
-                "name": "Clea"
-            },
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 13925,
-                "name": "Morgan Le Fay"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 9587,
-                "name": "Alex Sinclair"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 40683,
-                "name": "J. Michael Straczynski"
-            },
-            {
-                "id": 8662,
-                "name": "Jay Leisten"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 102843,
-                "name": "Oren Junior"
-            },
-            {
-                "id": 12650,
-                "name": "Pete Woods"
-            },
-            {
-                "id": 2509,
-                "name": "Phil Jimenez"
-            },
-            {
-                "id": 10681,
-                "name": "Scott Hanna"
-            },
-            {
-                "id": 77487,
-                "name": "Sean Damien Hill"
-            },
-            {
-                "id": 64552,
-                "name": "Sergio Fernandez Davila"
-            },
-            {
-                "id": 111018,
-                "name": "Yen Nitro"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>INDEPENDENCE FOREVER!</b></em></p><p><em>This is it!</em></p><p><em>The time-crossing calamity of the year crescendos in a catastrophically climactic conclusion!</em></p><p><em>From across time itself, can Doctor Strange, Captain America, Spider-Man and their allies stop Morgan Le Fay and the Royals from conquering the American Colonies and ending the American experiment before it even has a chance to begin?!</em></p>"
-    },
-    "1159114": {
-        "id": 1159114,
-        "isbn": null,
-        "name": null,
-        "issue_number": "5",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009812-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009812-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009812-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009812-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009812-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009812-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009812-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009812-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009812-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 38634,
-                "name": "Benjamin Franklin"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 2216,
-                "name": "Clea"
-            },
-            {
-                "id": 2267,
-                "name": "Hulk"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 13925,
-                "name": "Morgan Le Fay"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 9587,
-                "name": "Alex Sinclair"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 40683,
-                "name": "J. Michael Straczynski"
-            },
-            {
-                "id": 8662,
-                "name": "Jay Leisten"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 102843,
-                "name": "Oren Junior"
-            },
-            {
-                "id": 12650,
-                "name": "Pete Woods"
-            },
-            {
-                "id": 2509,
-                "name": "Phil Jimenez"
-            },
-            {
-                "id": 10681,
-                "name": "Scott Hanna"
-            },
-            {
-                "id": 77487,
-                "name": "Sean Damien Hill"
-            },
-            {
-                "id": 64552,
-                "name": "Sergio Fernandez Davila"
-            },
-            {
-                "id": 111018,
-                "name": "Yen Nitro"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>INDEPENDENCE FOREVER!</b></em></p><p><em>This is it!</em></p><p><em>The time-crossing calamity of the year crescendos in a catastrophically climactic conclusion!</em></p><p><em>From across time itself, can Doctor Strange, Captain America, Spider-Man and their allies stop Morgan Le Fay and the Royals from conquering the American Colonies and ending the American experiment before it even has a chance to begin?!</em></p>"
-    },
-    "1159644": {
-        "id": 1159644,
-        "isbn": null,
-        "name": null,
-        "issue_number": "4",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016642-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016642-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016642-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016642-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016642-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016642-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016642-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016642-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016642-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 196896,
-                "name": "B'Wete"
-            },
-            {
-                "id": 196891,
-                "name": "Behemoth"
-            },
-            {
-                "id": 196894,
-                "name": "Black Diamond"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 196893,
-                "name": "Ghoul"
-            },
-            {
-                "id": 196892,
-                "name": "Golden Arms"
-            },
-            {
-                "id": 179986,
-                "name": "M'Baku"
-            },
-            {
-                "id": 196895,
-                "name": "Scythe"
-            },
-            {
-                "id": 58997,
-                "name": "Shuri"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 85709,
-                "name": "Ariana Maher"
-            },
-            {
-                "id": 64630,
-                "name": "Ario Anindito"
-            },
-            {
-                "id": 73310,
-                "name": "Bryan Valenza"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 44298,
-                "name": "David Curiel"
-            },
-            {
-                "id": 66398,
-                "name": "Erick Arciniega"
-            },
-            {
-                "id": 76794,
-                "name": "Juan Frigeri"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 129498,
-                "name": "Stefano Nesi"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 80396,
-                "name": "Victor LaValle"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>T'Challa and Shuri have reunited just in time to face their fiercest enemy yet. And unknown to them, the entire Intergalactic Empire of Wakanda is watching the battle, waiting to see who will rise to take their rightful place as Emperor of Wakanda, on Earth and in the stars.</em></p>"
-    },
-    "1159644": {
-        "id": 1159644,
-        "isbn": null,
-        "name": null,
-        "issue_number": "4",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016642-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016642-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016642-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016642-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016642-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016642-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016642-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016642-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016642-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 196896,
-                "name": "B'Wete"
-            },
-            {
-                "id": 196891,
-                "name": "Behemoth"
-            },
-            {
-                "id": 196894,
-                "name": "Black Diamond"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 196893,
-                "name": "Ghoul"
-            },
-            {
-                "id": 196892,
-                "name": "Golden Arms"
-            },
-            {
-                "id": 179986,
-                "name": "M'Baku"
-            },
-            {
-                "id": 196895,
-                "name": "Scythe"
-            },
-            {
-                "id": 58997,
-                "name": "Shuri"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 85709,
-                "name": "Ariana Maher"
-            },
-            {
-                "id": 64630,
-                "name": "Ario Anindito"
-            },
-            {
-                "id": 73310,
-                "name": "Bryan Valenza"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 44298,
-                "name": "David Curiel"
-            },
-            {
-                "id": 66398,
-                "name": "Erick Arciniega"
-            },
-            {
-                "id": 76794,
-                "name": "Juan Frigeri"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 129498,
-                "name": "Stefano Nesi"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 80396,
-                "name": "Victor LaValle"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>T'Challa and Shuri have reunited just in time to face their fiercest enemy yet. And unknown to them, the entire Intergalactic Empire of Wakanda is watching the battle, waiting to see who will rise to take their rightful place as Emperor of Wakanda, on Earth and in the stars.</em></p>"
-    },
-    "1158150": {
-        "id": 1158150,
-        "isbn": null,
-        "name": "Assemble",
-        "issue_number": "36",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10004106-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10004106-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10004106-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10004106-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10004106-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10004106-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10004106-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10004106-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10004106-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 183852,
-                "name": "Arthur"
-            },
-            {
-                "id": 183855,
-                "name": "Bercilak"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 183853,
-                "name": "Galehaut"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 2264,
-                "name": "Kang"
-            },
-            {
-                "id": 183857,
-                "name": "Lancelot"
-            },
-            {
-                "id": 183851,
-                "name": "Mordred"
-            },
-            {
-                "id": 183854,
-                "name": "Parsifal"
-            },
-            {
-                "id": 1451,
-                "name": "Sam Wilson"
-            },
-            {
-                "id": 1466,
-                "name": "Scarlet Witch"
-            },
-            {
-                "id": 1444,
-                "name": "Storm"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 113689,
-                "name": "C. F. Villa"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 64803,
-                "name": "Cory Smith"
-            },
-            {
-                "id": 89778,
-                "name": "Danny Khazem"
-            },
-            {
-                "id": 6726,
-                "name": "Edgar Delgado"
-            },
-            {
-                "id": 112991,
-                "name": "Farid Karami"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 41882,
-                "name": "Giuseppe Camuncoli"
-            },
-            {
-                "id": 82750,
-                "name": "Jed MacKay"
-            },
-            {
-                "id": 12650,
-                "name": "Pete Woods"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 79334,
-                "name": "Roberto Poggi"
-            },
-            {
-                "id": 63097,
-                "name": "Russell Dauterman"
-            },
-            {
-                "id": 12332,
-                "name": "Stuart Immonen"
-            },
-            {
-                "id": 56390,
-                "name": "Wil Moss"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>JED MacKAY BRINGS HIS RUN TO A SHOCKING END!</b></em></p><p><em>Three years of dark mysteries, epic quests and cosmos-shattering battles comes to a head in this giant-sized, can't-miss final issue!</em></p><p><em>Everything Jed MacKay has built comes crashing down in this startling finale that will redefine the Avengers' future!</em></p>"
-    },
-    "1158150": {
-        "id": 1158150,
-        "isbn": null,
-        "name": "Assemble",
-        "issue_number": "36",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10004106-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10004106-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10004106-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10004106-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10004106-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10004106-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10004106-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10004106-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10004106-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 183852,
-                "name": "Arthur"
-            },
-            {
-                "id": 183855,
-                "name": "Bercilak"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 183853,
-                "name": "Galehaut"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 2264,
-                "name": "Kang"
-            },
-            {
-                "id": 183857,
-                "name": "Lancelot"
-            },
-            {
-                "id": 183851,
-                "name": "Mordred"
-            },
-            {
-                "id": 183854,
-                "name": "Parsifal"
-            },
-            {
-                "id": 1451,
-                "name": "Sam Wilson"
-            },
-            {
-                "id": 1466,
-                "name": "Scarlet Witch"
-            },
-            {
-                "id": 1444,
-                "name": "Storm"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 113689,
-                "name": "C. F. Villa"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 64803,
-                "name": "Cory Smith"
-            },
-            {
-                "id": 89778,
-                "name": "Danny Khazem"
-            },
-            {
-                "id": 6726,
-                "name": "Edgar Delgado"
-            },
-            {
-                "id": 112991,
-                "name": "Farid Karami"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 41882,
-                "name": "Giuseppe Camuncoli"
-            },
-            {
-                "id": 82750,
-                "name": "Jed MacKay"
-            },
-            {
-                "id": 12650,
-                "name": "Pete Woods"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 79334,
-                "name": "Roberto Poggi"
-            },
-            {
-                "id": 63097,
-                "name": "Russell Dauterman"
-            },
-            {
-                "id": 12332,
-                "name": "Stuart Immonen"
-            },
-            {
-                "id": 56390,
-                "name": "Wil Moss"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>JED MacKAY BRINGS HIS RUN TO A SHOCKING END!</b></em></p><p><em>Three years of dark mysteries, epic quests and cosmos-shattering battles comes to a head in this giant-sized, can't-miss final issue!</em></p><p><em>Everything Jed MacKay has built comes crashing down in this startling finale that will redefine the Avengers' future!</em></p>"
-    },
-    "1156922": {
-        "id": 1156922,
-        "isbn": null,
-        "name": null,
-        "issue_number": "3",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998082-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998082-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998082-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998082-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998082-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998082-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998082-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998082-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998082-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 196891,
-                "name": "Behemoth"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 196893,
-                "name": "Ghoul"
-            },
-            {
-                "id": 179986,
-                "name": "M'Baku"
-            },
-            {
-                "id": 58997,
-                "name": "Shuri"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 73569,
-                "name": "ACO"
-            },
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 85709,
-                "name": "Ariana Maher"
-            },
-            {
-                "id": 73310,
-                "name": "Bryan Valenza"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 44298,
-                "name": "David Curiel"
-            },
-            {
-                "id": 139113,
-                "name": "Dotemu"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 129498,
-                "name": "Stefano Nesi"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 139112,
-                "name": "Tribute Games"
-            },
-            {
-                "id": 80396,
-                "name": "Victor LaValle"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>T’Challa faces down a planet of villains. For each he defeats, another takes its place..and the power behind them all still awaits its chance to beat the King! His only hope is to finally reunite with his sister, Shuri and the orphaned boy, Femi. And only by working together will all three have any chance of surviving…</em></p>"
-    },
-    "1156922": {
-        "id": 1156922,
-        "isbn": null,
-        "name": null,
-        "issue_number": "3",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998082-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998082-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998082-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998082-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998082-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998082-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998082-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998082-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998082-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 196891,
-                "name": "Behemoth"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 196893,
-                "name": "Ghoul"
-            },
-            {
-                "id": 179986,
-                "name": "M'Baku"
-            },
-            {
-                "id": 58997,
-                "name": "Shuri"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 73569,
-                "name": "ACO"
-            },
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 85709,
-                "name": "Ariana Maher"
-            },
-            {
-                "id": 73310,
-                "name": "Bryan Valenza"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 44298,
-                "name": "David Curiel"
-            },
-            {
-                "id": 139113,
-                "name": "Dotemu"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 129498,
-                "name": "Stefano Nesi"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 139112,
-                "name": "Tribute Games"
-            },
-            {
-                "id": 80396,
-                "name": "Victor LaValle"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>T’Challa faces down a planet of villains. For each he defeats, another takes its place..and the power behind them all still awaits its chance to beat the King! His only hope is to finally reunite with his sister, Shuri and the orphaned boy, Femi. And only by working together will all three have any chance of surviving…</em></p>"
-    },
-    "1160332": {
-        "id": 1160332,
-        "isbn": null,
-        "name": null,
-        "issue_number": "3",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10023094-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10023094-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10023094-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10023094-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10023094-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10023094-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10023094-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10023094-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10023094-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1490,
-                "name": "Carnage"
-            },
-            {
-                "id": 6111,
-                "name": "Erik Killmonger"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1487,
-                "name": "J. Jonah Jameson"
-            },
-            {
-                "id": 12605,
-                "name": "Jim Hammond"
-            },
-            {
-                "id": 133335,
-                "name": "Maker"
-            },
-            {
-                "id": 13380,
-                "name": "Mary Jane"
-            },
-            {
-                "id": 188224,
-                "name": "Maystorm"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 78932,
-                "name": "Ms America"
-            },
-            {
-                "id": 187814,
-                "name": "Richard Parker"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 3114,
-                "name": "Uncle Ben"
-            },
-            {
-                "id": 1486,
-                "name": "Venom"
-            },
-            {
-                "id": 1440,
-                "name": "Wolverine"
-            }
-        ],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1160332": {
-        "id": 1160332,
-        "isbn": null,
-        "name": null,
-        "issue_number": "3",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10023094-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10023094-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10023094-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10023094-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10023094-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10023094-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10023094-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10023094-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10023094-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1490,
-                "name": "Carnage"
-            },
-            {
-                "id": 6111,
-                "name": "Erik Killmonger"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1487,
-                "name": "J. Jonah Jameson"
-            },
-            {
-                "id": 12605,
-                "name": "Jim Hammond"
-            },
-            {
-                "id": 133335,
-                "name": "Maker"
-            },
-            {
-                "id": 13380,
-                "name": "Mary Jane"
-            },
-            {
-                "id": 188224,
-                "name": "Maystorm"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 78932,
-                "name": "Ms America"
-            },
-            {
-                "id": 187814,
-                "name": "Richard Parker"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 3114,
-                "name": "Uncle Ben"
-            },
-            {
-                "id": 1486,
-                "name": "Venom"
-            },
-            {
-                "id": 1440,
-                "name": "Wolverine"
-            }
-        ],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1159690": {
-        "id": 1159690,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016749-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016749-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016749-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016749-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016749-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016749-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016749-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016749-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016749-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 2190,
-                "name": "Invisible Woman"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1483,
-                "name": "Kingpin"
-            },
-            {
-                "id": 13759,
-                "name": "Lindy Reynolds"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 1454,
-                "name": "Sentry"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 2268,
-                "name": "Thor"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 3122,
-                "name": "Alex Maleev"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 115101,
-                "name": "Christian Rosado"
-            },
-            {
-                "id": 103140,
-                "name": "Francesco Mobili"
-            },
-            {
-                "id": 41654,
-                "name": "Frank D'Armata"
-            },
-            {
-                "id": 2549,
-                "name": "Jae Lee"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 100829,
-                "name": "Lauren Amaro"
-            },
-            {
-                "id": 42108,
-                "name": "Mark Paniccia"
-            },
-            {
-                "id": 1429,
-                "name": "Matt Milla"
-            },
-            {
-                "id": 74477,
-                "name": "Moreno DiNisio"
-            },
-            {
-                "id": 41631,
-                "name": "Paul Jenkins"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>HE'S BEEN AN AVENGER, A DARK AVENGER AND A THUNDERBOLT!</em></p><p><em>THE SENTRY IS BACK — BUT SO IS THE VOID!</em></p><p><em>From creator Paul Jenkins comes a bold, high-stakes epic about MARVEL'S most dangerous hero — the SENTRY, a man with the power of a million exploding suns– and the dark entity born from his own psyche: the VOID. When the Void resurfaces, threatening to unravel reality itself, the Sentry must battle not only cosmic forces and criminal empires, but the monster within.</em></p><p><em>Guest-starring REED RICHARDS, SPIDER-MAN and the KINGPIN in a tale of impossible choices and devastating consequences. Can the Sentry save everything when the cost might be everything he loves?</em></p>"
-    },
-    "1159690": {
-        "id": 1159690,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016749-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016749-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016749-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016749-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016749-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016749-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016749-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016749-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016749-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 2190,
-                "name": "Invisible Woman"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 1483,
-                "name": "Kingpin"
-            },
-            {
-                "id": 13759,
-                "name": "Lindy Reynolds"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 1454,
-                "name": "Sentry"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 2268,
-                "name": "Thor"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 3122,
-                "name": "Alex Maleev"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 51230,
-                "name": "CAFU"
-            },
-            {
-                "id": 115101,
-                "name": "Christian Rosado"
-            },
-            {
-                "id": 103140,
-                "name": "Francesco Mobili"
-            },
-            {
-                "id": 41654,
-                "name": "Frank D'Armata"
-            },
-            {
-                "id": 2549,
-                "name": "Jae Lee"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 100829,
-                "name": "Lauren Amaro"
-            },
-            {
-                "id": 42108,
-                "name": "Mark Paniccia"
-            },
-            {
-                "id": 1429,
-                "name": "Matt Milla"
-            },
-            {
-                "id": 74477,
-                "name": "Moreno DiNisio"
-            },
-            {
-                "id": 41631,
-                "name": "Paul Jenkins"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>HE'S BEEN AN AVENGER, A DARK AVENGER AND A THUNDERBOLT!</em></p><p><em>THE SENTRY IS BACK — BUT SO IS THE VOID!</em></p><p><em>From creator Paul Jenkins comes a bold, high-stakes epic about MARVEL'S most dangerous hero — the SENTRY, a man with the power of a million exploding suns– and the dark entity born from his own psyche: the VOID. When the Void resurfaces, threatening to unravel reality itself, the Sentry must battle not only cosmic forces and criminal empires, but the monster within.</em></p><p><em>Guest-starring REED RICHARDS, SPIDER-MAN and the KINGPIN in a tale of impossible choices and devastating consequences. Can the Sentry save everything when the cost might be everything he loves?</em></p>"
-    },
-    "1159117": {
-        "id": 1159117,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009817-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009817-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009817-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009817-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009817-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009817-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009817-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009817-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009817-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 43587,
-                "name": "Amadeus Cho"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 153613,
-                "name": "Cosmic Ghost Rider"
-            },
-            {
-                "id": 2111,
-                "name": "Darkhawk"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 3447,
-                "name": "Maximus"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 41686,
-                "name": "Dan Abnett"
-            },
-            {
-                "id": 124842,
-                "name": "Ivan Talavera"
-            },
-            {
-                "id": 57505,
-                "name": "J. P. Mayer"
-            },
-            {
-                "id": 8662,
-                "name": "Jay Leisten"
-            },
-            {
-                "id": 64616,
-                "name": "Marcelo Ferreira"
-            },
-            {
-                "id": 60921,
-                "name": "Marcelo Maiolo"
-            },
-            {
-                "id": 82450,
-                "name": "Michele Bandini"
-            },
-            {
-                "id": 73102,
-                "name": "Netho Diaz"
-            },
-            {
-                "id": 59061,
-                "name": "Nolan Woodard"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 73077,
-                "name": "Sean Izaakse"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>GAMORA, CAPTAIN MARVEL, AMADEUS CHO, DARKHAWK, COSMIC GHOST RIDER!</b></em></p><p><em>Five unlikely operatives recruited by Maximus of the Inhumans.</em></p><p><em>Their mission?</em></p><p><em>Protect the delicate balance of new Galactic Union by ANY means necessary...and failure is NOT an option.</em></p><p><em>Expendable, deniable and disavowed, they are the Imperial Guardians.</em></p><p><em>But can they do Maximus' dirty work and keep their consciences clean? Why has a Kree Grand Admiral gone rogue and attacked Hala?</em></p><p><em>What's going on with Darkhawk's mind? What deluded fool thought COSMIC GHOST RIDER was a team player?</em></p><p><em>And, most importantly...what kind of game is Maximus REALLY playing?</em></p>"
-    },
-    "1159117": {
-        "id": 1159117,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009817-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009817-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009817-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009817-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009817-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009817-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009817-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009817-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009817-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 43587,
-                "name": "Amadeus Cho"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 153613,
-                "name": "Cosmic Ghost Rider"
-            },
-            {
-                "id": 2111,
-                "name": "Darkhawk"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 3447,
-                "name": "Maximus"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 41686,
-                "name": "Dan Abnett"
-            },
-            {
-                "id": 124842,
-                "name": "Ivan Talavera"
-            },
-            {
-                "id": 57505,
-                "name": "J. P. Mayer"
-            },
-            {
-                "id": 8662,
-                "name": "Jay Leisten"
-            },
-            {
-                "id": 64616,
-                "name": "Marcelo Ferreira"
-            },
-            {
-                "id": 60921,
-                "name": "Marcelo Maiolo"
-            },
-            {
-                "id": 82450,
-                "name": "Michele Bandini"
-            },
-            {
-                "id": 73102,
-                "name": "Netho Diaz"
-            },
-            {
-                "id": 59061,
-                "name": "Nolan Woodard"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 73077,
-                "name": "Sean Izaakse"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em><b>GAMORA, CAPTAIN MARVEL, AMADEUS CHO, DARKHAWK, COSMIC GHOST RIDER!</b></em></p><p><em>Five unlikely operatives recruited by Maximus of the Inhumans.</em></p><p><em>Their mission?</em></p><p><em>Protect the delicate balance of new Galactic Union by ANY means necessary...and failure is NOT an option.</em></p><p><em>Expendable, deniable and disavowed, they are the Imperial Guardians.</em></p><p><em>But can they do Maximus' dirty work and keep their consciences clean? Why has a Kree Grand Admiral gone rogue and attacked Hala?</em></p><p><em>What's going on with Darkhawk's mind? What deluded fool thought COSMIC GHOST RIDER was a team player?</em></p><p><em>And, most importantly...what kind of game is Maximus REALLY playing?</em></p>"
-    },
-    "1155367": {
-        "id": 1155367,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9978855-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9978855-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9978855-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9978855-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9978855-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9978855-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9978855-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9978855-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9978855-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 20577,
-                "name": "Ant-Man (Lang)"
-            },
-            {
-                "id": 4329,
-                "name": "Black Bolt"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 57033,
-                "name": "Blue Marvel"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 6807,
-                "name": "Drax the Destroyer"
-            },
-            {
-                "id": 2149,
-                "name": "Galactus"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 196576,
-                "name": "Godwyrm"
-            },
-            {
-                "id": 21599,
-                "name": "Godzilla"
-            },
-            {
-                "id": 2120,
-                "name": "Human Torch"
-            },
-            {
-                "id": 2190,
-                "name": "Invisible Woman"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 10975,
-                "name": "Karnak"
-            },
-            {
-                "id": 149552,
-                "name": "Knull"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 14558,
-                "name": "Nebula"
-            },
-            {
-                "id": 3507,
-                "name": "Odin"
-            },
-            {
-                "id": 32814,
-                "name": "Rocket Raccoon"
-            },
-            {
-                "id": 1449,
-                "name": "She-Hulk"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 10957,
-                "name": "Star-Lord"
-            },
-            {
-                "id": 2114,
-                "name": "Thing"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            },
-            {
-                "id": 1502,
-                "name": "Wasp"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 101858,
-                "name": "Björn Barends"
-            },
-            {
-                "id": 60197,
-                "name": "David Marquez"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 47446,
-                "name": "Gerry Duggan"
-            },
-            {
-                "id": 56728,
-                "name": "Ig Guara Barros"
-            },
-            {
-                "id": 74926,
-                "name": "Javier Garrón"
-            },
-            {
-                "id": 61283,
-                "name": "Jesus Aburtov"
-            },
-            {
-                "id": 107516,
-                "name": "Josemaria Casanovas"
-            },
-            {
-                "id": 57219,
-                "name": "Juan Fernandez"
-            },
-            {
-                "id": 4314,
-                "name": "Ken Lashley"
-            },
-            {
-                "id": 46737,
-                "name": "Paulo Siqueira"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 56666,
-                "name": "Ryan Stegman"
-            },
-            {
-                "id": 41795,
-                "name": "Travis Lanham"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>When Mole Man accidentally awakened a slumbering Godzilla from the core of the Earth, Godzilla embarked on a rampage that rebuffed even Earth's mightiest heroes', mutants', and even villains' attempts to stop it!</em></p><p><em>It was only after Black Panther synthesized a special vibranium alloy to create a giant mech, piloted and powered by Earth's strongest super heroes, that Mr. Fantastic was able to enact his fail-safe plan: ejecting Godzilla off-planet and into space!</em></p><p><em>But in saving Earth, he may have just doomed the rest of the cosmos...</em></p>"
-    },
-    "1155367": {
-        "id": 1155367,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9978855-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9978855-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9978855-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9978855-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9978855-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9978855-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9978855-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9978855-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9978855-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 20577,
-                "name": "Ant-Man (Lang)"
-            },
-            {
-                "id": 4329,
-                "name": "Black Bolt"
-            },
-            {
-                "id": 1477,
-                "name": "Black Panther"
-            },
-            {
-                "id": 57033,
-                "name": "Blue Marvel"
-            },
-            {
-                "id": 1442,
-                "name": "Captain America"
-            },
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 6807,
-                "name": "Drax the Destroyer"
-            },
-            {
-                "id": 2149,
-                "name": "Galactus"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 196576,
-                "name": "Godwyrm"
-            },
-            {
-                "id": 21599,
-                "name": "Godzilla"
-            },
-            {
-                "id": 2120,
-                "name": "Human Torch"
-            },
-            {
-                "id": 2190,
-                "name": "Invisible Woman"
-            },
-            {
-                "id": 1455,
-                "name": "Iron Man"
-            },
-            {
-                "id": 10975,
-                "name": "Karnak"
-            },
-            {
-                "id": 149552,
-                "name": "Knull"
-            },
-            {
-                "id": 2151,
-                "name": "Mr. Fantastic"
-            },
-            {
-                "id": 14558,
-                "name": "Nebula"
-            },
-            {
-                "id": 3507,
-                "name": "Odin"
-            },
-            {
-                "id": 32814,
-                "name": "Rocket Raccoon"
-            },
-            {
-                "id": 1449,
-                "name": "She-Hulk"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 10957,
-                "name": "Star-Lord"
-            },
-            {
-                "id": 2114,
-                "name": "Thing"
-            },
-            {
-                "id": 1504,
-                "name": "Vision"
-            },
-            {
-                "id": 1502,
-                "name": "Wasp"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 101745,
-                "name": "Arthur Hesli"
-            },
-            {
-                "id": 101858,
-                "name": "Björn Barends"
-            },
-            {
-                "id": 60197,
-                "name": "David Marquez"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 47446,
-                "name": "Gerry Duggan"
-            },
-            {
-                "id": 56728,
-                "name": "Ig Guara Barros"
-            },
-            {
-                "id": 74926,
-                "name": "Javier Garrón"
-            },
-            {
-                "id": 61283,
-                "name": "Jesus Aburtov"
-            },
-            {
-                "id": 107516,
-                "name": "Josemaria Casanovas"
-            },
-            {
-                "id": 57219,
-                "name": "Juan Fernandez"
-            },
-            {
-                "id": 4314,
-                "name": "Ken Lashley"
-            },
-            {
-                "id": 46737,
-                "name": "Paulo Siqueira"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 56666,
-                "name": "Ryan Stegman"
-            },
-            {
-                "id": 41795,
-                "name": "Travis Lanham"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>When Mole Man accidentally awakened a slumbering Godzilla from the core of the Earth, Godzilla embarked on a rampage that rebuffed even Earth's mightiest heroes', mutants', and even villains' attempts to stop it!</em></p><p><em>It was only after Black Panther synthesized a special vibranium alloy to create a giant mech, piloted and powered by Earth's strongest super heroes, that Mr. Fantastic was able to enact his fail-safe plan: ejecting Godzilla off-planet and into space!</em></p><p><em>But in saving Earth, he may have just doomed the rest of the cosmos...</em></p>"
-    },
-    "1137155": {
-        "id": 1137155,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2025-12-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9887521-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9887521-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9887521-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9887521-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9887521-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9887521-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9887521-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9887521-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9887521-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 153613,
-                "name": "Cosmic Ghost Rider"
-            },
-            {
-                "id": 2111,
-                "name": "Darkhawk"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 3447,
-                "name": "Maximus"
-            },
-            {
-                "id": 21332,
-                "name": "Super-Skrull"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 64803,
-                "name": "Cory Smith"
-            },
-            {
-                "id": 41686,
-                "name": "Dan Abnett"
-            },
-            {
-                "id": 112992,
-                "name": "Doaly"
-            },
-            {
-                "id": 55784,
-                "name": "Espen Grundetjern"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 102800,
-                "name": "Francesco Mortarino"
-            },
-            {
-                "id": 57221,
-                "name": "Jan Bazaldua"
-            },
-            {
-                "id": 61283,
-                "name": "Jesus Aburtov"
-            },
-            {
-                "id": 45065,
-                "name": "Jonathan Hickman"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 81542,
-                "name": "Luca Maresca"
-            },
-            {
-                "id": 82450,
-                "name": "Michele Bandini"
-            },
-            {
-                "id": 96423,
-                "name": "Raúl Angulo"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 1679,
-                "name": "Wayne Faucher"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>SPINNING STRAIGHT OUT OF THE PAGES OF IMPERIAL!</em></p><p><em>As the events of IMPERIAL explode in fatal fashion, the SUPER-SKRULL finds himself at the center of a seditious scheme with consequences that will be felt by the entire cosmos! But he’s not the only superpower looking for answers – an unlikely team is on the hunt to avert disaster before galactic order is lost for good!</em></p>"
-    },
-    "1137155": {
-        "id": 1137155,
-        "isbn": null,
-        "name": null,
-        "issue_number": "1",
-        "cover_date": "2025-12-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9887521-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9887521-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9887521-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9887521-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9887521-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9887521-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9887521-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9887521-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9887521-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 21561,
-                "name": "Carol Danvers"
-            },
-            {
-                "id": 153613,
-                "name": "Cosmic Ghost Rider"
-            },
-            {
-                "id": 2111,
-                "name": "Darkhawk"
-            },
-            {
-                "id": 6806,
-                "name": "Gamora"
-            },
-            {
-                "id": 3447,
-                "name": "Maximus"
-            },
-            {
-                "id": 21332,
-                "name": "Super-Skrull"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 97725,
-                "name": "Annalise Bissa"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 41781,
-                "name": "Cory Petit"
-            },
-            {
-                "id": 64803,
-                "name": "Cory Smith"
-            },
-            {
-                "id": 41686,
-                "name": "Dan Abnett"
-            },
-            {
-                "id": 112992,
-                "name": "Doaly"
-            },
-            {
-                "id": 55784,
-                "name": "Espen Grundetjern"
-            },
-            {
-                "id": 85096,
-                "name": "Federico Blee"
-            },
-            {
-                "id": 102800,
-                "name": "Francesco Mortarino"
-            },
-            {
-                "id": 57221,
-                "name": "Jan Bazaldua"
-            },
-            {
-                "id": 61283,
-                "name": "Jesus Aburtov"
-            },
-            {
-                "id": 45065,
-                "name": "Jonathan Hickman"
-            },
-            {
-                "id": 104455,
-                "name": "Lindsey Cohick"
-            },
-            {
-                "id": 81542,
-                "name": "Luca Maresca"
-            },
-            {
-                "id": 82450,
-                "name": "Michele Bandini"
-            },
-            {
-                "id": 96423,
-                "name": "Raúl Angulo"
-            },
-            {
-                "id": 41609,
-                "name": "Tom Brevoort"
-            },
-            {
-                "id": 1679,
-                "name": "Wayne Faucher"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>SPINNING STRAIGHT OUT OF THE PAGES OF IMPERIAL!</em></p><p><em>As the events of IMPERIAL explode in fatal fashion, the SUPER-SKRULL finds himself at the center of a seditious scheme with consequences that will be felt by the entire cosmos! But he’s not the only superpower looking for answers – an unlikely team is on the hunt to avert disaster before galactic order is lost for good!</em></p>"
     }
 }

@@ -108,21 +108,41 @@ class DetallesPersonaje(QWidget):
             background: #222; color: white; font-weight: bold;
             border-bottom: 2px solid #e62429;
             border-top-left-radius: 8px; border-top-right-radius: 8px;
-            background-color: #222;
         """)
         ly_frame.addWidget(header)
 
+        # 🔥 SCROLL (CLAVE)
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setFixedHeight(240)  # 👈 controla el tamaño
+        scroll.setStyleSheet("""
+            QScrollArea { border: none; background: transparent; }
+            QScrollBar:vertical {
+                border: none; background: #111; width: 8px; margin: 0px; border-radius: 4px;
+            }
+            QScrollBar::handle:vertical {
+                background: #555; min-height: 20px; border-radius: 4px;
+            }
+            QScrollBar::handle:vertical:hover { background: #e62429; }
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
+        """)
+
         contenedor = QWidget()
         contenedor.setStyleSheet("background: transparent; border: none;")
+
         ly_autores = QVBoxLayout(contenedor)
         ly_autores.setSpacing(10)
         ly_autores.setContentsMargins(10, 10, 10, 10)
         ly_autores.addWidget(self.crear_label_vacio("Sin autores disponibles"))
         ly_autores.addStretch()
-        ly_frame.addWidget(contenedor)
+
+        scroll.setWidget(contenedor)
+        ly_frame.addWidget(scroll)
+
         self.estado_listas[clave]["layout"] = ly_autores
 
         ly_frame.addWidget(self.crear_controles_paginacion(clave, oscuro=True))
+
         return frame
 
     def crear_item_autor(self, nombre):
