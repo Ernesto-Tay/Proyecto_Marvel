@@ -25,26 +25,22 @@ class ListaCircular: #La usaremos para navegar entre las secciones
     def eliminar(self, dato):
         if self.esta_vacia():
             return False
+        inicio = self.actual
         actual = self.actual
-
         while True:
             if actual.siguiente.dato == dato:
                 nodo_a_borrar = actual.siguiente
-
                 if self.tamanio == 1:
                     self.actual = None
                 else:
                     actual.siguiente = nodo_a_borrar.siguiente
-                    # Si borramos el dato actual, actual ahora es el siguiente, lo movemos
                     if nodo_a_borrar == self.actual:
-                        self.actual = actual
-
+                        self.actual = actual.siguiente
                 self.tamanio -= 1
                 return True
             actual = actual.siguiente
-            if actual == self.cabeza:
+            if actual == inicio:
                 break
-
         return False
 
     def buscar(self, dato):
@@ -63,13 +59,13 @@ class ListaCircular: #La usaremos para navegar entre las secciones
         if self.esta_vacia():
             return datos_lista
 
+        inicio = self.actual
         auxiliar = self.actual
 
         while True:
             datos_lista.append(auxiliar.dato)
             auxiliar = auxiliar.siguiente
-
-            if auxiliar == self.cabeza:
+            if auxiliar == inicio:
                 break
         return datos_lista
 
@@ -98,14 +94,14 @@ class ListaCircular: #La usaremos para navegar entre las secciones
             return []
 
         resultados = []
-        actual = self.cabeza
+        actual = self.actual
 
         # Saltar hasta el inicio
         for i in range(inicio):
             if actual:
                 actual = actual.siguiente
 
-        # Recogermos página
+        # Recoger página
         for i in range(elementos_por_pagina):
             if actual:
                 resultados.append(actual.dato)

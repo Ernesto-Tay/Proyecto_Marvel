@@ -30,6 +30,7 @@ class ListaDoble:
             nuevo.siguiente = self.cabeza
             self.cabeza.anterior = nuevo
             self.cabeza = nuevo
+        self.tamanio += 1
 
     def buscar_por_nombre(self, texto):
         resultados = []
@@ -109,6 +110,25 @@ class ListaDoble:
                 nombre_b = siguiente.dato.obtener_nombre().lower()
 
                 if (ascendente and nombre_a > nombre_b) or (not ascendente and nombre_a < nombre_b):
+                    auxi = actual.dato
+                    actual.dato = siguiente.dato
+                    siguiente.dato = auxi
+
+                actual = actual.siguiente
+
+    def ordenar_por_fecha(self, ascendente=True):
+        if self.tamanio <= 1:
+            return
+
+        for i in range(self.tamanio):
+            actual = self.cabeza
+            for j in range(self.tamanio - 1):
+                siguiente = actual.siguiente
+
+                fecha_a = actual.dato.obtener_fecha()
+                fecha_b = siguiente.dato.obtener_fecha()
+
+                if (ascendente and fecha_a > fecha_b) or (not ascendente and fecha_a < fecha_b):
                     auxi = actual.dato
                     actual.dato = siguiente.dato
                     siguiente.dato = auxi
