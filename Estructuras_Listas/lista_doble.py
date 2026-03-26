@@ -34,12 +34,37 @@ class ListaDoble:
 
     def buscar_por_nombre(self, texto):
         resultados = []
+        texto = texto.lower()
         actual = self.cabeza
 
         while actual:
-            if texto.lower() in actual.dato.nombre.lower():
-                resultados.append(actual.dato)
+            dato = actual.dato
+
+            # Detectar si es personaje o comic
+            if hasattr(dato, "nombre"):
+                nombre = dato.nombre.lower()
+            elif hasattr(dato, "titulo"):
+                nombre = dato.titulo.lower()
+            else:
+                nombre = ""
+
+            # Fecha (solo para comics)
+            if hasattr(dato, "fecha_lanzamiento"):
+                fecha = dato.fecha_lanzamiento.lower()
+            else:
+                fecha = ""
+
+            # Extraer año
+            if "-" in fecha:
+                anio = fecha.split("-")[-1]
+            else:
+                anio = fecha
+
+            if texto in nombre or texto in fecha or texto in anio:
+                resultados.append(dato)
+
             actual = actual.siguiente
+
         return resultados
 
     def buscar(self, dato):

@@ -48,7 +48,7 @@ class ComicsMenu(QWidget):
 
         fila_busqueda = QHBoxLayout()
         self.buscador_oval = QLineEdit()
-        self.buscador_oval.setPlaceholderText(" Buscar por título...")
+        self.buscador_oval.setPlaceholderText(" Buscar por título o año...")
         self.buscador_oval.setFixedWidth(500)
         self.buscador_oval.setStyleSheet("""
             QLineEdit {

@@ -1,28 +1,4 @@
 {
-    "1155347": {
-        "id": 1155347,
-        "isbn": null,
-        "name": null,
-        "issue_number": "21",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9978778-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9978778-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9978778-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9978778-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9978778-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9978778-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9978778-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9978778-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9978778-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
     "1156261": {
         "id": 1156261,
         "isbn": null,
@@ -41,11 +17,145 @@
             "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
             "image_tags": "All Images"
         },
-        "character_credits": [],
-        "person_credits": [],
+        "character_credits": [
+            {
+                "id": 1780,
+                "name": "Aunt May"
+            },
+            {
+                "id": 6286,
+                "name": "Ben Reilly"
+            },
+            {
+                "id": 196127,
+                "name": "Glitch"
+            },
+            {
+                "id": 79465,
+                "name": "Hallow's Eve"
+            },
+            {
+                "id": 2120,
+                "name": "Human Torch"
+            },
+            {
+                "id": 194988,
+                "name": "Maira Osmani-Milton"
+            },
+            {
+                "id": 195915,
+                "name": "Nial"
+            },
+            {
+                "id": 58812,
+                "name": "Norman Osborn"
+            },
+            {
+                "id": 195914,
+                "name": "Raelith the Wretched"
+            },
+            {
+                "id": 32814,
+                "name": "Rocket Raccoon"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 195913,
+                "name": "Symbie"
+            },
+            {
+                "id": 2114,
+                "name": "Thing"
+            },
+            {
+                "id": 83029,
+                "name": "Xanto Starblood"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 64630,
+                "name": "Ario Anindito"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 44779,
+                "name": "David Nakayama"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 10025,
+                "name": "Lee Bermejo"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 45375,
+                "name": "Marte Gracia"
+            },
+            {
+                "id": 134749,
+                "name": "McFarlane Toys"
+            },
+            {
+                "id": 66212,
+                "name": "Nathan Stockman"
+            },
+            {
+                "id": 42134,
+                "name": "Nick Bradshaw"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 57038,
+                "name": "Rachelle Rosenberg"
+            },
+            {
+                "id": 10681,
+                "name": "Scott Hanna"
+            },
+            {
+                "id": 42064,
+                "name": "Simone Bianchi"
+            },
+            {
+                "id": 77673,
+                "name": "Simone Di Meo"
+            },
+            {
+                "id": 9641,
+                "name": "Todd Nauck"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            }
+        ],
         "event_credits": [],
         "publisher": null,
-        "description": null
+        "description": "<p><em>TOO LITTLE, TOO LATE!</em></p><p><em>The era of space/earth Spider-Men comes to an end and everyone is left to pick up the pieces.</em></p><p><em>We are about to enter DEATH SPIRAL so Spidey better take a deep, deep breath.</em></p>"
     },
     "1151943": {
         "id": 1151943,
@@ -1438,5 +1548,163 @@
         "event_credits": [],
         "publisher": null,
         "description": null
+    },
+    "1156261": {
+        "id": 1156261,
+        "isbn": null,
+        "name": null,
+        "issue_number": "22",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9991552-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9991552-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9991552-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9991552-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9991552-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9991552-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9991552-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9991552-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1780,
+                "name": "Aunt May"
+            },
+            {
+                "id": 6286,
+                "name": "Ben Reilly"
+            },
+            {
+                "id": 196127,
+                "name": "Glitch"
+            },
+            {
+                "id": 79465,
+                "name": "Hallow's Eve"
+            },
+            {
+                "id": 2120,
+                "name": "Human Torch"
+            },
+            {
+                "id": 194988,
+                "name": "Maira Osmani-Milton"
+            },
+            {
+                "id": 195915,
+                "name": "Nial"
+            },
+            {
+                "id": 58812,
+                "name": "Norman Osborn"
+            },
+            {
+                "id": 195914,
+                "name": "Raelith the Wretched"
+            },
+            {
+                "id": 32814,
+                "name": "Rocket Raccoon"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 195913,
+                "name": "Symbie"
+            },
+            {
+                "id": 2114,
+                "name": "Thing"
+            },
+            {
+                "id": 83029,
+                "name": "Xanto Starblood"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 64630,
+                "name": "Ario Anindito"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 44779,
+                "name": "David Nakayama"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 10025,
+                "name": "Lee Bermejo"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 45375,
+                "name": "Marte Gracia"
+            },
+            {
+                "id": 134749,
+                "name": "McFarlane Toys"
+            },
+            {
+                "id": 66212,
+                "name": "Nathan Stockman"
+            },
+            {
+                "id": 42134,
+                "name": "Nick Bradshaw"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 57038,
+                "name": "Rachelle Rosenberg"
+            },
+            {
+                "id": 10681,
+                "name": "Scott Hanna"
+            },
+            {
+                "id": 42064,
+                "name": "Simone Bianchi"
+            },
+            {
+                "id": 77673,
+                "name": "Simone Di Meo"
+            },
+            {
+                "id": 9641,
+                "name": "Todd Nauck"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>TOO LITTLE, TOO LATE!</em></p><p><em>The era of space/earth Spider-Men comes to an end and everyone is left to pick up the pieces.</em></p><p><em>We are about to enter DEATH SPIRAL so Spidey better take a deep, deep breath.</em></p>"
     }
 }
