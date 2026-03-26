@@ -30,7 +30,7 @@ class VentanaPrincipal(QMainWindow):
         self.setMinimumSize(1000, 600)
         
         # Controlador
-        self.controlador = Instancias()
+        self.controlador = gestor
 
         # Variables para filtros
         self.filtro_autor = ""
