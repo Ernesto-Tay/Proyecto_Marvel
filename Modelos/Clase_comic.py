@@ -13,6 +13,8 @@ class Comic:
         self.eventos = []    # lista de ids de eventos
         self.nombres_creadores = []
         self.nombres_personajes = []
+        self.detalles_creadores = []
+        self.detalles_personajes = []
 
         # Normalizar fecha a formato MM-AAAA para almacenamiento y display
         self.fecha_lanzamiento = self._normalizar_fecha(fecha_lanzamiento)

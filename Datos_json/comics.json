@@ -1,546 +1,4 @@
 {
-    "1156261": {
-        "id": 1156261,
-        "isbn": null,
-        "name": null,
-        "issue_number": "22",
-        "cover_date": "2026-04-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9991552-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9991552-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9991552-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9991552-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9991552-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9991552-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9991552-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9991552-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [
-            {
-                "id": 1780,
-                "name": "Aunt May"
-            },
-            {
-                "id": 6286,
-                "name": "Ben Reilly"
-            },
-            {
-                "id": 196127,
-                "name": "Glitch"
-            },
-            {
-                "id": 79465,
-                "name": "Hallow's Eve"
-            },
-            {
-                "id": 2120,
-                "name": "Human Torch"
-            },
-            {
-                "id": 194988,
-                "name": "Maira Osmani-Milton"
-            },
-            {
-                "id": 195915,
-                "name": "Nial"
-            },
-            {
-                "id": 58812,
-                "name": "Norman Osborn"
-            },
-            {
-                "id": 195914,
-                "name": "Raelith the Wretched"
-            },
-            {
-                "id": 32814,
-                "name": "Rocket Raccoon"
-            },
-            {
-                "id": 1443,
-                "name": "Spider-Man"
-            },
-            {
-                "id": 195913,
-                "name": "Symbie"
-            },
-            {
-                "id": 2114,
-                "name": "Thing"
-            },
-            {
-                "id": 83029,
-                "name": "Xanto Starblood"
-            }
-        ],
-        "person_credits": [
-            {
-                "id": 64630,
-                "name": "Ario Anindito"
-            },
-            {
-                "id": 43193,
-                "name": "C.B. Cebulski"
-            },
-            {
-                "id": 44779,
-                "name": "David Nakayama"
-            },
-            {
-                "id": 41553,
-                "name": "Joe Caramagna"
-            },
-            {
-                "id": 40982,
-                "name": "Joe Kelly"
-            },
-            {
-                "id": 119896,
-                "name": "Kaitlyn Lindtvedt"
-            },
-            {
-                "id": 10025,
-                "name": "Lee Bermejo"
-            },
-            {
-                "id": 2123,
-                "name": "Mark Bagley"
-            },
-            {
-                "id": 45375,
-                "name": "Marte Gracia"
-            },
-            {
-                "id": 134749,
-                "name": "McFarlane Toys"
-            },
-            {
-                "id": 66212,
-                "name": "Nathan Stockman"
-            },
-            {
-                "id": 42134,
-                "name": "Nick Bradshaw"
-            },
-            {
-                "id": 41757,
-                "name": "Nick Lowe"
-            },
-            {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 10681,
-                "name": "Scott Hanna"
-            },
-            {
-                "id": 42064,
-                "name": "Simone Bianchi"
-            },
-            {
-                "id": 77673,
-                "name": "Simone Di Meo"
-            },
-            {
-                "id": 9641,
-                "name": "Todd Nauck"
-            },
-            {
-                "id": 98087,
-                "name": "Tom Groneman"
-            }
-        ],
-        "event_credits": [],
-        "publisher": null,
-        "description": "<p><em>TOO LITTLE, TOO LATE!</em></p><p><em>The era of space/earth Spider-Men comes to an end and everyone is left to pick up the pieces.</em></p><p><em>We are about to enter DEATH SPIRAL so Spidey better take a deep, deep breath.</em></p>"
-    },
-    "1151943": {
-        "id": 1151943,
-        "isbn": null,
-        "name": null,
-        "issue_number": "19",
-        "cover_date": "2026-03-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9955800-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9955800-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9955800-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9955800-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9955800-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9955800-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9955800-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9955800-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9955800-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1153436": {
-        "id": 1153436,
-        "isbn": null,
-        "name": null,
-        "issue_number": "20",
-        "cover_date": "2026-03-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9966973-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9966973-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9966973-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9966973-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9966973-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9966973-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9966973-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9966973-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9966973-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1136076": {
-        "id": 1136076,
-        "isbn": null,
-        "name": null,
-        "issue_number": "13",
-        "cover_date": "2025-12-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9881589-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9881589-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9881589-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9881589-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9881589-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9881589-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9881589-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9881589-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9881589-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1160263": {
-        "id": 1160263,
-        "isbn": null,
-        "name": null,
-        "issue_number": "25",
-        "cover_date": "2026-05-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10022955-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10022955-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10022955-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10022955-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10022955-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10022955-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10022955-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10022955-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10022955-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1133786": {
-        "id": 1133786,
-        "isbn": null,
-        "name": null,
-        "issue_number": "12",
-        "cover_date": "2025-11-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9869407-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9869407-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9869407-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9869407-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9869407-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9869407-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9869407-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9869407-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9869407-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1147680": {
-        "id": 1147680,
-        "isbn": null,
-        "name": null,
-        "issue_number": "17",
-        "cover_date": "2026-02-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9933448-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9933448-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9933448-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9933448-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9933448-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9933448-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9933448-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9933448-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9933448-cover.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1149813": {
-        "id": 1149813,
-        "isbn": null,
-        "name": null,
-        "issue_number": "18",
-        "cover_date": "2026-02-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9944542-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9944542-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9944542-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9944542-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9944542-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9944542-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9944542-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9944542-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9944542-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1117431": {
-        "id": 1117431,
-        "isbn": null,
-        "name": null,
-        "issue_number": "7",
-        "cover_date": "2025-09-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9774738-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9774738-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9774738-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9774738-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9774738-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9774738-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9774738-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9774738-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9774738-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1152756": {
-        "id": 1152756,
-        "isbn": null,
-        "name": "Heroes; Happy Anniversary, Avengers!",
-        "issue_number": "34",
-        "cover_date": "2026-03-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9961117-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9961117-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9961117-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9961117-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9961117-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9961117-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9961117-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9961117-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9961117-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142896": {
-        "id": 1142896,
-        "isbn": null,
-        "name": null,
-        "issue_number": "22",
-        "cover_date": "2025-12-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912132-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912132-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912132-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912132-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912132-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912132-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912132-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912132-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912132-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142913": {
-        "id": 1142913,
-        "isbn": null,
-        "name": null,
-        "issue_number": "21",
-        "cover_date": "2025-11-10",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912131-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912131-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912131-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912131-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912131-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912131-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912131-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912131-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912131-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142914": {
-        "id": 1142914,
-        "isbn": null,
-        "name": null,
-        "issue_number": "20",
-        "cover_date": "2025-10-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912130-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912130-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912130-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912130-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912130-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912130-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912130-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912130-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912130-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142983": {
-        "id": 1142983,
-        "isbn": null,
-        "name": null,
-        "issue_number": "19",
-        "cover_date": "2025-09-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912108-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912108-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912108-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912108-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912108-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912108-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912108-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912108-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912108-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142916": {
-        "id": 1142916,
-        "isbn": null,
-        "name": null,
-        "issue_number": "18",
-        "cover_date": "2025-08-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912127-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912127-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912127-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912127-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912127-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912127-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912127-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912127-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912127-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142915": {
-        "id": 1142915,
-        "isbn": null,
-        "name": null,
-        "issue_number": "17",
-        "cover_date": "2025-07-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912126-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912126-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912126-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912126-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912126-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912126-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912126-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912126-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912126-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
-    "1142984": {
-        "id": 1142984,
-        "isbn": null,
-        "name": null,
-        "issue_number": "16",
-        "cover_date": "2025-06-01",
-        "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9912113-wwww.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9912113-wwww.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9912113-wwww.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9912113-wwww.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9912113-wwww.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9912113-wwww.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9912113-wwww.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9912113-wwww.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9912113-wwww.jpg",
-            "image_tags": "All Images"
-        },
-        "character_credits": [],
-        "person_credits": [],
-        "event_credits": [],
-        "publisher": null,
-        "description": null
-    },
     "1142985": {
         "id": 1142985,
         "isbn": null,
@@ -1549,94 +1007,708 @@
         "publisher": null,
         "description": null
     },
-    "1156261": {
-        "id": 1156261,
+    "1160332": {
+        "id": 1160332,
         "isbn": null,
         "name": null,
-        "issue_number": "22",
-        "cover_date": "2026-04-01",
+        "issue_number": "3",
+        "cover_date": "2026-05-01",
         "image": {
-            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9991552-cover.jpg",
-            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9991552-cover.jpg",
-            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9991552-cover.jpg",
-            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9991552-cover.jpg",
-            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9991552-cover.jpg",
-            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9991552-cover.jpg",
-            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9991552-cover.jpg",
-            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9991552-cover.jpg",
-            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9991552-cover.jpg",
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10023094-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10023094-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10023094-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10023094-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10023094-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10023094-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10023094-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10023094-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10023094-cover.jpg",
             "image_tags": "All Images"
         },
         "character_credits": [
             {
-                "id": 1780,
-                "name": "Aunt May"
+                "id": 1490,
+                "name": "Carnage"
             },
             {
-                "id": 6286,
-                "name": "Ben Reilly"
+                "id": 6111,
+                "name": "Erik Killmonger"
             },
             {
-                "id": 196127,
-                "name": "Glitch"
+                "id": 1455,
+                "name": "Iron Man"
             },
             {
-                "id": 79465,
-                "name": "Hallow's Eve"
+                "id": 1487,
+                "name": "J. Jonah Jameson"
             },
             {
-                "id": 2120,
-                "name": "Human Torch"
+                "id": 12605,
+                "name": "Jim Hammond"
             },
             {
-                "id": 194988,
-                "name": "Maira Osmani-Milton"
+                "id": 133335,
+                "name": "Maker"
             },
             {
-                "id": 195915,
-                "name": "Nial"
+                "id": 13380,
+                "name": "Mary Jane"
             },
             {
-                "id": 58812,
-                "name": "Norman Osborn"
+                "id": 188224,
+                "name": "Maystorm"
             },
             {
-                "id": 195914,
-                "name": "Raelith the Wretched"
+                "id": 2151,
+                "name": "Mr. Fantastic"
             },
             {
-                "id": 32814,
-                "name": "Rocket Raccoon"
+                "id": 78932,
+                "name": "Ms America"
+            },
+            {
+                "id": 187814,
+                "name": "Richard Parker"
             },
             {
                 "id": 1443,
                 "name": "Spider-Man"
             },
             {
-                "id": 195913,
-                "name": "Symbie"
+                "id": 3114,
+                "name": "Uncle Ben"
             },
             {
-                "id": 2114,
-                "name": "Thing"
+                "id": 1486,
+                "name": "Venom"
             },
             {
-                "id": 83029,
-                "name": "Xanto Starblood"
+                "id": 1440,
+                "name": "Wolverine"
+            }
+        ],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1160332": {
+        "id": 1160332,
+        "isbn": null,
+        "name": null,
+        "issue_number": "3",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10023094-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10023094-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10023094-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10023094-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10023094-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10023094-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10023094-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10023094-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10023094-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6111,
+                "name": "Erik Killmonger"
+            },
+            {
+                "id": 1455,
+                "name": "Iron Man"
+            },
+            {
+                "id": 1487,
+                "name": "J. Jonah Jameson"
+            },
+            {
+                "id": 12605,
+                "name": "Jim Hammond"
+            },
+            {
+                "id": 133335,
+                "name": "Maker"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 188224,
+                "name": "Maystorm"
+            },
+            {
+                "id": 2151,
+                "name": "Mr. Fantastic"
+            },
+            {
+                "id": 78932,
+                "name": "Ms America"
+            },
+            {
+                "id": 187814,
+                "name": "Richard Parker"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 3114,
+                "name": "Uncle Ben"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            },
+            {
+                "id": 1440,
+                "name": "Wolverine"
+            }
+        ],
+        "person_credits": [],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1160267": {
+        "id": 1160267,
+        "isbn": null,
+        "name": null,
+        "issue_number": "1",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10022967-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10022967-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10022967-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10022967-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10022967-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10022967-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10022967-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10022967-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10022967-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 4684,
+                "name": "Brainiac"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 1485,
+                "name": "Doctor Octopus"
+            },
+            {
+                "id": 30761,
+                "name": "Dr. Jenet Klyburn"
+            },
+            {
+                "id": 13346,
+                "name": "High Evolutionary"
+            },
+            {
+                "id": 1487,
+                "name": "J. Jonah Jameson"
+            },
+            {
+                "id": 3213,
+                "name": "Jimmy Olsen"
+            },
+            {
+                "id": 1686,
+                "name": "Kon-El"
+            },
+            {
+                "id": 1808,
+                "name": "Lois Lane"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 4915,
+                "name": "Power Girl"
+            },
+            {
+                "id": 1525,
+                "name": "Punisher"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 40524,
+                "name": "Spider-Man 2099"
+            },
+            {
+                "id": 40756,
+                "name": "Superboy Prime"
+            },
+            {
+                "id": 1807,
+                "name": "Superman"
             }
         ],
         "person_credits": [
             {
-                "id": 64630,
-                "name": "Ario Anindito"
+                "id": 57544,
+                "name": "Daniel Sampere"
+            },
+            {
+                "id": 2399,
+                "name": "Jim Lee"
+            },
+            {
+                "id": 40724,
+                "name": "Mark Waid"
+            },
+            {
+                "id": 49258,
+                "name": "Tom King"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1160267": {
+        "id": 1160267,
+        "isbn": null,
+        "name": null,
+        "issue_number": "1",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10022967-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10022967-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10022967-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10022967-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10022967-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10022967-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10022967-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10022967-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10022967-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 4684,
+                "name": "Brainiac"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 1485,
+                "name": "Doctor Octopus"
+            },
+            {
+                "id": 30761,
+                "name": "Dr. Jenet Klyburn"
+            },
+            {
+                "id": 13346,
+                "name": "High Evolutionary"
+            },
+            {
+                "id": 1487,
+                "name": "J. Jonah Jameson"
+            },
+            {
+                "id": 3213,
+                "name": "Jimmy Olsen"
+            },
+            {
+                "id": 1686,
+                "name": "Kon-El"
+            },
+            {
+                "id": 1808,
+                "name": "Lois Lane"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 4915,
+                "name": "Power Girl"
+            },
+            {
+                "id": 1525,
+                "name": "Punisher"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 40524,
+                "name": "Spider-Man 2099"
+            },
+            {
+                "id": 40756,
+                "name": "Superboy Prime"
+            },
+            {
+                "id": 1807,
+                "name": "Superman"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 57544,
+                "name": "Daniel Sampere"
+            },
+            {
+                "id": 2399,
+                "name": "Jim Lee"
+            },
+            {
+                "id": 40724,
+                "name": "Mark Waid"
+            },
+            {
+                "id": 49258,
+                "name": "Tom King"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": null
+    },
+    "1159690": {
+        "id": 1159690,
+        "isbn": null,
+        "name": null,
+        "issue_number": "1",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016749-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016749-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016749-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016749-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016749-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016749-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016749-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016749-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016749-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1442,
+                "name": "Captain America"
+            },
+            {
+                "id": 21561,
+                "name": "Carol Danvers"
+            },
+            {
+                "id": 2190,
+                "name": "Invisible Woman"
+            },
+            {
+                "id": 1455,
+                "name": "Iron Man"
+            },
+            {
+                "id": 1483,
+                "name": "Kingpin"
+            },
+            {
+                "id": 13759,
+                "name": "Lindy Reynolds"
+            },
+            {
+                "id": 2151,
+                "name": "Mr. Fantastic"
+            },
+            {
+                "id": 1454,
+                "name": "Sentry"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 2268,
+                "name": "Thor"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 3122,
+                "name": "Alex Maleev"
             },
             {
                 "id": 43193,
                 "name": "C.B. Cebulski"
             },
             {
-                "id": 44779,
-                "name": "David Nakayama"
+                "id": 51230,
+                "name": "CAFU"
+            },
+            {
+                "id": 115101,
+                "name": "Christian Rosado"
+            },
+            {
+                "id": 103140,
+                "name": "Francesco Mobili"
+            },
+            {
+                "id": 41654,
+                "name": "Frank D'Armata"
+            },
+            {
+                "id": 2549,
+                "name": "Jae Lee"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 100829,
+                "name": "Lauren Amaro"
+            },
+            {
+                "id": 42108,
+                "name": "Mark Paniccia"
+            },
+            {
+                "id": 1429,
+                "name": "Matt Milla"
+            },
+            {
+                "id": 74477,
+                "name": "Moreno DiNisio"
+            },
+            {
+                "id": 41631,
+                "name": "Paul Jenkins"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>HE'S BEEN AN AVENGER, A DARK AVENGER AND A THUNDERBOLT!</em></p><p><em>THE SENTRY IS BACK — BUT SO IS THE VOID!</em></p><p><em>From creator Paul Jenkins comes a bold, high-stakes epic about MARVEL'S most dangerous hero — the SENTRY, a man with the power of a million exploding suns– and the dark entity born from his own psyche: the VOID. When the Void resurfaces, threatening to unravel reality itself, the Sentry must battle not only cosmic forces and criminal empires, but the monster within.</em></p><p><em>Guest-starring REED RICHARDS, SPIDER-MAN and the KINGPIN in a tale of impossible choices and devastating consequences. Can the Sentry save everything when the cost might be everything he loves?</em></p>"
+    },
+    "1159690": {
+        "id": 1159690,
+        "isbn": null,
+        "name": null,
+        "issue_number": "1",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016749-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016749-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016749-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016749-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016749-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016749-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016749-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016749-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016749-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1442,
+                "name": "Captain America"
+            },
+            {
+                "id": 21561,
+                "name": "Carol Danvers"
+            },
+            {
+                "id": 2190,
+                "name": "Invisible Woman"
+            },
+            {
+                "id": 1455,
+                "name": "Iron Man"
+            },
+            {
+                "id": 1483,
+                "name": "Kingpin"
+            },
+            {
+                "id": 13759,
+                "name": "Lindy Reynolds"
+            },
+            {
+                "id": 2151,
+                "name": "Mr. Fantastic"
+            },
+            {
+                "id": 1454,
+                "name": "Sentry"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 2268,
+                "name": "Thor"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 3122,
+                "name": "Alex Maleev"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 51230,
+                "name": "CAFU"
+            },
+            {
+                "id": 115101,
+                "name": "Christian Rosado"
+            },
+            {
+                "id": 103140,
+                "name": "Francesco Mobili"
+            },
+            {
+                "id": 41654,
+                "name": "Frank D'Armata"
+            },
+            {
+                "id": 2549,
+                "name": "Jae Lee"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 100829,
+                "name": "Lauren Amaro"
+            },
+            {
+                "id": 42108,
+                "name": "Mark Paniccia"
+            },
+            {
+                "id": 1429,
+                "name": "Matt Milla"
+            },
+            {
+                "id": 74477,
+                "name": "Moreno DiNisio"
+            },
+            {
+                "id": 41631,
+                "name": "Paul Jenkins"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>HE'S BEEN AN AVENGER, A DARK AVENGER AND A THUNDERBOLT!</em></p><p><em>THE SENTRY IS BACK — BUT SO IS THE VOID!</em></p><p><em>From creator Paul Jenkins comes a bold, high-stakes epic about MARVEL'S most dangerous hero — the SENTRY, a man with the power of a million exploding suns– and the dark entity born from his own psyche: the VOID. When the Void resurfaces, threatening to unravel reality itself, the Sentry must battle not only cosmic forces and criminal empires, but the monster within.</em></p><p><em>Guest-starring REED RICHARDS, SPIDER-MAN and the KINGPIN in a tale of impossible choices and devastating consequences. Can the Sentry save everything when the cost might be everything he loves?</em></p>"
+    },
+    "1159638": {
+        "id": 1159638,
+        "isbn": null,
+        "name": "Death Spiral, Part 4",
+        "issue_number": "24",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016618-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016618-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016618-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016618-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016618-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016618-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016618-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016618-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016618-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 153703,
+                "name": "Carl Brock"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 60772,
+                "name": "Charles Soule"
+            },
+            {
+                "id": 3170,
+                "name": "Dean White"
+            },
+            {
+                "id": 112992,
+                "name": "Doaly"
+            },
+            {
+                "id": 6726,
+                "name": "Edgar Delgado"
+            },
+            {
+                "id": 41882,
+                "name": "Giuseppe Camuncoli"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 2528,
+                "name": "Jesus Saiz"
             },
             {
                 "id": 41553,
@@ -1655,48 +1727,28 @@
                 "name": "Lee Bermejo"
             },
             {
+                "id": 41883,
+                "name": "Lorenzo Ruggiero"
+            },
+            {
                 "id": 2123,
                 "name": "Mark Bagley"
             },
             {
-                "id": 45375,
-                "name": "Marte Gracia"
+                "id": 5432,
+                "name": "Matt Hollingsworth"
             },
             {
-                "id": 134749,
-                "name": "McFarlane Toys"
-            },
-            {
-                "id": 66212,
-                "name": "Nathan Stockman"
-            },
-            {
-                "id": 42134,
-                "name": "Nick Bradshaw"
+                "id": 8268,
+                "name": "Mike Hawthorne"
             },
             {
                 "id": 41757,
                 "name": "Nick Lowe"
             },
             {
-                "id": 57038,
-                "name": "Rachelle Rosenberg"
-            },
-            {
-                "id": 10681,
-                "name": "Scott Hanna"
-            },
-            {
-                "id": 42064,
-                "name": "Simone Bianchi"
-            },
-            {
-                "id": 77673,
-                "name": "Simone Di Meo"
-            },
-            {
-                "id": 9641,
-                "name": "Todd Nauck"
+                "id": 42009,
+                "name": "Rod Reis"
             },
             {
                 "id": 98087,
@@ -1705,6 +1757,1416 @@
         ],
         "event_credits": [],
         "publisher": null,
-        "description": "<p><em>TOO LITTLE, TOO LATE!</em></p><p><em>The era of space/earth Spider-Men comes to an end and everyone is left to pick up the pieces.</em></p><p><em>We are about to enter DEATH SPIRAL so Spidey better take a deep, deep breath.</em></p>"
+        "description": "<p><em>CARNAGE MEETS ITS MATCH!?</em></p><p><em>DEATH SPIRAL PART FOUR!</em></p><p><em>Carnage faces off against Torment while the serial killer’s latest murder leaves the Spidey-Symbiote Alliance shaken.</em></p>"
+    },
+    "1159638": {
+        "id": 1159638,
+        "isbn": null,
+        "name": "Death Spiral, Part 4",
+        "issue_number": "24",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10016618-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10016618-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10016618-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10016618-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10016618-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10016618-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10016618-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10016618-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10016618-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 153703,
+                "name": "Carl Brock"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 60772,
+                "name": "Charles Soule"
+            },
+            {
+                "id": 3170,
+                "name": "Dean White"
+            },
+            {
+                "id": 112992,
+                "name": "Doaly"
+            },
+            {
+                "id": 6726,
+                "name": "Edgar Delgado"
+            },
+            {
+                "id": 41882,
+                "name": "Giuseppe Camuncoli"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 2528,
+                "name": "Jesus Saiz"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 10025,
+                "name": "Lee Bermejo"
+            },
+            {
+                "id": 41883,
+                "name": "Lorenzo Ruggiero"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 5432,
+                "name": "Matt Hollingsworth"
+            },
+            {
+                "id": 8268,
+                "name": "Mike Hawthorne"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 42009,
+                "name": "Rod Reis"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>CARNAGE MEETS ITS MATCH!?</em></p><p><em>DEATH SPIRAL PART FOUR!</em></p><p><em>Carnage faces off against Torment while the serial killer’s latest murder leaves the Spidey-Symbiote Alliance shaken.</em></p>"
+    },
+    "1159231": {
+        "id": 1159231,
+        "isbn": null,
+        "name": "Death Spiral, Part 3 of 9",
+        "issue_number": "255",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10010857-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10010857-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10010857-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10010857-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10010857-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10010857-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10010857-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10010857-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10010857-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 6800,
+                "name": "Armadillo"
+            },
+            {
+                "id": 6299,
+                "name": "Boomerang"
+            },
+            {
+                "id": 153703,
+                "name": "Carl Brock"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 15649,
+                "name": "Lady Octopus"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 3161,
+                "name": "Tombstone"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 53623,
+                "name": "Al Ewing"
+            },
+            {
+                "id": 62091,
+                "name": "Andrei Bressan"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 75894,
+                "name": "Carlos Gomez (SP)"
+            },
+            {
+                "id": 74454,
+                "name": "Ceci de la Cruz"
+            },
+            {
+                "id": 57831,
+                "name": "Clayton Cowles"
+            },
+            {
+                "id": 63804,
+                "name": "Fabrizio De Tommaso"
+            },
+            {
+                "id": 41654,
+                "name": "Frank D'Armata"
+            },
+            {
+                "id": 52357,
+                "name": "Frank Martin Jr."
+            },
+            {
+                "id": 81548,
+                "name": "German Peralta"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 49529,
+                "name": "Jordan D. White"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 104668,
+                "name": "Martin Biro"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>THE SECRET IS OUT!</em></p><p><em>DEATH SPIRAL PART THREE!</em></p><p><em>After the shocking events of AMAZING SPIDER-MAN #23, Spider-Man and the All-New Venom have some serious talking to do… But first they’ve got to solve the one murder neither of them – or their villains – ever expected to face! Meanwhile, EDDIE BROCK is back…with a CARNAGE-sized secret of his own, and a connection to the mystery you’ll have to see to believe!</em></p>"
+    },
+    "1159231": {
+        "id": 1159231,
+        "isbn": null,
+        "name": "Death Spiral, Part 3 of 9",
+        "issue_number": "255",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/10010857-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/10010857-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/10010857-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/10010857-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/10010857-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10010857-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/10010857-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/10010857-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/10010857-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 6800,
+                "name": "Armadillo"
+            },
+            {
+                "id": 6299,
+                "name": "Boomerang"
+            },
+            {
+                "id": 153703,
+                "name": "Carl Brock"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 15649,
+                "name": "Lady Octopus"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 3161,
+                "name": "Tombstone"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 53623,
+                "name": "Al Ewing"
+            },
+            {
+                "id": 62091,
+                "name": "Andrei Bressan"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 75894,
+                "name": "Carlos Gomez (SP)"
+            },
+            {
+                "id": 74454,
+                "name": "Ceci de la Cruz"
+            },
+            {
+                "id": 57831,
+                "name": "Clayton Cowles"
+            },
+            {
+                "id": 63804,
+                "name": "Fabrizio De Tommaso"
+            },
+            {
+                "id": 41654,
+                "name": "Frank D'Armata"
+            },
+            {
+                "id": 52357,
+                "name": "Frank Martin Jr."
+            },
+            {
+                "id": 81548,
+                "name": "German Peralta"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 49529,
+                "name": "Jordan D. White"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 104668,
+                "name": "Martin Biro"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>THE SECRET IS OUT!</em></p><p><em>DEATH SPIRAL PART THREE!</em></p><p><em>After the shocking events of AMAZING SPIDER-MAN #23, Spider-Man and the All-New Venom have some serious talking to do… But first they’ve got to solve the one murder neither of them – or their villains – ever expected to face! Meanwhile, EDDIE BROCK is back…with a CARNAGE-sized secret of his own, and a connection to the mystery you’ll have to see to believe!</em></p>"
+    },
+    "1159114": {
+        "id": 1159114,
+        "isbn": null,
+        "name": null,
+        "issue_number": "5",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009812-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009812-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009812-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009812-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009812-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009812-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009812-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009812-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009812-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 38634,
+                "name": "Benjamin Franklin"
+            },
+            {
+                "id": 1442,
+                "name": "Captain America"
+            },
+            {
+                "id": 2216,
+                "name": "Clea"
+            },
+            {
+                "id": 2267,
+                "name": "Hulk"
+            },
+            {
+                "id": 1455,
+                "name": "Iron Man"
+            },
+            {
+                "id": 13925,
+                "name": "Morgan Le Fay"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 9587,
+                "name": "Alex Sinclair"
+            },
+            {
+                "id": 85096,
+                "name": "Federico Blee"
+            },
+            {
+                "id": 40683,
+                "name": "J. Michael Straczynski"
+            },
+            {
+                "id": 8662,
+                "name": "Jay Leisten"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 102843,
+                "name": "Oren Junior"
+            },
+            {
+                "id": 12650,
+                "name": "Pete Woods"
+            },
+            {
+                "id": 2509,
+                "name": "Phil Jimenez"
+            },
+            {
+                "id": 10681,
+                "name": "Scott Hanna"
+            },
+            {
+                "id": 77487,
+                "name": "Sean Damien Hill"
+            },
+            {
+                "id": 64552,
+                "name": "Sergio Fernandez Davila"
+            },
+            {
+                "id": 111018,
+                "name": "Yen Nitro"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em><b>INDEPENDENCE FOREVER!</b></em></p><p><em>This is it!</em></p><p><em>The time-crossing calamity of the year crescendos in a catastrophically climactic conclusion!</em></p><p><em>From across time itself, can Doctor Strange, Captain America, Spider-Man and their allies stop Morgan Le Fay and the Royals from conquering the American Colonies and ending the American experiment before it even has a chance to begin?!</em></p>"
+    },
+    "1159114": {
+        "id": 1159114,
+        "isbn": null,
+        "name": null,
+        "issue_number": "5",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10009812-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10009812-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10009812-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10009812-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10009812-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10009812-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10009812-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10009812-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10009812-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 38634,
+                "name": "Benjamin Franklin"
+            },
+            {
+                "id": 1442,
+                "name": "Captain America"
+            },
+            {
+                "id": 2216,
+                "name": "Clea"
+            },
+            {
+                "id": 2267,
+                "name": "Hulk"
+            },
+            {
+                "id": 1455,
+                "name": "Iron Man"
+            },
+            {
+                "id": 13925,
+                "name": "Morgan Le Fay"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 9587,
+                "name": "Alex Sinclair"
+            },
+            {
+                "id": 85096,
+                "name": "Federico Blee"
+            },
+            {
+                "id": 40683,
+                "name": "J. Michael Straczynski"
+            },
+            {
+                "id": 8662,
+                "name": "Jay Leisten"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 102843,
+                "name": "Oren Junior"
+            },
+            {
+                "id": 12650,
+                "name": "Pete Woods"
+            },
+            {
+                "id": 2509,
+                "name": "Phil Jimenez"
+            },
+            {
+                "id": 10681,
+                "name": "Scott Hanna"
+            },
+            {
+                "id": 77487,
+                "name": "Sean Damien Hill"
+            },
+            {
+                "id": 64552,
+                "name": "Sergio Fernandez Davila"
+            },
+            {
+                "id": 111018,
+                "name": "Yen Nitro"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em><b>INDEPENDENCE FOREVER!</b></em></p><p><em>This is it!</em></p><p><em>The time-crossing calamity of the year crescendos in a catastrophically climactic conclusion!</em></p><p><em>From across time itself, can Doctor Strange, Captain America, Spider-Man and their allies stop Morgan Le Fay and the Royals from conquering the American Colonies and ending the American experiment before it even has a chance to begin?!</em></p>"
+    },
+    "1158149": {
+        "id": 1158149,
+        "isbn": null,
+        "name": "Death Spiral: Part 2 of 9",
+        "issue_number": "23",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10004105-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10004105-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10004105-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10004105-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10004105-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10004105-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10004105-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10004105-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10004105-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1780,
+                "name": "Aunt May"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 15649,
+                "name": "Lady Octopus"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 4825,
+                "name": "Shocker"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 42444,
+                "name": "Cliff Rathburn"
+            },
+            {
+                "id": 3170,
+                "name": "Dean White"
+            },
+            {
+                "id": 8334,
+                "name": "Ed McGuinness"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 124842,
+                "name": "Ivan Talavera"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 10025,
+                "name": "Lee Bermejo"
+            },
+            {
+                "id": 62759,
+                "name": "Marcio Menyz"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 1524,
+                "name": "Mark Farmer"
+            },
+            {
+                "id": 3570,
+                "name": "Mike McKone"
+            },
+            {
+                "id": 1775,
+                "name": "Morry Hollowell"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 111471,
+                "name": "Taurin Clarke"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em><b>SHOCKED BY THE SINISTER SYMBIOTE!</b></em></p><p><em><b>DEATH SPIRAL PART TWO!</b></em></p><p><em>CARNAGE. KNOWS. Which means SPIDEY and VENOM team up again to stop the serial killer-symbiote.</em></p><p><em>But instead of EDDIE BROCK, Peter uncovers another bombshell beneath Venom's mask — MARY JANE WATSON! And that's just the first SHOCKING REVELATION of this issue!</em></p><p><em>Carnage isn't the only problem...Peter and MJ are going to have to patch things up if they want a fighting chance to stop new hyper-lethal villain, TORMENT's killing spree.</em></p>"
+    },
+    "1158149": {
+        "id": 1158149,
+        "isbn": null,
+        "name": "Death Spiral: Part 2 of 9",
+        "issue_number": "23",
+        "cover_date": "2026-05-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/10004105-wwww.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/10004105-wwww.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/10004105-wwww.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/10004105-wwww.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/10004105-wwww.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10004105-wwww.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/10004105-wwww.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/10004105-wwww.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/10004105-wwww.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 1780,
+                "name": "Aunt May"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 15649,
+                "name": "Lady Octopus"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 4825,
+                "name": "Shocker"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 42444,
+                "name": "Cliff Rathburn"
+            },
+            {
+                "id": 3170,
+                "name": "Dean White"
+            },
+            {
+                "id": 8334,
+                "name": "Ed McGuinness"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 124842,
+                "name": "Ivan Talavera"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 10025,
+                "name": "Lee Bermejo"
+            },
+            {
+                "id": 62759,
+                "name": "Marcio Menyz"
+            },
+            {
+                "id": 2123,
+                "name": "Mark Bagley"
+            },
+            {
+                "id": 1524,
+                "name": "Mark Farmer"
+            },
+            {
+                "id": 3570,
+                "name": "Mike McKone"
+            },
+            {
+                "id": 1775,
+                "name": "Morry Hollowell"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 111471,
+                "name": "Taurin Clarke"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em><b>SHOCKED BY THE SINISTER SYMBIOTE!</b></em></p><p><em><b>DEATH SPIRAL PART TWO!</b></em></p><p><em>CARNAGE. KNOWS. Which means SPIDEY and VENOM team up again to stop the serial killer-symbiote.</em></p><p><em>But instead of EDDIE BROCK, Peter uncovers another bombshell beneath Venom's mask — MARY JANE WATSON! And that's just the first SHOCKING REVELATION of this issue!</em></p><p><em>Carnage isn't the only problem...Peter and MJ are going to have to patch things up if they want a fighting chance to stop new hyper-lethal villain, TORMENT's killing spree.</em></p>"
+    },
+    "1156973": {
+        "id": 1156973,
+        "isbn": null,
+        "name": "Reunions and Partings",
+        "issue_number": "10",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998196-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998196-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998196-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998196-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998196-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998196-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998196-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998196-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998196-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 8145,
+                "name": "Fin Fang Foom"
+            },
+            {
+                "id": 3196,
+                "name": "Mariko Yashida"
+            },
+            {
+                "id": 2151,
+                "name": "Mr. Fantastic"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 1440,
+                "name": "Wolverine"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 6119,
+                "name": "Brian Reber"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 138446,
+                "name": "Cy Pedro Beltran"
+            },
+            {
+                "id": 66398,
+                "name": "Erick Arciniega"
+            },
+            {
+                "id": 56416,
+                "name": "Gerardo Sandoval"
+            },
+            {
+                "id": 8286,
+                "name": "Kaare Kyle Andrews"
+            },
+            {
+                "id": 42339,
+                "name": "Marc Guggenheim"
+            },
+            {
+                "id": 75401,
+                "name": "Mark Basso"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 41609,
+                "name": "Tom Brevoort"
+            },
+            {
+                "id": 41795,
+                "name": "Travis Lanham"
+            },
+            {
+                "id": 102612,
+                "name": "Victor Nava"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>TEARFUL REUNION AND DEADLY GOODBYE!</em></p><p><em>At long last, LOGAN reunites with MARIKO. But can they reconcile over an impossible situation? And will ARACHNIX allow them this moment, or wreak death and destruction that even SPIDER-MAN can’t stop?</em></p>"
+    },
+    "1156973": {
+        "id": 1156973,
+        "isbn": null,
+        "name": "Reunions and Partings",
+        "issue_number": "10",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998196-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998196-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998196-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998196-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998196-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998196-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998196-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998196-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998196-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 8145,
+                "name": "Fin Fang Foom"
+            },
+            {
+                "id": 3196,
+                "name": "Mariko Yashida"
+            },
+            {
+                "id": 2151,
+                "name": "Mr. Fantastic"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 1440,
+                "name": "Wolverine"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 6119,
+                "name": "Brian Reber"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 138446,
+                "name": "Cy Pedro Beltran"
+            },
+            {
+                "id": 66398,
+                "name": "Erick Arciniega"
+            },
+            {
+                "id": 56416,
+                "name": "Gerardo Sandoval"
+            },
+            {
+                "id": 8286,
+                "name": "Kaare Kyle Andrews"
+            },
+            {
+                "id": 42339,
+                "name": "Marc Guggenheim"
+            },
+            {
+                "id": 75401,
+                "name": "Mark Basso"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 41609,
+                "name": "Tom Brevoort"
+            },
+            {
+                "id": 41795,
+                "name": "Travis Lanham"
+            },
+            {
+                "id": 102612,
+                "name": "Victor Nava"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>TEARFUL REUNION AND DEADLY GOODBYE!</em></p><p><em>At long last, LOGAN reunites with MARIKO. But can they reconcile over an impossible situation? And will ARACHNIX allow them this moment, or wreak death and destruction that even SPIDER-MAN can’t stop?</em></p>"
+    },
+    "1156915": {
+        "id": 1156915,
+        "isbn": null,
+        "name": "Part 1 of 9",
+        "issue_number": "1",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998046-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998046-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998046-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998046-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998046-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998046-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998046-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998046-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998046-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 194596,
+                "name": "Brian Nehring"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 157159,
+                "name": "Dylan Brock"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 1489,
+                "name": "Flash Thompson"
+            },
+            {
+                "id": 196127,
+                "name": "Glitch"
+            },
+            {
+                "id": 2120,
+                "name": "Human Torch"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 182041,
+                "name": "Paul"
+            },
+            {
+                "id": 195914,
+                "name": "Raelith the Wretched"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 195913,
+                "name": "Symbie"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 53623,
+                "name": "Al Ewing"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 51230,
+                "name": "CAFU"
+            },
+            {
+                "id": 60772,
+                "name": "Charles Soule"
+            },
+            {
+                "id": 81665,
+                "name": "Dave Rapoza"
+            },
+            {
+                "id": 8334,
+                "name": "Ed McGuinness"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 2528,
+                "name": "Jesus Saiz"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 66889,
+                "name": "Jung-Geun Yoon"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 56294,
+                "name": "Lucio Parrillo"
+            },
+            {
+                "id": 45375,
+                "name": "Marte Gracia"
+            },
+            {
+                "id": 5432,
+                "name": "Matt Hollingsworth"
+            },
+            {
+                "id": 134749,
+                "name": "McFarlane Toys"
+            },
+            {
+                "id": 43303,
+                "name": "Mico Suayan"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 62579,
+                "name": "SKAN"
+            },
+            {
+                "id": 92948,
+                "name": "Stonehouse"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            },
+            {
+                "id": 43003,
+                "name": "Tyler Kirkham"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>FIRST YOUR FRIENDS. THEN YOUR FAMILY. THEN YOU.</em></p><p><em>The next epic SPIDER-MAN and VENOM crossover starts here and continues through April!</em></p><p><em>A new super-powered serial killer is on the loose and they’re coming for Spidey, Venom and everyone in between.</em></p><p><em>But what terrible secret has CARNAGE learned, and what does it have to do with Spider-Man?!</em></p>"
+    },
+    "1156915": {
+        "id": 1156915,
+        "isbn": null,
+        "name": "Part 1 of 9",
+        "issue_number": "1",
+        "cover_date": "2026-04-01",
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9998046-cover.jpg",
+            "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9998046-cover.jpg",
+            "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9998046-cover.jpg",
+            "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9998046-cover.jpg",
+            "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9998046-cover.jpg",
+            "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9998046-cover.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9998046-cover.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9998046-cover.jpg",
+            "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9998046-cover.jpg",
+            "image_tags": "All Images"
+        },
+        "character_credits": [
+            {
+                "id": 194596,
+                "name": "Brian Nehring"
+            },
+            {
+                "id": 1490,
+                "name": "Carnage"
+            },
+            {
+                "id": 157159,
+                "name": "Dylan Brock"
+            },
+            {
+                "id": 6733,
+                "name": "Eddie Brock"
+            },
+            {
+                "id": 1489,
+                "name": "Flash Thompson"
+            },
+            {
+                "id": 196127,
+                "name": "Glitch"
+            },
+            {
+                "id": 2120,
+                "name": "Human Torch"
+            },
+            {
+                "id": 13380,
+                "name": "Mary Jane"
+            },
+            {
+                "id": 182041,
+                "name": "Paul"
+            },
+            {
+                "id": 195914,
+                "name": "Raelith the Wretched"
+            },
+            {
+                "id": 1443,
+                "name": "Spider-Man"
+            },
+            {
+                "id": 195913,
+                "name": "Symbie"
+            },
+            {
+                "id": 196726,
+                "name": "Torment"
+            },
+            {
+                "id": 1486,
+                "name": "Venom"
+            }
+        ],
+        "person_credits": [
+            {
+                "id": 53623,
+                "name": "Al Ewing"
+            },
+            {
+                "id": 43193,
+                "name": "C.B. Cebulski"
+            },
+            {
+                "id": 51230,
+                "name": "CAFU"
+            },
+            {
+                "id": 60772,
+                "name": "Charles Soule"
+            },
+            {
+                "id": 81665,
+                "name": "Dave Rapoza"
+            },
+            {
+                "id": 8334,
+                "name": "Ed McGuinness"
+            },
+            {
+                "id": 57858,
+                "name": "Iban Coello"
+            },
+            {
+                "id": 61283,
+                "name": "Jesus Aburtov"
+            },
+            {
+                "id": 2528,
+                "name": "Jesus Saiz"
+            },
+            {
+                "id": 41553,
+                "name": "Joe Caramagna"
+            },
+            {
+                "id": 40982,
+                "name": "Joe Kelly"
+            },
+            {
+                "id": 66889,
+                "name": "Jung-Geun Yoon"
+            },
+            {
+                "id": 119896,
+                "name": "Kaitlyn Lindtvedt"
+            },
+            {
+                "id": 56294,
+                "name": "Lucio Parrillo"
+            },
+            {
+                "id": 45375,
+                "name": "Marte Gracia"
+            },
+            {
+                "id": 5432,
+                "name": "Matt Hollingsworth"
+            },
+            {
+                "id": 134749,
+                "name": "McFarlane Toys"
+            },
+            {
+                "id": 43303,
+                "name": "Mico Suayan"
+            },
+            {
+                "id": 41757,
+                "name": "Nick Lowe"
+            },
+            {
+                "id": 62579,
+                "name": "SKAN"
+            },
+            {
+                "id": 92948,
+                "name": "Stonehouse"
+            },
+            {
+                "id": 98087,
+                "name": "Tom Groneman"
+            },
+            {
+                "id": 43003,
+                "name": "Tyler Kirkham"
+            }
+        ],
+        "event_credits": [],
+        "publisher": null,
+        "description": "<p><em>FIRST YOUR FRIENDS. THEN YOUR FAMILY. THEN YOU.</em></p><p><em>The next epic SPIDER-MAN and VENOM crossover starts here and continues through April!</em></p><p><em>A new super-powered serial killer is on the loose and they’re coming for Spidey, Venom and everyone in between.</em></p><p><em>But what terrible secret has CARNAGE learned, and what does it have to do with Spider-Man?!</em></p>"
     }
 }

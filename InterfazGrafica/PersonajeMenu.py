@@ -5,6 +5,8 @@ from PyQt6.QtGui import QPixmap
 from Controladores.init import gestor, PageOrderer
 from Controladores.api_comicvine import ComicVineAPI
 
+MAX_PREVIEW_IMAGENES = 10
+
 class PersonajesMenu(QWidget):
     def __init__(self, perfil, controlador=None):
         super().__init__()
@@ -149,39 +151,68 @@ class PersonajesMenu(QWidget):
         layout_exterior.addWidget(self.lienzo)
         self.carga_datos()
 
-    def manejar_busqueda(self):
-        texto = self.buscador_oval.text().strip().lower()
 
+    def manejar_busqueda(self):
+        texto = self.buscador_oval.text().strip()
         if not texto:
             self.mostrar_pagina()
             return
 
-        resultados = []
-
         if self.lista_personajes:
-            personajes = self.lista_personajes.obtener_pagina(0, self.lista_personajes.tamanio)
+            resultados = self._buscar_personajes_por_texto(texto)
+            self.mostrar_resultados_filtrados(resultados)
 
-            for p in personajes:
-                # 🔥 ASEGURAR CREADORES (igual que en detalles)
-                if not p.creadores and getattr(p, "creadores_ids", []):
-                    nombres = []
-                    for cid in p.creadores_ids[:3]:  # limitamos para rendimiento
-                        creador_obj = self.gestor.buscador("creador", self.api, cid)
-                        if creador_obj and getattr(creador_obj, "nombre_completo", None):
-                            nombres.append(creador_obj.nombre_completo)
-                    if nombres:
-                        p.creadores = nombres
+    def _buscar_personajes_por_texto(self, texto):
+        resultados = []
+        actual = self.lista_personajes.cabeza if self.lista_personajes else None
+        texto = texto.lower()
 
-                nombre_match = texto in p.nombre.lower()
+        while actual:
+            personaje = actual.dato
+            nombre = getattr(personaje, "nombre", "") or ""
+            coincide_nombre = texto in nombre.lower()
+            coincide_creador = False
 
-                creador_match = any(
-                    texto in c.lower() for c in (p.creadores or [])
-                )
+            creadores = getattr(personaje, "creadores", []) or []
+            if creadores:
+                coincide_creador = any(texto in str(creador).lower() for creador in creadores)
 
-                if nombre_match or creador_match:
-                    resultados.append(p)
+            if not coincide_creador and self.api:
+                creadores_ids = list(getattr(personaje, "creadores_ids", []) or [])
 
-        self.mostrar_resultados_filtrados(resultados)
+                if not creadores_ids:
+                    try:
+                        detalle = self.gestor.buscador("personaje", self.api, personaje.id)
+                    except Exception:
+                        detalle = None
+                    if detalle:
+                        if getattr(detalle, "creadores", None):
+                            personaje.creadores = list(detalle.creadores)
+                            creadores = personaje.creadores
+                            coincide_creador = any(texto in str(creador).lower() for creador in creadores)
+                        creadores_ids = list(getattr(detalle, "creadores_ids", []) or [])
+                        if getattr(detalle, "comics", None) and not getattr(personaje, "comics", None):
+                            personaje.comics = list(detalle.comics)
+                        if getattr(detalle, "eventos", None) and not getattr(personaje, "eventos", None):
+                            personaje.eventos = list(detalle.eventos)
+
+                for creador_id in creadores_ids[:10]:
+                    try:
+                        creador_obj = self.gestor.buscador("creador", self.api, creador_id)
+                    except Exception:
+                        creador_obj = None
+                    if creador_obj and texto in str(getattr(creador_obj, "nombre_completo", "")).lower():
+                        coincide_creador = True
+                        if getattr(creador_obj, "nombre_completo", None) and creador_obj.nombre_completo not in creadores:
+                            creadores.append(creador_obj.nombre_completo)
+                            personaje.creadores = creadores
+                        break
+
+            if coincide_nombre or coincide_creador:
+                resultados.append(personaje)
+            actual = actual.siguiente
+
+        return resultados
 
 
     def mostrar_resultados_filtrados(self, lista_resultados):
@@ -194,6 +225,7 @@ class PersonajesMenu(QWidget):
             columna = i % 5
             tarjeta = self.crear_tarjeta_personaje(personaje)
             self.layout_grid.addWidget(tarjeta, fila, columna)
+
 
     def manejar_ordenamiento(self):
         if not self.lista_personajes or self.lista_personajes.esta_vacia():
@@ -402,7 +434,7 @@ class PersonajesMenu(QWidget):
         ventana = self.window()
         if hasattr(ventana, 'stack') and hasattr(ventana, 'vista_detalles_per'):
             personaje_detallado = self._cargar_detalles_personaje(nombre)
-            ventana.vista_detalles_per.actualizar_datos(personaje_detallado)
+            ventana.vista_detalles_per.actualizar_datos(personaje_detallado, gestor=self.gestor, api=self.api)
             ventana.stack.setCurrentIndex(3) #detalles indice 3
 
             # Limpia estilos de botones laterales
@@ -491,4 +523,29 @@ class PersonajesMenu(QWidget):
         personaje.comics = list(dict.fromkeys([x for x in nombres_comics if x]))
         personaje.creadores = list(dict.fromkeys([x for x in nombres_creadores if x]))
         personaje.eventos = list(dict.fromkeys([x for x in nombres_eventos if x]))
+        personaje.creadores_ids = ids_creadores
+        personaje.eventos_ids = ids_eventos
+        personaje.detalles_creadores = self._crear_preview_relaciones(personaje.creadores_ids, personaje.creadores, "creador")
+        personaje.detalles_comics = self._crear_preview_relaciones(personaje.comics_ids, personaje.comics, "comic")
+        personaje.detalles_eventos = self._crear_preview_relaciones(personaje.eventos_ids, personaje.eventos, "evento")
         return personaje
+
+    def _crear_preview_relaciones(self, ids, nombres, tipo):
+        detalles = []
+        nombres = list(nombres or [])
+        ids = list(ids or [])
+
+        for idx, nombre in enumerate(nombres):
+            ruta_imagen = None
+            if idx < MAX_PREVIEW_IMAGENES and idx < len(ids):
+                try:
+                    obj = self.gestor.buscador(tipo, self.api, ids[idx])
+                except Exception:
+                    obj = None
+                if obj:
+                    imagen = getattr(obj, "imagen", None)
+                    if isinstance(imagen, tuple) and len(imagen) > 1:
+                        ruta_imagen = imagen[1]
+            detalles.append({"texto": nombre, "imagen": ruta_imagen})
+
+        return detalles

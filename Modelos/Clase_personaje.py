@@ -11,6 +11,9 @@ class Personaje: # Trabajaremos con clase para representar a cada personaje de M
         self.creadores_ids = []  # Lista de ids de creadores
         self.comics_ids = []  # Lista de ids de comics
         self.eventos_ids = []  # Lista de ids de eventos
+        self.detalles_creadores = []
+        self.detalles_comics = []
+        self.detalles_eventos = []
 
     def __str__(self):
         return f"Personaje: {self.nombre}"

@@ -1,7 +1,6 @@
 import math
 import os
-from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-                              QScrollArea, QFrame)
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QScrollArea, QFrame
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap
 from Estructuras_Listas.Lista_simple import ListaSimple
@@ -14,17 +13,14 @@ class DetallesComic(QWidget):
 
         self.tamanio_pagina = 10
         self.estado_listas = {
-            "autores": {"lista": ListaSimple(), "pagina": 0, "layout": None,
-                        "lbl_pag": None, "btn_prev": None, "btn_next": None},
-            "personajes": {"lista": ListaSimple(), "pagina": 0, "layout": None,
-                           "lbl_pag": None, "btn_prev": None, "btn_next": None},
+            "autores": {"lista": ListaSimple(), "pagina": 0, "layout": None, "lbl_pag": None, "btn_prev": None, "btn_next": None},
+            "personajes": {"lista": ListaSimple(), "pagina": 0, "layout": None, "lbl_pag": None, "btn_prev": None, "btn_next": None},
         }
 
         layout_principal = QVBoxLayout(self)
         layout_principal.setContentsMargins(60, 20, 60, 20)
         layout_principal.setSpacing(25)
 
-        # Botón volver
         self.btn_regresar = QPushButton("VOLVER AL LISTADO")
         self.btn_regresar.setFixedWidth(200)
         self.btn_regresar.setCursor(Qt.CursorShape.PointingHandCursor)
@@ -38,7 +34,6 @@ class DetallesComic(QWidget):
         self.btn_regresar.clicked.connect(self.volver)
         layout_principal.addWidget(self.btn_regresar)
 
-        # Fila superior: imagen + info
         fila_superior = QHBoxLayout()
         fila_superior.setSpacing(50)
         fila_superior.setAlignment(Qt.AlignmentFlag.AlignTop)
@@ -55,12 +50,11 @@ class DetallesComic(QWidget):
         self.foto_portada.setText("No Image")
         fila_superior.addWidget(self.foto_portada)
 
-        # Panel de información
         info_layout = QVBoxLayout()
         info_layout.setSpacing(12)
         info_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
 
-        self.lbl_titulo = QLabel("TÍTULO DEL CÓMIC")
+        self.lbl_titulo = QLabel("TITULO DEL COMIC")
         self.lbl_titulo.setStyleSheet("font-size: 32px; font-weight: bold; color: #ffffff; background: transparent;")
         self.lbl_titulo.setWordWrap(True)
         info_layout.addWidget(self.lbl_titulo)
@@ -73,11 +67,11 @@ class DetallesComic(QWidget):
         self.lbl_isbn.setStyleSheet("color: #aaaaaa; font-size: 13px; background: transparent;")
         info_layout.addWidget(self.lbl_isbn)
 
-        lbl_t_desc = QLabel("Descripción")
+        lbl_t_desc = QLabel("Descripcion")
         lbl_t_desc.setStyleSheet("color: #e62429; font-size: 16px; font-weight: bold; background: transparent; margin-top: 8px;")
         info_layout.addWidget(lbl_t_desc)
 
-        self.lbl_descripcion = QLabel("Selecciona un cómic...")
+        self.lbl_descripcion = QLabel("Selecciona un comic...")
         self.lbl_descripcion.setWordWrap(True)
         self.lbl_descripcion.setStyleSheet("color: #cccccc; font-size: 13px; line-height: 150%; background: transparent;")
         info_layout.addWidget(self.lbl_descripcion)
@@ -86,7 +80,6 @@ class DetallesComic(QWidget):
         fila_superior.addLayout(info_layout, 1)
         layout_principal.addLayout(fila_superior)
 
-        # Listas (autores y personajes)
         tablas_layout = QHBoxLayout()
         tablas_layout.setSpacing(30)
         tablas_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
@@ -150,20 +143,37 @@ class DetallesComic(QWidget):
         label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         return label
 
+    def _normalizar_item_visual(self, item):
+        if isinstance(item, dict):
+            return str(item.get("texto", "")), item.get("imagen")
+        return str(item), None
+
     def _crear_item(self, texto):
+        texto, ruta_imagen = self._normalizar_item_visual(texto)
         item_w = QWidget()
         item_w.setFixedHeight(45)
         item_ly = QHBoxLayout(item_w)
+        item_ly.setContentsMargins(6, 4, 6, 4)
+        item_ly.setSpacing(8)
 
-        punto = QLabel("•")
-        punto.setFixedWidth(20)
-        punto.setStyleSheet("color: #e62429; font-weight: bold; border: none; background: transparent;")
+        img = QLabel()
+        img.setFixedSize(24, 24)
+        img.setStyleSheet("background: #333; border: 1px solid #444; border-radius: 12px;")
+        if ruta_imagen and os.path.exists(ruta_imagen):
+            pixmap = QPixmap(ruta_imagen)
+            img.setPixmap(
+                pixmap.scaled(
+                    img.size(),
+                    Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                    Qt.TransformationMode.SmoothTransformation,
+                )
+            )
 
         txt = QLabel(texto)
         txt.setStyleSheet("color: #ddd; font-size: 13px; border: none; background: transparent;")
         txt.setWordWrap(True)
 
-        item_ly.addWidget(punto)
+        item_ly.addWidget(img)
         item_ly.addWidget(txt, 1)
         item_w.setStyleSheet("QWidget:hover { background: #222; border-radius: 4px; }")
         return item_w
@@ -260,19 +270,18 @@ class DetallesComic(QWidget):
             layout.addWidget(self._crear_label_vacio(placeholders[clave]))
         else:
             for item in items:
-                layout.addWidget(self._crear_item(str(item)))
+                layout.addWidget(self._crear_item(item))
         layout.addStretch()
         self._actualizar_controles(clave)
 
     def actualizar_datos(self, comic):
-        self.lbl_titulo.setText(comic.titulo or "Sin título")
+        self.lbl_titulo.setText(comic.titulo or "Sin titulo")
         fecha = comic.fecha_lanzamiento or ""
         self.lbl_fecha.setText(f"Fecha: {fecha}" if fecha else "")
         isbn = comic.isbn or ""
         self.lbl_isbn.setText(f"ISBN: {isbn}" if isbn else "")
 
-        desc = comic.descripcion or "Este cómic no tiene descripción disponible."
-        # Limpiar HTML básico si viene de la API
+        desc = comic.descripcion or "Este comic no tiene descripcion disponible."
         import re
         desc = re.sub(r"<[^>]+>", "", desc)
         self.lbl_descripcion.setText(desc[:500] + ("..." if len(desc) > 500 else ""))
@@ -292,14 +301,14 @@ class DetallesComic(QWidget):
             self.foto_portada.setPixmap(QPixmap())
             self.foto_portada.setText("No Image")
 
-        self._poblar_lista("autores", getattr(comic, "nombres_creadores", []))
-        self._poblar_lista("personajes", getattr(comic, "nombres_personajes", []))
+        self._poblar_lista("autores", getattr(comic, "detalles_creadores", None) or getattr(comic, "nombres_creadores", []))
+        self._poblar_lista("personajes", getattr(comic, "detalles_personajes", None) or getattr(comic, "nombres_personajes", []))
 
     def volver(self):
         v = self.window()
         if hasattr(v, "stack"):
-            v.stack.setCurrentIndex(1)  # índice de ComicsMenu
-            if hasattr(v, 'actualizar_estilo_boton'):
+            v.stack.setCurrentIndex(1)
+            if hasattr(v, "actualizar_estilo_boton"):
                 v.actualizar_estilo_boton(v.btn_home, False)
                 v.actualizar_estilo_boton(v.btn_comics, True)
                 v.actualizar_estilo_boton(v.btn_personajes, False)

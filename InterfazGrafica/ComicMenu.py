@@ -7,6 +7,8 @@ from PyQt6.QtGui import QPixmap
 from Controladores.init import gestor, ComicOrderer
 from Controladores.api_comicvine import ComicVineAPI
 
+MAX_PREVIEW_IMAGENES = 10
+
 
 class ComicsMenu(QWidget):
     def __init__(self, perfil, controlador=None):
@@ -348,11 +350,11 @@ class ComicsMenu(QWidget):
         except Exception:
             pass
 
-        # Usar nombres ya incluidos en los créditos (vienen directo de la API sin llamadas extra)
+        # Usar nombres ya incluidos en los creditos (vienen directo de la API sin llamadas extra)
         nombres_creadores = list(getattr(comic, "nombres_creadores", []) or [])
         nombres_personajes = list(getattr(comic, "nombres_personajes", []) or [])
 
-        # Solo si faltan nombres, intentar resolver por ID (máximo 5 para no tardar)
+        # Solo si faltan nombres, intentar resolver por ID (maximo 5 para no tardar)
         max_rel = 5
         if not nombres_creadores:
             for creador_id in (getattr(comic, "creadores", []) or [])[:max_rel]:
@@ -374,4 +376,26 @@ class ComicsMenu(QWidget):
 
         comic.nombres_creadores = list(dict.fromkeys([x for x in nombres_creadores if x]))
         comic.nombres_personajes = list(dict.fromkeys([x for x in nombres_personajes if x]))
+        comic.detalles_creadores = self._crear_preview_relaciones(comic.creadores, comic.nombres_creadores, "creador")
+        comic.detalles_personajes = self._crear_preview_relaciones(comic.personajes, comic.nombres_personajes, "personaje")
         return comic
+
+    def _crear_preview_relaciones(self, ids, nombres, tipo):
+        detalles = []
+        nombres = list(nombres or [])
+        ids = list(ids or [])
+
+        for idx, nombre in enumerate(nombres):
+            ruta_imagen = None
+            if idx < MAX_PREVIEW_IMAGENES and idx < len(ids):
+                try:
+                    obj = self.gestor.buscador(tipo, self.api, ids[idx])
+                except Exception:
+                    obj = None
+                if obj:
+                    imagen = getattr(obj, "imagen", None)
+                    if isinstance(imagen, tuple) and len(imagen) > 1:
+                        ruta_imagen = imagen[1]
+            detalles.append({"texto": nombre, "imagen": ruta_imagen})
+
+        return detalles

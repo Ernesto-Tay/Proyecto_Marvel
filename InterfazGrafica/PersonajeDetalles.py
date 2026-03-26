@@ -1,15 +1,48 @@
 import math
 import os
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QScrollArea, QFrame
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QObject, QThread, pyqtSignal
 from PyQt6.QtGui import QPixmap
 from Estructuras_Listas.Lista_simple import ListaSimple
+
+MAX_AUTOR_IMAGENES_ASYNC = 10
+
+
+class AutorImagenWorker(QObject):
+    finalizado = pyqtSignal(int, object)
+
+    def __init__(self, token, gestor, api, creadores_ids, creadores_nombres):
+        super().__init__()
+        self.token = token
+        self.gestor = gestor
+        self.api = api
+        self.creadores_ids = list(creadores_ids or [])
+        self.creadores_nombres = list(creadores_nombres or [])
+
+    def ejecutar(self):
+        detalles = []
+        for idx, nombre in enumerate(self.creadores_nombres):
+            ruta_imagen = None
+            if idx < MAX_AUTOR_IMAGENES_ASYNC and idx < len(self.creadores_ids):
+                try:
+                    creador = self.gestor.buscador("creador", self.api, self.creadores_ids[idx])
+                except Exception:
+                    creador = None
+                if creador:
+                    imagen = getattr(creador, "imagen", None)
+                    if isinstance(imagen, tuple) and len(imagen) > 1:
+                        ruta_imagen = imagen[1]
+            detalles.append({"texto": nombre, "imagen": ruta_imagen})
+        self.finalizado.emit(self.token, detalles)
 
 
 class DetallesPersonaje(QWidget):
     def __init__(self):
         super().__init__()
         self.setStyleSheet("background-color: #121212; border: none;")
+        self._autor_worker_thread = None
+        self._autor_worker = None
+        self._token_autores = 0
 
         self.tamanio_pagina_detalles = 10
         self.estado_listas = {
@@ -108,13 +141,13 @@ class DetallesPersonaje(QWidget):
             background: #222; color: white; font-weight: bold;
             border-bottom: 2px solid #e62429;
             border-top-left-radius: 8px; border-top-right-radius: 8px;
+            background-color: #222;
         """)
         ly_frame.addWidget(header)
 
-        # 🔥 SCROLL (CLAVE)
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
-        scroll.setFixedHeight(240)  # 👈 controla el tamaño
+        scroll.setFixedHeight(240)
         scroll.setStyleSheet("""
             QScrollArea { border: none; background: transparent; }
             QScrollBar:vertical {
@@ -127,37 +160,55 @@ class DetallesPersonaje(QWidget):
             QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
         """)
 
-        contenedor = QWidget()
-        contenedor.setStyleSheet("background: transparent; border: none;")
-
-        ly_autores = QVBoxLayout(contenedor)
+        contenedor_scroll = QWidget()
+        contenedor_scroll.setStyleSheet("background: #161616;")
+        ly_autores = QVBoxLayout(contenedor_scroll)
         ly_autores.setSpacing(10)
         ly_autores.setContentsMargins(10, 10, 10, 10)
         ly_autores.addWidget(self.crear_label_vacio("Sin autores disponibles"))
         ly_autores.addStretch()
-
-        scroll.setWidget(contenedor)
+        scroll.setWidget(contenedor_scroll)
         ly_frame.addWidget(scroll)
-
         self.estado_listas[clave]["layout"] = ly_autores
 
         ly_frame.addWidget(self.crear_controles_paginacion(clave, oscuro=True))
 
         return frame
 
+    def _normalizar_item_visual(self, item):
+        if isinstance(item, dict):
+            return str(item.get("texto", "")), item.get("imagen")
+        return str(item), None
+
     def crear_item_autor(self, nombre):
-        ly = QHBoxLayout()
+        nombre, ruta_imagen = self._normalizar_item_visual(nombre)
+        item_w = QWidget()
+        item_w.setFixedHeight(50)
+        ly = QHBoxLayout(item_w)
+        ly.setContentsMargins(6, 4, 6, 4)
+        ly.setSpacing(8)
         img = QLabel()
-        img.setFixedSize(40, 40)
-        img.setStyleSheet("background: #333; border: 1px solid #444; border-radius: 20px;")
+        img.setFixedSize(28, 28)
+        img.setStyleSheet("background: #333; border: 1px solid #444; border-radius: 14px;")
+        if ruta_imagen and os.path.exists(ruta_imagen):
+            pixmap = QPixmap(ruta_imagen)
+            img.setPixmap(
+                pixmap.scaled(
+                    img.size(),
+                    Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                    Qt.TransformationMode.SmoothTransformation,
+                )
+            )
 
         lbl = QLabel(nombre)
         lbl.setStyleSheet("font-size: 13px; font-weight: bold; color: #eee; border: none; background: transparent;")
+        lbl.setWordWrap(True)
 
         ly.addWidget(img)
         ly.addWidget(lbl)
         ly.addStretch()
-        return ly
+        item_w.setStyleSheet("QWidget:hover { background: #222; border-radius: 4px; }")
+        return item_w
 
     def crear_controles_paginacion(self, clave, oscuro=True):
         widget_pag = QWidget()
@@ -174,9 +225,7 @@ class DetallesPersonaje(QWidget):
         btn_prev.clicked.connect(lambda: self.cambiar_pagina(clave, -1))
 
         lbl_pag = QLabel("1/1")
-        lbl_pag.setStyleSheet(
-            f"color: {color}; font-weight: bold; font-size: 16px; padding: 0 10px; background: transparent;"
-        )
+        lbl_pag.setStyleSheet(f"color: {color}; font-weight: bold; font-size: 16px; padding: 0 10px; background: transparent;")
 
         btn_next = QPushButton(">")
         btn_next.setStyleSheet(estilo_flecha)
@@ -245,16 +294,29 @@ class DetallesPersonaje(QWidget):
         return label
 
     def crear_item_lista(self, texto):
+        texto, ruta_imagen = self._normalizar_item_visual(texto)
         item_w = QWidget()
         item_w.setFixedHeight(55)
         item_ly = QHBoxLayout(item_w)
+        item_ly.setContentsMargins(6, 4, 6, 4)
+        item_ly.setSpacing(8)
 
         img_m = QLabel()
-        img_m.setFixedSize(35, 35)
+        img_m.setFixedSize(28, 28)
         img_m.setStyleSheet("background: #333; border-radius: 4px;")
+        if ruta_imagen and os.path.exists(ruta_imagen):
+            pixmap = QPixmap(ruta_imagen)
+            img_m.setPixmap(
+                pixmap.scaled(
+                    img_m.size(),
+                    Qt.AspectRatioMode.KeepAspectRatioByExpanding,
+                    Qt.TransformationMode.SmoothTransformation,
+                )
+            )
 
         txt = QLabel(texto)
         txt.setStyleSheet("color: #ddd; font-size: 13px; border: none; background: transparent;")
+        txt.setWordWrap(True)
 
         flecha = QLabel(">")
         flecha.setStyleSheet("color: #444; font-weight: bold; border: none; background: transparent;")
@@ -328,13 +390,45 @@ class DetallesPersonaje(QWidget):
         else:
             for item in items:
                 if clave == "autores":
-                    layout.addLayout(self.crear_item_autor(str(item)))
+                    layout.addWidget(self.crear_item_autor(item))
                 else:
-                    layout.addWidget(self.crear_item_lista(str(item)))
+                    layout.addWidget(self.crear_item_lista(item))
         layout.addStretch()
         self.actualizar_controles_paginacion(clave)
 
-    def actualizar_datos(self, personaje):
+    def _cancelar_worker_autores(self):
+        self._token_autores += 1
+        if self._autor_worker_thread is not None:
+            self._autor_worker_thread.quit()
+            self._autor_worker_thread.wait(100)
+        self._autor_worker_thread = None
+        self._autor_worker = None
+
+    def _iniciar_worker_autores(self, personaje, gestor, api):
+        if not gestor or not api or not getattr(personaje, "creadores_ids", None) or not getattr(personaje, "creadores", None):
+            return
+
+        self._cancelar_worker_autores()
+        token = self._token_autores
+        thread = QThread(self)
+        worker = AutorImagenWorker(token, gestor, api, personaje.creadores_ids, personaje.creadores)
+        worker.moveToThread(thread)
+        worker.finalizado.connect(self._aplicar_autores_async)
+        thread.started.connect(worker.ejecutar)
+        worker.finalizado.connect(thread.quit)
+        thread.finished.connect(worker.deleteLater)
+        thread.finished.connect(thread.deleteLater)
+        self._autor_worker_thread = thread
+        self._autor_worker = worker
+        thread.start()
+
+    def _aplicar_autores_async(self, token, detalles):
+        if token != self._token_autores:
+            return
+        self.estado_listas["autores"]["pagina"] = 0
+        self.poblar_lista_simple("autores", detalles)
+
+    def actualizar_datos(self, personaje, gestor=None, api=None):
         self.lbl_nombre.setText(personaje.nombre)
         self.lbl_descripcion.setText(personaje.descripcion or "Este personaje no tiene descripcion disponible.")
 
@@ -353,11 +447,17 @@ class DetallesPersonaje(QWidget):
             self.foto_perfil.setPixmap(QPixmap())
             self.foto_perfil.setText("No Image")
 
-        self.poblar_lista_simple("autores", personaje.creadores)
-        self.poblar_lista_simple("comics", personaje.comics)
-        self.poblar_lista_simple("eventos", personaje.eventos)
+        self._cancelar_worker_autores()
+        self.poblar_lista_simple("autores", getattr(personaje, "detalles_creadores", None) or personaje.creadores)
+        self.poblar_lista_simple("comics", getattr(personaje, "detalles_comics", None) or personaje.comics)
+        self.poblar_lista_simple("eventos", getattr(personaje, "detalles_eventos", None) or personaje.eventos)
+        self._iniciar_worker_autores(personaje, gestor, api)
 
     def volver(self):
         v = self.window()
         if hasattr(v, "stack"):
             v.stack.setCurrentIndex(2)
+
+    def closeEvent(self, event):
+        self._cancelar_worker_autores()
+        super().closeEvent(event)

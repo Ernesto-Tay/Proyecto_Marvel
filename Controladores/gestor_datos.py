@@ -499,6 +499,33 @@ class Instancias:
         self.raw_data = DataBank()
         self.converter = Instanciador()
 
+    def _instancia_completa(self, type, instancia):
+        if instancia is None:
+            return False
+        match type:
+            case "comic":
+                return bool(
+                    getattr(instancia, "descripcion", None)
+                    or getattr(instancia, "nombres_creadores", None)
+                    or getattr(instancia, "nombres_personajes", None)
+                    or getattr(instancia, "eventos", None)
+                )
+            case "personaje":
+                return bool(
+                    getattr(instancia, "descripcion", None)
+                    or getattr(instancia, "creadores", None)
+                    or getattr(instancia, "eventos", None)
+                    or getattr(instancia, "comics", None)
+                    or getattr(instancia, "creadores_ids", None)
+                    or getattr(instancia, "eventos_ids", None)
+                    or getattr(instancia, "comics_ids", None)
+                )
+            case "creador":
+                return bool(getattr(instancia, "nombre_completo", None))
+            case "evento":
+                return bool(getattr(instancia, "titulo", None))
+        return True
+
     def buscador(self, type, api, id=None):
         types = {
             "comic": [self.comics, self.raw_data.d_comics],
@@ -511,7 +538,8 @@ class Instancias:
 
         type_dict = types[type][0]
         retrieval = types[type][1]
-        if id and id not in type_dict:
+        instancia_cache = type_dict.get(id)
+        if id and (instancia_cache is None or not self._instancia_completa(type, instancia_cache)):
             data = retrieval.obtener(id=id, api=api)
             if data is not None:
                 match type:
@@ -532,7 +560,7 @@ class Instancias:
                 type_dict[c_data.id] = c_data
                 return c_data
             return False
-        return type_dict.get(id, False)
+        return instancia_cache if instancia_cache is not None else type_dict.get(id, False)
 
     def dumper(self, type, api, modo="general"):
         types = {"comic": [self.comics, self.raw_data.d_comics], "personaje": [self.personajes, self.raw_data.d_personajes]}
