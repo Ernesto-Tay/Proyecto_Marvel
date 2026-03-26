@@ -72,10 +72,10 @@ class HomeMenu(QWidget):
 
         raw = gestor.raw_data
         stats = [
-            ("Cómics",     "comics",      len(raw.d_comics.datos)),
-            ("Personajes", "personajes", len(raw.d_personajes.datos)),
-            ("Creadores",  "creadores",   len(raw.d_creadores.datos)),
-            ("Eventos",    "eventos",    len(raw.d_eventos.datos)),
+            ("Cómics",     "comics",     "", len(raw.d_comics.datos)),
+            ("Personajes", "personajes", "", len(raw.d_personajes.datos)),
+            ("Creadores",  "creadores",  "", len(raw.d_creadores.datos)),
+            ("Eventos",    "eventos",    "", len(raw.d_eventos.datos)),
         ]
         for titulo, clave, icono, valor in stats:
             stats_row.addWidget(self._crear_stat_card(titulo, clave, icono, valor))
