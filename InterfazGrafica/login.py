@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
             global win_principal
             # Pasamos el nombre del administrador
-            win_principal = MenuPrincipal(auth_service.admin.nombre)
+            win_principal = MenuPrincipal(auth_service.admin)
             # Cerramos el login y mostramos el menu
             login_win.close()
             win_principal.show()

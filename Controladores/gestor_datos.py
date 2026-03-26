@@ -1,6 +1,8 @@
 # Las siguientes clases funcionarán como el Cache del sistema para optimizar procesos
 from Modelos.__init__ import Creador, Comic, Evento, Personaje
+from Estructuras_Listas.init import ListaDoble
 import json
+from PyQt6.QtCore import pyqtSignal, QObject
 folder = "Datos_json"
 import urllib.request
 import os
@@ -22,14 +24,9 @@ class DescargadorImagenes:
         # Validar que la URL exista
         if not url:
             return (None, None)
-
         # Extraer el nombre de la imagen al final de la URL (ej: "batman_portada.jpg")
         nombre_archivo = url.split("/")[-1]
-
-        # Crear la ruta completa donde se guardará (ej: "Imagenes_ComicVine/batman_portada.jpg")
         ruta_local = os.path.join(self.carpeta_destino, nombre_archivo)
-
-        # Verificar si la imagen ya fue descargada antes para ahorrar tiempo y recursos
         if not os.path.exists(ruta_local):
             try:
                 req = urllib.request.Request(url, headers=self.headers)
@@ -354,3 +351,26 @@ class Instancias:
             return conv
         return False
 
+gestor = Instancias()
+
+class PageOrderer(QObject):
+    # Definimos señales para comunicarnos con la interfaz
+    finalizado = pyqtSignal(object)
+    error = pyqtSignal(str)
+
+    def __init__(self, g_data, perfil_clave):
+        super().__init__()
+        self.gestor = g_data
+        self.perfil_clave = perfil_clave
+
+    def dump_list(self):
+        try:
+            personajes_dict = self.gestor.dumper("personaje", self.perfil_clave)
+            lista_marvel = ListaDoble()
+            for p_id, personaje_obj in personajes_dict.items():
+                lista_marvel.agregar(personaje_obj)
+
+            # 3. Emitimos la lista completa
+            self.finalizado.emit(lista_marvel)
+        except Exception as e:
+            self.error.emit(str(e))

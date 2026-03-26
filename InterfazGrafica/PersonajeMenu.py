@@ -1,20 +1,26 @@
 import os
-from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
-                             QPushButton, QScrollArea, QFrame, QLineEdit,
-                             QComboBox, QGridLayout)
-from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,QPushButton, QScrollArea, QFrame, QLineEdit,QComboBox, QGridLayout)
+from PyQt6.QtCore import Qt, QThread
 from PyQt6.QtGui import QPixmap
-
+from Controladores.init import gestor, PageOrderer
+from Estructuras_Listas.init import ListaDoble
 
 class PersonajesMenu(QWidget):
-    def __init__(self, controlador=None):
+    def __init__(self, perfil, controlador=None):
         super().__init__()
+        self.perfil = perfil
         self.controlador = controlador
-        self.pagina_actual = 1
+        self.pagina_actual = 0
+        self.gestor = gestor
+        self.lista_personajes = None
+        self.thread = None
+        self.trabajador = None
+        self.carga_datos()
+
+
 
         # Contenedor principal
         self.setStyleSheet("background-color: white; border: none;")
-
         layout_exterior = QVBoxLayout(self)
         layout_exterior.setContentsMargins(0, 0, 0, 0)
 
@@ -67,7 +73,7 @@ class PersonajesMenu(QWidget):
         """
         # Ordenameinto
         self.cb_orden = QComboBox()
-        self.cb_orden.addItems(["Ordenar por nombre", "Ordenar por autor"])
+        self.cb_orden.addItems(["Ordenar por nombre"])
         self.cb_orden.setStyleSheet(estilo_cb)
 
         self.cb_lanz = QComboBox()
@@ -78,6 +84,10 @@ class PersonajesMenu(QWidget):
         fila_filtros.addStretch()
         fila_filtros.addWidget(self.cb_lanz)
         layout_principal.addLayout(fila_filtros)
+
+        self.cb_orden.clear()  # Limpiamos lo anterior
+        self.cb_orden.addItems(["Nombre (A-Z)", "Nombre (Z-A)"])
+        self.cb_orden.currentIndexChanged.connect(self.manejar_ordenamiento)
 
         # area de caudros
         self.scroll = QScrollArea()
@@ -92,11 +102,6 @@ class PersonajesMenu(QWidget):
 
         #Esto es solo para probar, aun no se debe conectar la api x,d
         # Generación de 10 personajes
-        self.personajes_prueba = ["Spider-Man", "Iron Man", "Black Panther", "Thor", "Storm",
-                                  "Deadpool", "Black Widow", "Falcon", "Captain Marvel", "She-Hulk"]
-
-        self.cargar_tarjetas_prueba()
-
         self.scroll.setWidget(self.contenedor_grid)
         layout_principal.addWidget(self.scroll)
 
@@ -114,7 +119,8 @@ class PersonajesMenu(QWidget):
 
         self.lbl_pag = QLabel(f"{self.pagina_actual}")
         self.lbl_pag.setStyleSheet("color: black; font-weight: bold; font-size: 14px;")
-
+        self.btn_sig.clicked.connect(self.pagina_siguiente)
+        self.btn_ant.clicked.connect(self.pagina_anterior)
         footer.addStretch()
         footer.addWidget(self.btn_ant)
         footer.addSpacing(15)
@@ -123,15 +129,60 @@ class PersonajesMenu(QWidget):
         footer.addWidget(self.btn_sig)
         footer.addStretch()
         layout_principal.addLayout(footer)
-
         layout_exterior.addWidget(self.lienzo)
 
-    def cargar_tarjetas_prueba(self):
-        for i, nombre in enumerate(self.personajes_prueba):
+
+    def manejar_ordenamiento(self):
+        if not self.lista_personajes or self.lista_personajes.esta_vacia():
+            return
+
+        texto_seleccionado = self.cb_orden.currentText()
+        ascendente = (texto_seleccionado == "Nombre (A-Z)")
+        self.lista_personajes.ordenar_por_nombre(ascendente=ascendente)
+        self.pagina_actual = 0
+        self.mostrar_pagina()
+
+    def carga_datos(self):
+        self.thread = QThread()
+        self.trabajador = PageOrderer(self.gestor, self.perfil.clave)
+        self.trabajador.moveToThread(self.thread)
+        self.trabajador.finalizado.connect(self.recibir_lista)
+        self.thread.started.connect(self.trabajador.dump_list)
+        self.thread.start()
+
+
+    def recibir_lista(self, lista):
+        self.lista_personajes = lista
+        self.mostrar_pagina()
+
+
+    def mostrar_pagina(self):
+        if not self.lista_personajes:
+            return
+
+        for i in reversed(range(self.layout_grid.count())):
+            self.layout_grid.itemAt(i).widget().setParent(None)
+
+        personajes_pagina = self.lista_personajes.obtener_pagina(self.pagina_actual, 10)
+        for i, personaje in enumerate(personajes_pagina):
             fila = i // 5
             columna = i % 5
-            tarjeta = self.crear_tarjeta_personaje(nombre)
+            tarjeta = self.crear_tarjeta_personaje(personaje)
             self.layout_grid.addWidget(tarjeta, fila, columna)
+        self.lbl_pag.setText(f"{self.pagina_actual + 1}")
+
+
+    def pagina_siguiente(self):
+        if self.lista_personajes and (self.pagina_actual + 1) * 10 < self.lista_personajes.tamanio:
+            self.pagina_actual += 1
+            self.mostrar_pagina()
+
+
+    def pagina_anterior(self):
+        if self.pagina_actual > 0:
+            self.pagina_actual -= 1
+            self.mostrar_pagina()
+
 
     def crear_tarjeta_personaje(self, nombre):
         tarjeta = QFrame()
@@ -154,7 +205,7 @@ class PersonajesMenu(QWidget):
         img.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Nombre
-        lbl_n = QLabel(nombre)
+        lbl_n = QLabel(nombre.nombre)
         lbl_n.setStyleSheet("color: white; font-weight: bold; font-size: 14px; border: none; background: transparent;")
         lbl_n.setAlignment(Qt.AlignmentFlag.AlignCenter)
 

@@ -10,7 +10,7 @@ from HomeMenu import HomeMenu
 from Estructuras_Listas.lista_circular import ListaCircular
 
 class MenuPrincipal(QMainWindow):
-    def __init__(self, nombre_usuario="Admin"):
+    def __init__(self, perfil):
         super().__init__()
         #Usamo la lista circular para navegar entre secciones :D
         self.nav_circular = ListaCircular()
@@ -91,7 +91,7 @@ class MenuPrincipal(QMainWindow):
         self.vista_comics_vacia = QWidget()
 
         # perosnjae
-        self.vista_personajes = PersonajesMenu()
+        self.vista_personajes = PersonajesMenu(perfil)
         self.vista_detalles_per = DetallesPersonaje()
 
         self.stack.addWidget(self.vista_home)  # 0
