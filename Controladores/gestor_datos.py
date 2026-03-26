@@ -63,6 +63,13 @@ class DataComics:
         self.datos = {}
         self.max_items = MAX_CACHE_COMICS
 
+    def _tiene_detalle_completo(self, comic):
+        if not isinstance(comic, dict):
+            return False
+        if "description" in comic:
+            return True
+        return any(clave in comic for clave in ("person_credits", "character_credits", "event_credits"))
+
     def _normalizar_comic(self, comic):
         if not isinstance(comic, dict):
             return comic
@@ -92,23 +99,25 @@ class DataComics:
             "person_credits": _min_creditos(comic.get("person_credits")),
             "event_credits": _min_creditos(comic.get("event_credits")),
             "publisher": comic.get("publisher"),
+            "description": comic.get("description"),
         }
 
     def obtener(self, api, id=None):
         if id:
             cache_key = str(id)
-            if id in self.datos:
-                return self.datos[id]
-            if cache_key in self.datos:
-                return self.datos[cache_key]
+            comic_cache = self.datos.get(id) or self.datos.get(cache_key)
+            if self._tiene_detalle_completo(comic_cache):
+                return comic_cache
             data = api.obtener_comics(id)
             if data:
                 comic = self._normalizar_comic(data[0])
-                if comic.get("publisher") and comic["publisher"].get("name") == "Marvel":
+                if not comic.get("publisher") or comic["publisher"].get("name") == "Marvel":
                     self.datos[id] = comic
                     self.datos[cache_key] = comic
                     self.guardar()
                     return comic
+            if comic_cache:
+                return comic_cache
             return False
 
         try:
@@ -260,21 +269,30 @@ class DataPersonajes:
         self.datos = {}
         self.max_items = MAX_CACHE_PERSONAJES
 
+    def _tiene_detalle_completo(self, personaje):
+        if not isinstance(personaje, dict):
+            return False
+        return any(
+            personaje.get(clave) is not None
+            for clave in ("creator_credits", "event_credits", "issue_credits")
+        )
+
     def obtener(self, api, id=None, modo="general"):
         if id:
             cache_key = str(id)
-            if id in self.datos:
-                return self.datos[id]
-            if cache_key in self.datos:
-                return self.datos[cache_key]
+            personaje_cache = self.datos.get(id) or self.datos.get(cache_key)
+            if self._tiene_detalle_completo(personaje_cache):
+                return personaje_cache
             data = api.obtener_personajes(id)
             if data:
                 personaje = data[0]
-                if personaje.get("publisher") and personaje["publisher"].get("name") == "Marvel":
+                if not personaje.get("publisher") or personaje["publisher"].get("name") == "Marvel":
                     self.datos[id] = personaje
                     self.datos[cache_key] = personaje
                     self.guardar()
                     return personaje
+            if personaje_cache:
+                return personaje_cache
             return False
 
         try:

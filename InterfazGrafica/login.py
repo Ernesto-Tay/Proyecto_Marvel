@@ -153,7 +153,6 @@ class MundoComicLogin(QWidget):
         else:
             QMessageBox.critical(self, "Error", mensaje)
 
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 

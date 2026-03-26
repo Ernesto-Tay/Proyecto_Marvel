@@ -342,6 +342,9 @@ class ComicsMenu(QWidget):
                 if convertido is not None:
                     comic = convertido
                     self.gestor.comics[comic.id] = comic
+                    self.gestor.raw_data.d_comics.datos[comic.id] = self.gestor.raw_data.d_comics._normalizar_comic(detalle_raw[0])
+                    self.gestor.raw_data.d_comics.datos[str(comic.id)] = self.gestor.raw_data.d_comics.datos[comic.id]
+                    self.gestor.raw_data.d_comics.guardar()
         except Exception:
             pass
 
