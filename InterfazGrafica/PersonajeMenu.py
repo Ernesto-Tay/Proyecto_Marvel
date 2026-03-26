@@ -19,12 +19,12 @@ class PersonajesMenu(QWidget):
         self.modo_carga = "ucm"
 
         # Contenedor principal
-        self.setStyleSheet("background-color: white; border: none;")
+        self.setStyleSheet("background-color: #121212; border: none;")
         layout_exterior = QVBoxLayout(self)
         layout_exterior.setContentsMargins(0, 0, 0, 0)
 
         self.lienzo = QFrame()
-        self.lienzo.setStyleSheet("background-color: white;")
+        self.lienzo.setStyleSheet("background-color: #121212;")
         layout_principal = QVBoxLayout(self.lienzo)
         layout_principal.setContentsMargins(25, 20, 25, 10)
 
@@ -34,14 +34,14 @@ class PersonajesMenu(QWidget):
 
         fila_titulo = QHBoxLayout()
         titulo = QLabel("Buscador de Personajes")
-        titulo.setStyleSheet("color: black; font-size: 28px; font-weight: bold;")
+        titulo.setStyleSheet("color: #ffffff; font-size: 28px; font-weight: bold;")
         fila_titulo.addStretch()
         fila_titulo.addWidget(titulo)
         fila_titulo.addStretch()
         contenedor_cabecera.addLayout(fila_titulo)
 
         self.lbl_estado = QLabel("Cargando personajes...")
-        self.lbl_estado.setStyleSheet("color: #666; font-size: 13px;")
+        self.lbl_estado.setStyleSheet("color: #aaaaaa; font-size: 13px;")
         self.lbl_estado.setAlignment(Qt.AlignmentFlag.AlignCenter)
         contenedor_cabecera.addWidget(self.lbl_estado)
 
@@ -51,10 +51,11 @@ class PersonajesMenu(QWidget):
         self.buscador_oval.setFixedWidth(500)
         self.buscador_oval.setStyleSheet("""
             QLineEdit {
-                background-color: white; border: 3px solid #800000;
-                border-radius: 20px; padding: 10px 15px; color: black;
+                background-color: #2d2d2d; border: 2px solid #333333;
+                border-radius: 20px; padding: 10px 15px; color: #ffffff;
                 font-size: 15px;
             }
+            QLineEdit:focus { border: 2px solid #e62429; }
         """)
         fila_busqueda.addStretch()
         fila_busqueda.addWidget(self.buscador_oval)
@@ -66,13 +67,16 @@ class PersonajesMenu(QWidget):
         #busqueda/orden
         fila_filtros = QHBoxLayout()
         estilo_cb = """
-            QComboBox { 
-                background: #e62429; border: 1px solid red; border-radius: 6px; 
-                padding: 6px; color: black; min-width: 160px;
+            QComboBox {
+                background: #2d2d2d; border: 1px solid #444444; border-radius: 6px;
+                padding: 6px 10px; color: #ffffff; min-width: 160px; font-size: 13px;
             }
+            QComboBox:hover { border: 1px solid #e62429; }
+            QComboBox::drop-down { border: none; }
             QComboBox QAbstractItemView {
-                background-color: #ffa6a6 ; color: black;
-                selection-background-color: red; selection-color: red;
+                background-color: #2d2d2d; color: #ffffff;
+                selection-background-color: #e62429; selection-color: white;
+                border: 1px solid #444444;
             }
         """
         # Ordenameinto
@@ -97,10 +101,16 @@ class PersonajesMenu(QWidget):
         # area de caudros
         self.scroll = QScrollArea()
         self.scroll.setWidgetResizable(True)
-        self.scroll.setStyleSheet("QScrollArea { border: none; background-color: white; }")
+        self.scroll.setStyleSheet("""
+            QScrollArea { border: none; background-color: #121212; }
+            QScrollBar:vertical { background: #1a1a1a; width: 8px; border-radius: 4px; border: none; }
+            QScrollBar::handle:vertical { background: #444444; min-height: 20px; border-radius: 4px; }
+            QScrollBar::handle:vertical:hover { background: #e62429; }
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
+        """)
 
         self.contenedor_grid = QWidget()
-        self.contenedor_grid.setStyleSheet("background-color: white;")
+        self.contenedor_grid.setStyleSheet("background-color: #121212;")
         self.layout_grid = QGridLayout(self.contenedor_grid)
         self.layout_grid.setSpacing(20)
         self.layout_grid.setContentsMargins(10, 10, 10, 10)
@@ -118,12 +128,14 @@ class PersonajesMenu(QWidget):
 
         # Estilos
         self.btn_ant.setStyleSheet(
-            "background: #333; color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold;")
+            "background: #252525; color: #aaaaaa; padding: 8px 16px; border-radius: 5px; "
+            "font-weight: bold; border: 1px solid #333333; font-size: 13px;")
         self.btn_sig.setStyleSheet(
-            "background: #e62429; color: white; padding: 8px 15px; border-radius: 5px; font-weight: bold;")
+            "background: #e62429; color: white; padding: 8px 16px; border-radius: 5px; "
+            "font-weight: bold; border: none; font-size: 13px;")
 
         self.lbl_pag = QLabel(f"{self.pagina_actual}")
-        self.lbl_pag.setStyleSheet("color: black; font-weight: bold; font-size: 14px;")
+        self.lbl_pag.setStyleSheet("color: #ffffff; font-weight: bold; font-size: 14px;")
         self.btn_sig.clicked.connect(self.pagina_siguiente)
         self.btn_ant.clicked.connect(self.pagina_anterior)
         footer.addStretch()
@@ -226,25 +238,17 @@ class PersonajesMenu(QWidget):
     def mostrar_error_carga(self, mensaje):
         # CORRECCION: dejar el error visible dentro de la pantalla y tambien en una ventana emergente.
         self.lbl_estado.setText("Error al cargar personajes. Revisa el detalle mostrado.")
-        self.lbl_estado.setStyleSheet("color: #000000; font-size: 13px; font-weight: bold;")
-        # CORRECCION: forzar colores legibles en el popup de error para que el detalle se pueda leer.
+        self.lbl_estado.setStyleSheet("color: #e62429; font-size: 13px; font-weight: bold;")
         msg_box = QMessageBox(self)
         msg_box.setIcon(QMessageBox.Icon.Critical)
         msg_box.setWindowTitle("Error de carga")
         msg_box.setText(mensaje)
         msg_box.setStyleSheet("""
-            QMessageBox {
-                background-color: white;
-            }
-            QMessageBox QLabel {
-                color: black;
-                background-color: white;
-            }
+            QMessageBox { background-color: #1a1a1a; }
+            QMessageBox QLabel { color: #ffffff; background-color: #1a1a1a; }
             QMessageBox QPushButton {
-                color: black;
-                background-color: #f0f0f0;
-                padding: 6px 12px;
-                min-width: 80px;
+                color: white; background-color: #e62429;
+                padding: 6px 12px; min-width: 80px; border-radius: 4px;
             }
         """)
         msg_box.exec()
@@ -365,9 +369,32 @@ class PersonajesMenu(QWidget):
                 if convertido is not None:
                     personaje = convertido
                     self.gestor.personajes[personaje.id] = personaje
+                    # Actualizar cache raw para que los datos enriquecidos persistan
+                    self.gestor.raw_data.d_personajes.datos[personaje.id] = detalle_raw[0]
+                    self.gestor.raw_data.d_personajes.datos[str(personaje.id)] = detalle_raw[0]
+                    self.gestor.raw_data.d_personajes.guardar()
         except Exception:
             # Si falla el detalle remoto, seguimos con la info base en vez de cortar la hidratacion.
             pass
+
+        # 1b) Resolver IDs directamente si tenemos IDs pero no nombres
+        if not personaje.creadores and getattr(personaje, "creadores_ids", []):
+            nombres = []
+            for cid in personaje.creadores_ids[:5]:
+                creador_obj = self.gestor.buscador("creador", self.api, cid)
+                if creador_obj and getattr(creador_obj, "nombre_completo", None):
+                    nombres.append(creador_obj.nombre_completo)
+            if nombres:
+                personaje.creadores = nombres
+
+        if not personaje.eventos and getattr(personaje, "eventos_ids", []):
+            nombres = []
+            for eid in personaje.eventos_ids[:5]:
+                evento_obj = self.gestor.buscador("evento", self.api, eid)
+                if evento_obj and getattr(evento_obj, "titulo", None):
+                    nombres.append(evento_obj.titulo)
+            if nombres:
+                personaje.eventos = nombres
 
         # 2) Solo si faltan datos visibles, hidratar relaciones y con limite para evitar esperas largas.
         if personaje.comics and personaje.creadores and personaje.eventos:
@@ -384,6 +411,9 @@ class PersonajesMenu(QWidget):
             comic_obj = self.gestor.buscador("comic", self.api, comic_id)
             if comic_obj and getattr(comic_obj, "titulo", None):
                 nombres_comics.append(comic_obj.titulo)
+                # Extraer nombres directamente del comic (evita lookups adicionales)
+                nombres_creadores.extend(getattr(comic_obj, "nombres_creadores", []) or [])
+                # Mantener IDs para lookups adicionales si necesario
                 ids_creadores.extend(getattr(comic_obj, "creadores", []) or [])
                 ids_eventos.extend(getattr(comic_obj, "eventos", []) or [])
 
