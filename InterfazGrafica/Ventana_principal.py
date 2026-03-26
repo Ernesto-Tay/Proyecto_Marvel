@@ -1,10 +1,10 @@
 import sys
 import os
 from collections import Counter
-from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
-                             QTreeWidget, QTreeWidgetItem, QHeaderView, 
-                             QPushButton, QLabel, QLineEdit, QComboBox, 
-                             QTextEdit, QMessageBox, QMenuBar, QMenu, 
+from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
+                             QTreeWidget, QTreeWidgetItem, QHeaderView,
+                             QPushButton, QLabel, QLineEdit, QComboBox,
+                             QTextEdit, QMessageBox, QMenuBar, QMenu,
                              QFrame, QApplication, QSizePolicy)
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtGui import QFont, QAction, QIcon
@@ -19,6 +19,7 @@ from Controladores.init import gestor
 from Modelos.__init__ import Comic
 from Estructuras_Listas.init import ListaDoble
 
+
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -29,15 +30,14 @@ class VentanaPrincipal(QMainWindow):
         self.setMinimumSize(1000, 600)
         
         # Controlador
-        self.controlador = gestor
-        
+        self.controlador = Instancias()
+
         # Variables para filtros
         self.filtro_autor = ""
         self.filtro_anio = ""
         self.busqueda = ""
         self.orden = "Nombre"
-        self._actualizando_filtros = False
-        
+
         # Configurar estilo CSS
         self.setStyleSheet("""
             QMainWindow {
@@ -311,7 +311,7 @@ class VentanaPrincipal(QMainWindow):
         botones_layout.addWidget(self.btn_editar)
         botones_layout.addWidget(self.btn_eliminar)
         botones_layout.addStretch()
-        
+
         izquierdo_layout.addWidget(frame_botones)
         
         # Panel derecho (detalles)
@@ -340,22 +340,22 @@ class VentanaPrincipal(QMainWindow):
             }
         """)
         derecho_layout.addWidget(self.txt_detalles)
-        
+
         # Agregar paneles al layout principal
         main_layout.addWidget(panel_izquierdo, 1)
         main_layout.addWidget(panel_derecho)
-        
+
     def cargar_comics(self):
         """Cargar comics en el TreeWidget con filtros y ordenamiento"""
         if self._actualizando_filtros:
             return
         # Limpiar tree
         self.tree.clear()
-        
+
         # Obtener comics filtrados
         comics = self.controlador.obtener_todos_comics()
         comics = [self._normalizar_comic_vista(c) for c in comics]
-        
+
         # Aplicar filtros
         self.busqueda = self.busqueda_entry.text().lower()
         self.filtro_autor = self.autor_combo.currentText()
@@ -366,18 +366,18 @@ class VentanaPrincipal(QMainWindow):
         if self.filtro_anio != "Todos":
             comics = [c for c in comics if str(c.anio) == self.filtro_anio]
         if self.busqueda:
-            comics = [c for c in comics if self.busqueda in c.titulo.lower() or 
-                     self.busqueda in c.autor.lower()]
-        
+            comics = [c for c in comics if self.busqueda in c.titulo.lower() or
+                      self.busqueda in c.autor.lower()]
+
         # Ordenar
         self.orden = self.orden_combo.currentText()
         if self.orden == "Nombre":
-            comics.sort(key=lambda x: (x.titulo or "").lower())
+            comics.sort(key=lambda x: x.titulo)
         elif self.orden == "Año":
-            comics.sort(key=lambda x: x.anio if isinstance(x.anio, int) else 0)
+            comics.sort(key=lambda x: x.anio)
         elif self.orden == "Autor":
-            comics.sort(key=lambda x: (x.autor or "").lower())
-        
+            comics.sort(key=lambda x: x.autor)
+
         # Insertar en tree
         for comic in comics:
             item = QTreeWidgetItem(self.tree)
@@ -388,19 +388,19 @@ class VentanaPrincipal(QMainWindow):
             item.setText(4, comic.editorial)
             # Guardar el objeto comic para usarlo después
             item.setData(0, Qt.ItemDataRole.UserRole, comic)
-        
+
         # Actualizar filtros
         self.actualizar_filtros(comics)
-        
+
     def actualizar_filtros(self, comics):
         """Actualizar opciones de filtros"""
         self._actualizando_filtros = True
         # Guardar selección actual
         autor_actual = self.autor_combo.currentText()
         anio_actual = self.anio_combo.currentText()
-        
+
         # Actualizar autores
-        autores = sorted(set((c.autor or "") for c in comics if c.autor))
+        autores = sorted(set(c.autor for c in comics))
         self.autor_combo.clear()
         self.autor_combo.addItem("Todos")
         self.autor_combo.addItems(autores)
@@ -420,8 +420,6 @@ class VentanaPrincipal(QMainWindow):
         index = self.anio_combo.findText(anio_actual)
         if index >= 0:
             self.anio_combo.setCurrentIndex(index)
-        
-        self._actualizando_filtros = False
 
     def mostrar_detalles(self):
         """Mostrar detalles del comic seleccionado"""
@@ -444,47 +442,47 @@ class VentanaPrincipal(QMainWindow):
             
             DESCRIPCIÓN:
             {comic.descripcion if hasattr(comic, 'descripcion') else 'No disponible'}
-            
+
             PERSONAJES:
             {', '.join(comic.personajes) if hasattr(comic, 'personajes') else 'No disponible'}
             """
-            
+
             self.txt_detalles.setText(detalles)
-            
+
     def abrir_agregar_comic(self):
         """Abrir ventana para agregar comic"""
         # Importar aquí para evitar importación circular
         from .ventana_comic import VentanaComic
         ventana_comic = VentanaComic(self.controlador, self.cargar_comics, parent=self)
         ventana_comic.exec()
-        
+
     def editar_comic(self):
         """Editar comic seleccionado"""
         items = self.tree.selectedItems()
         if not items:
             QMessageBox.warning(self, "Advertencia", "Selecciona un comic para editar")
             return
-            
+
         item = items[0]
         comic = item.data(0, Qt.ItemDataRole.UserRole)
-        
+
         if comic:
             from .ventana_comic import VentanaComic
             ventana_comic = VentanaComic(self.controlador, self.cargar_comics, comic, self)
             ventana_comic.exec()
-            
+
     def eliminar_comic(self):
         """Eliminar comic seleccionado"""
         items = self.tree.selectedItems()
         if not items:
             QMessageBox.warning(self, "Advertencia", "Selecciona un comic para eliminar")
             return
-            
-        reply = QMessageBox.question(self, "Confirmar", 
-                                    "¿Estás seguro de eliminar este comic?",
-                                    QMessageBox.StandardButton.Yes | 
-                                    QMessageBox.StandardButton.No)
-        
+
+        reply = QMessageBox.question(self, "Confirmar",
+                                     "¿Estás seguro de eliminar este comic?",
+                                     QMessageBox.StandardButton.Yes |
+                                     QMessageBox.StandardButton.No)
+
         if reply == QMessageBox.StandardButton.Yes:
             item = items[0]
             comic = item.data(0, Qt.ItemDataRole.UserRole)
@@ -492,12 +490,11 @@ class VentanaPrincipal(QMainWindow):
             self.cargar_comics()
             self.txt_detalles.clear()
             QMessageBox.information(self, "Éxito", "Comic eliminado correctamente")
-            
+
     def mostrar_estadisticas(self):
         """Mostrar estadísticas de la colección"""
         comics = self.controlador.obtener_todos_comics()
-        comics = [self._normalizar_comic_vista(c) for c in comics]
-        
+
         total = len(comics)
         autores = len(set(c.autor for c in comics))
         anios = len(set(c.anio for c in comics))
@@ -510,34 +507,34 @@ class VentanaPrincipal(QMainWindow):
         Autores distintos: {autores}
         Años diferentes: {anios}
         Editoriales: {editoriales}
-        
+
         TOP 5 AUTORES:
         """
-        
+
         contador_autores = Counter(c.autor for c in comics)
         for autor, count in contador_autores.most_common(5):
             stats += f"\n   • {autor}: {count} cómic(s)"
             
         QMessageBox.information(self, "Estadísticas", stats)
-        
+
     def mostrar_acerca_de(self):
         """Mostrar información del programa"""
         info = """
         SISTEMA DE GESTIÓN DE CÓMICS MARVEL
-        
+
         Versión: 1.0
         Desarrollado para Proyecto Marvel
-        
+
         Características:
         Gestión completa de cómics
         Búsqueda y filtros avanzados
         Ordenamiento por nombre, año o autor
         Interfaz moderna y fácil de usar
-        
+
         © 2026 - Todos los derechos reservados
         """
         QMessageBox.about(self, "Acerca de", info)
-        
+
     def iniciar(self):
         """Iniciar la aplicación"""
         self.show()

@@ -9,7 +9,7 @@ from Estructuras_Listas.Lista_simple import ListaSimple
 class DetallesPersonaje(QWidget):
     def __init__(self):
         super().__init__()
-        self.setStyleSheet("background-color: white; border: none;")
+        self.setStyleSheet("background-color: #121212; border: none;")
 
         self.tamanio_pagina_detalles = 10
         self.estado_listas = {
@@ -44,8 +44,8 @@ class DetallesPersonaje(QWidget):
         self.foto_perfil.setStyleSheet("""
             border: 3px solid #e62429;
             border-radius: 12px;
-            background-color: #f0f0f0;
-            color: #666;
+            background-color: #1a1a1a;
+            color: #666666;
         """)
         self.foto_perfil.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.foto_perfil.setText("No Image")
@@ -56,7 +56,7 @@ class DetallesPersonaje(QWidget):
         info_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
 
         self.lbl_nombre = QLabel("NOMBRE DEL PERSONAJE")
-        self.lbl_nombre.setStyleSheet("font-size: 38px; font-weight: bold; color: black; background: transparent;")
+        self.lbl_nombre.setStyleSheet("font-size: 38px; font-weight: bold; color: #ffffff; background: transparent;")
         info_layout.addWidget(self.lbl_nombre)
 
         layout_superior_detalles = QHBoxLayout()
@@ -69,7 +69,7 @@ class DetallesPersonaje(QWidget):
 
         self.lbl_descripcion = QLabel("Selecciona un personaje...")
         self.lbl_descripcion.setWordWrap(True)
-        self.lbl_descripcion.setStyleSheet("color: #333; font-size: 14px; line-height: 150%; background: transparent;")
+        self.lbl_descripcion.setStyleSheet("color: #cccccc; font-size: 14px; line-height: 150%; background: transparent;")
 
         desc_container.addWidget(lbl_t_desc)
         desc_container.addWidget(self.lbl_descripcion)

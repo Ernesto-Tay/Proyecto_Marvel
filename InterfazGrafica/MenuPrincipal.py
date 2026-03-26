@@ -3,24 +3,28 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QHBoxLayout, QVBoxLayout,
                              QPushButton, QLabel, QStackedWidget, QFrame)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap
-from InterfazGrafica.Ventana_principal import VentanaPrincipal
+
+from ComicMenu import ComicsMenu
+from ComicDetalles import DetallesComic
 from PersonajeMenu import PersonajesMenu
 from PersonajeDetalles import DetallesPersonaje
 from HomeMenu import HomeMenu
 from Estructuras_Listas.lista_circular import ListaCircular
 
+
 class MenuPrincipal(QMainWindow):
     def __init__(self, perfil):
         super().__init__()
-        #Usamo la lista circular para navegar entre secciones :D
+        # Lista circular para navegar entre secciones principales
         self.nav_circular = ListaCircular()
         self.nav_circular.agregar(0)  # Home
-        self.nav_circular.agregar(1)  # Comic
+        self.nav_circular.agregar(1)  # Comics
         self.nav_circular.agregar(2)  # Personajes
 
+        self.perfil = perfil
         self.setWindowTitle("MUNDO COMIC - Catálogo Virtual")
         self.showMaximized()
-        self.setStyleSheet("background-color: white; color: white; font-family: 'Segoe UI', Arial;")
+        self.setStyleSheet("background-color: #121212; color: white; font-family: 'Segoe UI', Arial;")
 
         self.ruta_recursos = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Recursos")
 
@@ -30,7 +34,7 @@ class MenuPrincipal(QMainWindow):
         self.main_layout.setContentsMargins(0, 0, 0, 0)
         self.main_layout.setSpacing(0)
 
-        #
+        # Sidebar
         self.sidebar = QFrame()
         self.sidebar.setFixedWidth(260)
         self.sidebar.setStyleSheet("background-color: #161616; border-right: 1px solid #222;")
@@ -46,21 +50,33 @@ class MenuPrincipal(QMainWindow):
         self.sidebar_layout.addWidget(self.avatar_label)
 
         self.lbl_logo = QLabel("MUNDO COMIC")
-        self.lbl_logo.setStyleSheet("color: #e62429; font-size: 24px; font-weight: bold; margin-bottom: 10px;")
+        self.lbl_logo.setStyleSheet("color: #e62429; font-size: 24px; font-weight: bold; margin-bottom: 4px;")
         self.lbl_logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.sidebar_layout.addWidget(self.lbl_logo)
 
-        #Navegación Circular
+        nombre_admin = getattr(perfil, 'nombre', None) or getattr(perfil, 'usuario', 'Admin')
+        self.lbl_admin = QLabel(f"Admin: {nombre_admin}")
+        self.lbl_admin.setStyleSheet("color: #666666; font-size: 11px; background: transparent;")
+        self.lbl_admin.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.sidebar_layout.addWidget(self.lbl_admin)
+
+        sep_top = QFrame()
+        sep_top.setFrameShape(QFrame.Shape.HLine)
+        sep_top.setStyleSheet("background: #2a2a2a; border: none; max-height: 1px; margin: 8px 0px;")
+        self.sidebar_layout.addWidget(sep_top)
+
+        # Navegación Circular
         fila_flechas = QHBoxLayout()
-        self.btn_atras_circ = QPushButton(" < ")
-        self.btn_sig_circ = QPushButton(" > ")
+        self.btn_atras_circ = QPushButton("◀")
+        self.btn_sig_circ = QPushButton("▶")
 
         estilo_flecha = """
-            QPushButton { 
-                background-color: #252525; color: #e62429; border-radius: 15px; 
-                font-weight: bold; font-size: 16px; min-width: 45px; height: 30px;
+            QPushButton {
+                background-color: #252525; color: #e62429; border-radius: 15px;
+                font-weight: bold; font-size: 13px; min-width: 45px; height: 30px;
+                border: 1px solid #333333;
             }
-            QPushButton:hover { background-color: #e62429; color: white; }
+            QPushButton:hover { background-color: #e62429; color: white; border: 1px solid #e62429; }
         """
         self.btn_atras_circ.setStyleSheet(estilo_flecha)
         self.btn_sig_circ.setStyleSheet(estilo_flecha)
@@ -84,27 +100,35 @@ class MenuPrincipal(QMainWindow):
         self.sidebar_layout.addWidget(self.btn_personajes)
         self.sidebar_layout.addStretch()
 
-        # --- STACKED WIDGET (CONTENEDOR) ---
+        sep_bottom = QFrame()
+        sep_bottom.setFrameShape(QFrame.Shape.HLine)
+        sep_bottom.setStyleSheet("background: #2a2a2a; border: none; max-height: 1px;")
+        self.sidebar_layout.addWidget(sep_bottom)
+
+        lbl_version = QLabel("v1.0 — Mundo Comic")
+        lbl_version.setStyleSheet("color: #444444; font-size: 10px; padding: 8px; background: transparent;")
+        lbl_version.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.sidebar_layout.addWidget(lbl_version)
+
+        # Stacked Widget (contenedor de vistas)
         self.stack = QStackedWidget()
-        self.vista_home = HomeMenu(self)
-        # Comic, solo llamen al modulo, no colocar logica :D
-        self.vista_comics_vacia =  VentanaPrincipal()
 
-        # perosnjae
-        self.vista_personajes = PersonajesMenu(perfil)
-        self.vista_detalles_per = DetallesPersonaje()
+        self.vista_home = HomeMenu(self)              # índice 0
+        self.vista_comics = ComicsMenu(perfil)        # índice 1
+        self.vista_personajes = PersonajesMenu(perfil) # índice 2
+        self.vista_detalles_per = DetallesPersonaje() # índice 3
+        self.vista_detalles_comic = DetallesComic()   # índice 4
 
-        self.stack.addWidget(self.vista_home)  # 0
-        self.stack.addWidget(self.vista_comics_vacia)  # 1
-        self.stack.addWidget(self.vista_personajes)  # 2
-        self.stack.addWidget(self.vista_detalles_per)  # 3
+        self.stack.addWidget(self.vista_home)
+        self.stack.addWidget(self.vista_comics)
+        self.stack.addWidget(self.vista_personajes)
+        self.stack.addWidget(self.vista_detalles_per)
+        self.stack.addWidget(self.vista_detalles_comic)
 
-        #CONEXIONES
-        # Navegación Circular
+        # Conexiones
         self.btn_sig_circ.clicked.connect(self.mover_siguiente_circular)
         self.btn_atras_circ.clicked.connect(self.mover_anterior_circular)
 
-        # Conectar botones a sus índices
         self.btn_home.clicked.connect(lambda: self.cambiar_pestana(0, self.btn_home))
         self.btn_comics.clicked.connect(lambda: self.cambiar_pestana(1, self.btn_comics))
         self.btn_personajes.clicked.connect(lambda: self.cambiar_pestana(2, self.btn_personajes))
@@ -123,28 +147,35 @@ class MenuPrincipal(QMainWindow):
         self.sincronizar_ui_circular(indice)
 
     def sincronizar_ui_circular(self, indice):
-        #Mueve el stack y actualiza el botón que corresponde al índice
         self.stack.setCurrentIndex(indice)
         botones = {0: self.btn_home, 1: self.btn_comics, 2: self.btn_personajes}
         for i, btn in botones.items():
             self.actualizar_estilo_boton(btn, i == indice)
+        if indice == 0:
+            self.vista_home.actualizar_stats()
 
     def cambiar_pestana(self, indice, boton):
         self.stack.setCurrentIndex(indice)
-        # Sincronizamos el puntero de la lista circular para que no se pierda
+        # Sincronizamos el puntero de la lista circular
         while self.nav_circular.actual.dato != indice:
             self.nav_circular.siguiente()
 
         for b in [self.btn_home, self.btn_comics, self.btn_personajes]:
             self.actualizar_estilo_boton(b, b == boton)
+        if indice == 0:
+            self.vista_home.actualizar_stats()
 
     def actualizar_estilo_boton(self, btn, activo):
         if activo:
             btn.setStyleSheet(
-                "background-color: #252525; color: #e62429; border-left: 5px solid #e62429; text-align: left; font-weight: bold; font-size: 14px; height: 55px;")
+                "background-color: #252525; color: #e62429; "
+                "border-left: 4px solid #e62429; border-top: none; border-right: none; border-bottom: none; "
+                "text-align: left; padding-left: 16px; font-weight: bold; font-size: 14px; height: 55px;")
         else:
             btn.setStyleSheet(
-                "background-color: transparent; color: #888; border-left: 5px solid transparent; text-align: left; font-size: 14px; height: 55px; border: none;")
+                "background-color: transparent; color: #888888; "
+                "border-left: 4px solid transparent; border-top: none; border-right: none; border-bottom: none; "
+                "text-align: left; padding-left: 16px; font-size: 14px; height: 55px;")
 
     def crear_boton_menu(self, texto, activo):
         btn = QPushButton(f"  {texto}")
